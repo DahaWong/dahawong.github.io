@@ -80,14 +80,14 @@ footer {
   justify-content: center;
 }
 .toc-container {
-  display: flex;
-  margin-top: 20rem;
+  display: hidden;
+  margin-top: 14rem;
   margin-left: 32rem;
   position: fixed;
   flex-wrap: wrap;
 }
 .toc-sideborder {
-  display: flex;
+  display: hidden;
   width: 1px;
   background-image: linear-gradient(to top, rgba(93,93,93,0.04), rgba(93,93,93,0.2), rgba(93,93,93,0.04));
 }
@@ -118,20 +118,21 @@ footer {
   margin-bottom: 1rem;
 }
 .post-title {
-  font-size: 2.5rem;
-  margin: 3rem 0 6rem;
-}
-.post-content {
-  padding: 24px auto;
-  font-size: 18px;
+  width: 40rem;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.08rem;
+  margin: 6rem 0 4rem;
 }
 h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  letter-spacing: 0.28rem;
+  margin-bottom: 3rem;
   color: #424242;
 }
 h4 {
-  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
   color: rgba(66,66,66,0.9);
 }
 hr {
@@ -141,28 +142,32 @@ hr {
   width: 80%;
   background-image: linear-gradient(to right, rgba(93,93,93,0.04), rgba(93,93,93,0.2), rgba(93,93,93,0.04));
 }
-p {
-  font-size: 1.05rem;
-  line-height: 3rem;
-  letter-spacing: 0.1rem;
+p,
+ul,
+ol {
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+  line-height: 4rem;
   margin: 3rem 0;
+  word-break: normal;
 }
 ul,
 ol {
-  margin-bottom: 4rem;
+  margin-left: 2.5rem;
 }
 li {
-  font-size: 1.05rem;
-  line-height: 2.5rem;
-  margin-left: 1.4rem;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.4rem;
   letter-spacing: 0.08rem;
+  line-height: 4rem;
+}
+li:last-child {
+  margin-bottom: 0;
 }
 li li,
 li p {
   color: rgba(66,66,66,0.7);
-  font-size: 1rem;
-  margin-right: 1.3rem;
+  font-size: 1.2rem;
+  margin-right: 4rem;
 }
 p,
 li {
@@ -170,22 +175,58 @@ li {
 }
 p a,
 li a {
+  letter-spacing: 0.1rem;
   color: rgba(66,66,66,0.9);
   margin: 0 0.1rem;
   text-decoration: none;
   border-bottom: 0.9px solid rgba(0,0,0,0.25);
+  word-break: break-all;
 }
 p a:hover,
 li a:hover {
   color: rgba(66,66,66,0.4);
   border-bottom: 0.8px solid rgba(0,0,0,0.2);
 }
-@media only screen and (max-width: 500px) {
-  p {
-    font-size: 1.2rem;
-    line-height: 4rem;
+@media only screen and (min-width: 500px) {
+  h3 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+    letter-spacing: 0.12rem;
+  }
+  .post-title {
+    font-size: 2.5rem;
   }
   .post-container {
-    width: 60rem;
+    width: 40rem;
+  }
+  .toc-container {
+    display: flex;
+  }
+  .toc-sideborder {
+    display: flex;
+  }
+  p,
+  ul,
+  ol {
+    font-size: 1.1rem;
+    line-height: 2.2rem;
+    letter-spacing: 1.4px;
+    margin-bottom: 2.5rem;
+    margin-top: 1.2rem;
+  }
+  ul,
+  ol {
+    margin-left: 1.6rem;
+  }
+  li {
+    line-height: 2rem;
+  }
+  li li {
+    font-size: 0.95rem;
+    line-height: 1.8rem;
   }
 }
