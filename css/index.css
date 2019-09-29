@@ -135,7 +135,7 @@ ul,
 ol {
   font-size: 0.9rem;
   letter-spacing: 0.1rem;
-  line-height: 2rem;
+  line-height: 2.2rem;
   margin: 1rem 0 2rem;
   word-break: normal;
 }
@@ -144,7 +144,7 @@ ol {
   margin-left: 1.2rem;
 }
 li {
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
   letter-spacing: 0.08rem;
   line-height: 1.8rem;
 }
