@@ -75,44 +75,54 @@ footer {
   text-align: center;
   color: #000;
 }
-@media only screen {
-  .post-container {
-    display: flex;
-    flex-wrap: wrap;
-    width: 14rem;
-    justify-content: center;
-  }
-  .toc-container {
-    display: hidden;
-    margin-top: 14rem;
-    margin-left: 36rem;
-    position: fixed;
-    flex-wrap: wrap;
-  }
-  .toc-sideborder {
-    display: hidden;
-    width: 1px;
-    background-image: linear-gradient(to top, rgba(93,93,93,0.04), rgba(93,93,93,0.2), rgba(93,93,93,0.04));
-  }
-  .toc {
-    list-style-type: none;
-  }
-  .toc a {
-    color: rgba(158,158,158,0.7);
-    color: #9e9e9e;
-    font-size: 0.9rem;
-    border-bottom: 0;
-  }
-  .toc a:hover {
-    color: rgba(189,189,189,0.7);
-    border-bottom: 0;
-  }
-  .post-title {
-    text-align: center;
-    font-size: 1.4rem;
-    letter-spacing: 0.1rem;
-    margin: 3rem 0 1.5rem;
-  }
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 14rem;
+  justify-content: center;
+}
+.toc-container {
+  display: hidden;
+  margin-top: 8rem;
+  margin-left: 32rem;
+  position: fixed;
+  flex-wrap: wrap;
+}
+.toc-sideborder {
+  display: hidden;
+  width: 1px;
+  background-image: linear-gradient(to top, rgba(93,93,93,0.06), rgba(93,93,93,0.3), rgba(93,93,93,0.06));
+}
+.toc {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.toc a {
+  color: #9e9e9e;
+  font-size: 0.9rem;
+  border-bottom: 0;
+}
+.toc a:hover {
+  color: rgba(189,189,189,0.8);
+  border-bottom: 0;
+}
+.post-title {
+  text-align: center;
+  font-size: 1.4rem;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0 3rem;
+}
+blockquote {
+  border-left: 0.08rem solid #bdbdbd;
+  padding-left: 1rem;
+  margin-bottom: 2rem;
+}
+blockquote p {
+  margin: 0;
+  font-size: 0.8rem;
 }
 h3 {
   font-size: 1.2rem;
@@ -130,43 +140,37 @@ hr {
   border: 0;
   height: 1px;
   width: 80%;
-  background-image: linear-gradient(to right, rgba(93,93,93,0.04), rgba(93,93,93,0.2), rgba(93,93,93,0.04));
+  background-image: linear-gradient(to right, rgba(93,93,93,0.06), rgba(93,93,93,0.3), rgba(93,93,93,0.06));
 }
 p,
 ul,
 ol {
   font-size: 0.9rem;
-  letter-spacing: 0.1rem;
-  line-height: 2.2rem;
+  letter-spacing: 0.15rem;
+  line-height: 2.4rem;
   margin: 1rem 0 2rem;
   word-break: normal;
+  color: rgba(66,66,66,0.9);
 }
 ul,
 ol {
   margin-left: 1.2rem;
 }
 li {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   letter-spacing: 0.08rem;
   line-height: 1.8rem;
 }
-li:last-child {
-  margin-bottom: 0;
-}
 li li,
 li p {
-  color: rgba(66,66,66,0.7);
+  color: rgba(66,66,66,0.9);
   font-size: 0.8rem;
   margin-right: 1.5rem;
-}
-p,
-li {
-  color: rgba(66,66,66,0.9);
 }
 p a,
 li a {
   letter-spacing: 0.05rem;
-  color: rgba(66,66,66,0.9);
+  color: #424242;
   margin: 0 0.05rem;
   text-decoration: none;
   border-bottom: 0.9px solid rgba(0,0,0,0.25);
@@ -174,7 +178,7 @@ li a {
 }
 p a:hover,
 li a:hover {
-  color: rgba(66,66,66,0.4);
+  color: rgba(66,66,66,0.6);
   border-bottom: 0.8px solid rgba(0,0,0,0.2);
 }
 @media only screen and (min-width: 501px) {
@@ -204,13 +208,9 @@ li a:hover {
   ol {
     font-size: 1.1rem;
     line-height: 2.2rem;
-    letter-spacing: 1.4px;
+    letter-spacing: 0.15rem;
     margin-bottom: 2.5rem;
     margin-top: 1.2rem;
-  }
-  ul,
-  ol {
-    margin-left: 1.6rem;
   }
   li {
     line-height: 2rem;
@@ -219,13 +219,17 @@ li a:hover {
     font-size: 0.95rem;
     line-height: 2rem;
   }
-  ol,
-  ul {
+  ul,
+  ol {
     margin-bottom: 0.5rem;
+    margin-left: 1.6rem;
   }
-  ol ol,
-  ul ol {
+  ul ol,
+  ol ol {
     margin-left: 2rem;
     margin-top: 0.6rem;
   }
+}
+body {
+  font-family: 'Noto Serif SC', serif;
 }
