@@ -7,6 +7,7 @@ body {
   display: flex;
   position: relative;
   justify-content: center;
+  flex-wrap: wrap;
 }
 .banner {
   width: 800px;
@@ -41,7 +42,6 @@ body {
 .article-container {
   display: flex;
   align-items: center;
-  background-color: #f00;
   width: 800px;
   flex-wrap: wrap;
   flex-direction: column;
@@ -76,46 +76,72 @@ footer {
 .post-container {
   display: flex;
   flex-wrap: wrap;
-  width: 800px;
+  width: 50rem;
   justify-content: center;
 }
 .toc {
   display: flex;
   width: 200px;
   flex-direction: column;
-  margin-top: 0px;
+  margin-top: 100px;
   margin-left: 300px;
   position: fixed;
 }
-h1 {
-  font-size: 36px;
-  margin: 48px;
+.post-title {
+  font-size: 2.5rem;
+  margin: 3rem 0 6rem;
 }
 .post-content {
   padding: 24px auto;
   font-size: 18px;
 }
 h3 {
-  margin: 24px 0;
+  margin: 2rem 0;
+  color: rgba(66,66,66,0.9);
 }
 hr {
-  margin: 36px 0;
+  margin: 6rem auto;
+  border: 0;
+  height: 1px;
+  width: 80%;
+  background-image: linear-gradient(to right, rgba(93,93,93,0.04), rgba(93,93,93,0.2), rgba(93,93,93,0.04));
 }
 p {
-  font-size: 18px;
-  line-height: 30px;
-  letter-spacing: 1.2px;
-  margin-bottom: 32px;
+  font-size: 1.05rem;
+  line-height: 3rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 4rem;
+}
+li {
+  font-size: 1.05rem;
+  line-height: 3rem;
+  margin-left: 1.4rem;
+  margin-bottom: 1.8rem;
+  letter-spacing: 0.08rem;
 }
 li li,
 li p {
-  margin: 12px 0px 12px 20px;
+  color: rgba(66,66,66,0.7);
+  font-size: 1rem;
+  margin: 0.8rem 0px 0.8rem 1.3rem;
 }
+p,
 li {
-  margin-left: 20px;
-  margin-bottom: 28px;
-  letter-spacing: 1.2px;
+  color: rgba(66,66,66,0.9);
 }
-a {
+p a,
+li a,
+p:visited,
+li:visited {
+  color: rgba(66,66,66,0.9);
+  margin: 0 2px;
   text-decoration: none;
+  border-bottom: 0.9px solid rgba(0,0,0,0.25);
+}
+p a:hover,
+li a:hover,
+p:visited:hover,
+li:visited:hover {
+  color: rgba(66,66,66,0.4);
+  border-bottom: 0.8px solid rgba(0,0,0,0.2);
 }
