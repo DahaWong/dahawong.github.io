@@ -96,11 +96,12 @@ footer {
   font-size: 18px;
 }
 h3 {
-  margin: 2rem 0;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
   color: #424242;
 }
 h4 {
-  margin: 1rem 0;
+  margin-bottom: 1.5rem;
   color: rgba(66,66,66,0.9);
 }
 hr {
@@ -114,6 +115,10 @@ p {
   font-size: 1.05rem;
   line-height: 3rem;
   letter-spacing: 0.1rem;
+  margin: 3rem 0;
+}
+ul,
+ol {
   margin-bottom: 4rem;
 }
 li {
@@ -138,7 +143,7 @@ li a,
 p:visited,
 li:visited {
   color: rgba(66,66,66,0.9);
-  margin: 0 2px;
+  margin: 0 0.1rem;
   text-decoration: none;
   border-bottom: 0.9px solid rgba(0,0,0,0.25);
 }
