@@ -97,6 +97,10 @@ footer {
 }
 h3 {
   margin: 2rem 0;
+  color: #424242;
+}
+h4 {
+  margin: 1rem 0;
   color: rgba(66,66,66,0.9);
 }
 hr {
@@ -114,16 +118,16 @@ p {
 }
 li {
   font-size: 1.05rem;
-  line-height: 3rem;
+  line-height: 2.5rem;
   margin-left: 1.4rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1.6rem;
   letter-spacing: 0.08rem;
 }
 li li,
 li p {
   color: rgba(66,66,66,0.7);
   font-size: 1rem;
-  margin: 0.8rem 0px 0.8rem 1.3rem;
+  margin: 0rem 0 0 1.3rem;
 }
 p,
 li {
