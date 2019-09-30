@@ -121,7 +121,7 @@ footer {
 }
 .toc ol a:hover {
   font-weight: 300;
-  color: #424242;
+  color: #212121;
   border-bottom: 0;
 }
 .post-title {
@@ -145,20 +145,20 @@ blockquote p a {
 }
 blockquote p a:hover,
 blockquote p a a:hover {
-  color: rgba(66,66,66,0.3);
+  color: rgba(33,33,33,0.3);
 }
 h3 {
   font-weight: 400;
   font-size: 1.2rem;
   letter-spacing: 0.08rem;
   margin-bottom: 2rem;
-  color: #424242;
+  color: #212121;
 }
 h4 {
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.08rem;
-  color: rgba(66,66,66,0.9);
+  color: rgba(33,33,33,0.9);
 }
 hr {
   margin: 4rem auto;
@@ -175,7 +175,7 @@ ol {
   line-height: 2.4rem;
   margin: 1rem 0 2rem;
   word-break: normal;
-  color: rgba(66,66,66,0.9);
+  color: rgba(33,33,33,0.9);
 }
 ul,
 ol {
@@ -189,14 +189,14 @@ li {
 }
 li li,
 li p {
-  color: rgba(66,66,66,0.9);
+  color: rgba(33,33,33,0.9);
   font-size: 0.8rem;
   margin-right: 1.5rem;
 }
 p a,
 li a {
   letter-spacing: 0.05rem;
-  color: #424242;
+  color: #212121;
   margin: 0 0.05rem;
   text-decoration: none;
   border-bottom: 0.9px solid rgba(0,0,0,0.25);
@@ -204,7 +204,7 @@ li a {
 }
 p a:hover,
 li a:hover {
-  color: rgba(66,66,66,0.6);
+  color: rgba(33,33,33,0.6);
   border-bottom: 0.8px solid rgba(0,0,0,0.2);
 }
 strong {
