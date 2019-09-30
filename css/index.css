@@ -97,16 +97,20 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  list-style-type: none;
   flex-wrap: wrap;
+  list-style-type: none;
+}
+.toc ul li,
+.toc ol li {
+  color: rgba(189,189,189,0.8);
 }
 .toc a {
-  color: #9e9e9e;
+  color: rgba(189,189,189,0.8);
   font-size: 0.9rem;
   border-bottom: 0;
 }
 .toc a:hover {
-  color: rgba(189,189,189,0.8);
+  color: #424242;
   border-bottom: 0;
 }
 .post-title {
@@ -117,12 +121,13 @@ footer {
 }
 blockquote {
   border-left: 0.08rem solid #bdbdbd;
-  padding-left: 1rem;
+  padding-left: 2rem;
   margin-bottom: 2rem;
 }
 blockquote p {
   margin: 0;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  color: #636363;
 }
 h3 {
   font-size: 1.2rem;
