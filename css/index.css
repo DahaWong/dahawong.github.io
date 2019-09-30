@@ -10,57 +10,60 @@ body {
   flex-wrap: wrap;
 }
 .banner {
-  width: 800px;
-  display: flex;
+  width: 18rem;
+  display: none;
   justify-content: center;
   font-size: 48px;
   padding: 24px;
 }
 .page-type {
-  display: flex;
+  display: none;
   height: 4rem;
 }
 .center-part {
   display: flex;
-  width: 800px;
+  width: 18rem;
   flex-direction: column;
 }
 .paginator-container {
   display: flex;
-  width: 800px;
+  width: 18rem;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 48px;
+  padding: 1.5rem;
+  margin-bottom: 0.25rem;
   background-color: #9e9e9e;
   position: sticky;
   top: 0;
 }
 .page-number {
   font-family: 'Wire One', sans-serif;
-  margin: 2rem 1rem;
-  font-size: 3.5rem;
+  font-size: 2em;
   text-decoration: none;
   color: #fff;
 }
 .article-container {
   display: flex;
   align-items: center;
-  width: 800px;
   flex-wrap: wrap;
   flex-direction: column;
+  overflow: hidden;
 }
 .article-title {
   display: flex;
-  width: 800px;
-  height: 340.4255319148936px;
+  width: 18rem;
+  height: 8.51063829787234rem;
+  padding: 0 1.5rem;
   color: #fff;
-  font-size: 1.5rem;
+  background-color: rgba(158,158,158,0.6);
+  font-size: 1.05rem;
+  text-align: center;
   text-decoration: none;
-  background-color: #bdbdbd;
   align-items: center;
   justify-content: center;
-  border-bottom: 0.15rem solid #fff;
-  letter-spacing: 0.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 0.5rem;
+  letter-spacing: 0.2rem;
 }
 footer {
   display: flex;
@@ -68,15 +71,15 @@ footer {
 }
 .from-to {
   font-family: 'Wire One', sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.6rem;
-  width: 800px;
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  width: 18rem;
   text-align: center;
   margin: 2rem;
 }
 .footer-rss,
 .footer-share {
-  width: 400px;
+  width: 9rem;
   margin: 1rem 0;
   text-align: center;
   color: #000;
