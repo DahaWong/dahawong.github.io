@@ -148,6 +148,11 @@ footer {
     text-align: center;
   }
 }
+.main-container {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
 .post-container {
   font-family: 'Noto Sans SC', sans-serif;
   font-weight: 300;
