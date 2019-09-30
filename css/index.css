@@ -79,6 +79,7 @@ footer {
 }
 .footer-rss,
 .footer-share {
+  display: none;
   width: 9rem;
   text-align: center;
   color: #000;
