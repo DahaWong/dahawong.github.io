@@ -86,7 +86,7 @@ footer {
   font-weight: 300;
   display: flex;
   flex-wrap: wrap;
-  width: 14rem;
+  width: 18rem;
   justify-content: center;
 }
 .toc-container {
@@ -170,9 +170,9 @@ hr {
 p,
 ul,
 ol {
-  font-size: 0.9rem;
-  letter-spacing: 0.08rem;
-  line-height: 2.4rem;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 2.5rem;
   margin: 1rem 0 2rem;
   word-break: normal;
   color: rgba(33,33,33,0.9);
