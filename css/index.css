@@ -32,7 +32,7 @@ body {
   height: 16vh;
   justify-content: center;
   position: fixed;
-  bottom: 50vh;
+  bottom: 16vh;
 }
 .button img {
   width: 8vw;
