@@ -9,12 +9,6 @@ body {
   justify-content: flex-end;
   flex-wrap: wrap;
 }
-.banner {
-  display: none;
-  justify-content: center;
-  font-size: 48px;
-  padding: 24px;
-}
 .page-type {
   display: none;
   height: 4rem;
@@ -59,7 +53,7 @@ body {
 }
 .page-number {
   font-family: 'Wire One', sans-serif;
-  font-size: 2em;
+  font-size: 2.2rem;
   text-decoration: none;
   color: #fff;
 }
@@ -126,7 +120,7 @@ footer {
     margin-bottom: 0.5rem;
   }
   .page-number {
-    font-size: 3.5em;
+    font-size: 4rem;
   }
   .article-title {
     width: 50vw;
@@ -163,8 +157,8 @@ footer {
 }
 .toc-container {
   display: hidden;
-  margin-top: 8rem;
-  margin-left: 32rem;
+  top: 10rem;
+  right: 3rem;
   position: fixed;
   flex-wrap: wrap;
 }
@@ -219,6 +213,9 @@ blockquote p a {
 blockquote p a:hover,
 blockquote p a a:hover {
   color: rgba(33,33,33,0.3);
+}
+abbr {
+  text-decoration: none;
 }
 h3 {
   font-weight: 400;
