@@ -77,24 +77,32 @@ footer {
 }
 .from-to {
   font-family: 'Wire One', sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  width: 40vw;
   letter-spacing: 0.25rem;
   text-align: center;
   margin: 1rem 0 0.5rem;
+  padding: 0 1rem;
   color: #424242;
 }
 .more {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
   width: 40vw;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  padding: 0 1rem;
   text-align: center;
 }
 .rss,
-.share {
-  width: 20vw;
+.share,
+.newsletter {
+  width: 10vw;
 }
 .rss img,
-.share img {
+.share img,
+.newsletter img {
   width: 2rem;
 }
 @media only screen and (min-width: 501px) {
@@ -139,8 +147,8 @@ footer {
     letter-spacing: 0.3rem;
   }
   .from-to {
-    width: 50vw;
-    font-size: 1.4rem;
+    width: 25vw;
+    font-size: 1.5rem;
     letter-spacing: 0.5rem;
     margin-top: 2rem;
   }
@@ -150,13 +158,14 @@ footer {
   }
   .more {
     width: 25vw;
-    padding: 0 0.8rem;
   }
   .rss,
+  .newsletter,
   .share {
-    width: 12.5vw;
+    width: 5vw;
   }
   .rss img,
+  .newsletter img,
   .share img {
     width: 3rem;
   }
