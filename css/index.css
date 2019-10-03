@@ -28,6 +28,10 @@ body {
   flex-direction: column;
   width: 80vw;
 }
+.active-page {
+  color: #fffbdb;
+  text-shadow: 0 0 0.4rem #fff, 0 0 0.4rem #fff7b3, 0 0 0.8rem #fff;
+}
 .paginator-container {
   display: flex;
   flex-wrap: wrap;
@@ -43,7 +47,11 @@ body {
   font-family: 'Wire One', sans-serif;
   font-size: 2.2rem;
   text-decoration: none;
-  color: #fff;
+  color: #fafafa;
+}
+.page-number:hover {
+  color: #fffbdb;
+  text-shadow: 0 0 0.4rem #fff, 0 0 0.4rem #fff7b3, 0 0 0.8rem #fff;
 }
 .article-container {
   display: flex;
@@ -114,19 +122,29 @@ footer {
   .button {
     display: flex;
     flex-direction: column;
-    height: 16vh;
     justify-content: center;
     position: fixed;
     bottom: 16vh;
   }
-  .button img {
+  button {
+    display: flex;
+    justify-content: center;
     width: 8vw;
-    height: 5.657708628005658vw;
+    height: 4.944375772558714vw;
+    background-color: #f0f0f0;
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.12), 0 -1px 3px 0 rgba(255,255,255,0.22), 0 1px 4px 0 rgba(0,0,0,0.1), inset 0px -3px 5px 0 rgba(0,0,0,0.4), inset 0 0 3px 2px rgba(255,255,255,0.6), inset 0px -2px 2px 0 rgba(255,255,255,0.12);
+    border-radius: 0.8rem;
+    border: none;
+    margin-bottom: 2rem;
   }
-  .button img:last-child {
-    width: 7.8vw;
-    height: 5.516265912305516vw;
-    margin-left: 0.15rem;
+  .background {
+    width: 4rem;
+  }
+  .background img {
+    width: 4rem;
+  }
+  .down {
+    transform: rotate(180deg);
   }
   .paginator-container {
     width: 50vw;
@@ -256,13 +274,14 @@ h3 {
   font-weight: 400;
   font-size: 1.2rem;
   letter-spacing: 0.08rem;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
   color: #212121;
 }
 h4 {
   font-weight: 400;
   font-size: 1rem;
   letter-spacing: 0.08rem;
+  margin-top: 4rem;
   color: rgba(33,33,33,0.9);
 }
 hr {
@@ -318,7 +337,6 @@ strong {
 @media only screen and (min-width: 501px) {
   h3 {
     font-size: 1.6rem;
-    margin-bottom: 2rem;
     letter-spacing: 0.15rem;
   }
   h4 {
