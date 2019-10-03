@@ -99,7 +99,7 @@ footer {
 .newsletter img,
 .share img,
 width 10vw img {
-  width: 2rem;
+  width: 34px;
 }
 @media only screen and (min-width: 501px) {
   .center-part {
