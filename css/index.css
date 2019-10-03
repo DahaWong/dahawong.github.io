@@ -29,8 +29,8 @@ body {
   width: 80vw;
 }
 .active-page {
-  color: #fffbdb;
-  text-shadow: 0 0 0.4rem #fff, 0 0 0.4rem #fff7b3, 0 0 0.8rem #fff;
+  color: #fafafa;
+  text-shadow: 0 0 0.4rem #fff, 0 0 0.4rem #fff7b3, 0 0 0.6rem #fff7b3;
 }
 .paginator-container {
   display: flex;
@@ -39,7 +39,7 @@ body {
   width: 80vw;
   padding: 1.5rem;
   margin-bottom: 0.25rem;
-  background-color: #636363;
+  background-color: #616161;
   position: sticky;
   top: 0;
 }
@@ -48,10 +48,11 @@ body {
   font-size: 2.2rem;
   text-decoration: none;
   color: #fafafa;
+  cursor: default;
+  transition-duration: 500ms;
 }
 .page-number:hover {
-  color: #fffbdb;
-  text-shadow: 0 0 0.4rem #fff, 0 0 0.4rem #fff7b3, 0 0 0.8rem #fff;
+  text-shadow: 0 0 0.4rem #fff, 0 0 0.4rem #fff7b3, 0 0 0.6rem #fff7b3;
 }
 .article-container {
   display: flex;
@@ -131,17 +132,14 @@ footer {
     justify-content: center;
     width: 8vw;
     height: 4.944375772558714vw;
-    background-color: #f0f0f0;
+    background-color: #616161;
     box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.12), 0 -1px 3px 0 rgba(255,255,255,0.22), 0 1px 4px 0 rgba(0,0,0,0.1), inset 0px -3px 5px 0 rgba(0,0,0,0.4), inset 0 0 3px 2px rgba(255,255,255,0.6), inset 0px -2px 2px 0 rgba(255,255,255,0.12);
     border-radius: 0.8rem;
     border: none;
     margin-bottom: 2rem;
   }
-  .background {
-    width: 4rem;
-  }
-  .background img {
-    width: 4rem;
+  button img {
+    transition: 500ms;
   }
   .down {
     transform: rotate(180deg);
