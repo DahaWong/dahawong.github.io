@@ -70,22 +70,32 @@ body {
 }
 footer {
   display: flex;
+  width: 80vw;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
 }
 .from-to {
   font-family: 'Wire One', sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 0.25rem;
   text-align: center;
-  margin: 1rem 0 1.5rem;
+  margin: 1rem 0 0.5rem;
+  color: #424242;
 }
-.footer-rss,
-.footer-share {
-  display: none;
-  width: 9rem;
+.more {
+  display: flex;
+  width: 40vw;
+  margin-top: 1.5rem;
   text-align: center;
-  color: #000;
+}
+.rss,
+.share {
+  width: 20vw;
+}
+.rss img,
+.share img {
+  width: 2rem;
 }
 @media only screen and (min-width: 501px) {
   .center-part {
@@ -130,13 +140,25 @@ footer {
   }
   .from-to {
     width: 50vw;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     letter-spacing: 0.5rem;
-    margin: 3rem 0 2rem;
+    margin-top: 2rem;
   }
-  .footer-rss,
-  .footer-share {
-    text-align: center;
+  footer {
+    width: 50vw;
+    margin: 2rem 0;
+  }
+  .more {
+    width: 25vw;
+    padding: 0 0.8rem;
+  }
+  .rss,
+  .share {
+    width: 12.5vw;
+  }
+  .rss img,
+  .share img {
+    width: 3rem;
   }
 }
 .main-container {
@@ -309,7 +331,7 @@ strong {
     font-size: 2.3rem;
   }
   .post-container {
-    width: 40rem;
+    width: 50vw;
   }
   .toc-container {
     display: flex;
