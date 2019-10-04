@@ -20,7 +20,7 @@ $(function() {
             $('html, body').animate({scrollTop:0}
                 ,4000)          
         }else{
-            $('html, body').animate({scrollTop:$('.from-to').offset().top - $(window).height()},5000)          
+            $('html, body').animate({scrollTop:$('.from-to').offset().top - $(window).height()},4000)          
         }
         img.attr("src","/img/active-triangle.png")
     })
