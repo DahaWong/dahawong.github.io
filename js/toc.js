@@ -27,7 +27,7 @@ $(function() {
     headers.each(function(){
       let header = $(this)
       let headerOffset = header.offset().top - scrollOffset
-      if (headerOffset < 400){
+      if (headerOffset < 300){
         activeId = "#" + header.attr("id")
       }
     })
@@ -37,5 +37,14 @@ $(function() {
     _this.addClass('active')
   }, 50, 100))
 
+
+  $(".toc-link").click(function(){
+    let target = $(this).attr("href")
+    let offset = $(target).offset().top - 299
+    $('html, body').animate({scrollTop: offset}
+      ,1200,function(){
+        window.location.hash = target
+      })
+  })
 })
 
