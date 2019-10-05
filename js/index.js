@@ -2,17 +2,31 @@ $(function() {
     let currentTime = new Date();
     let currentHour = currentTime.getHours();
     // console.log(currentHour)
+    function footerDarken(){
+        $(".rss").attr("src","/img/rss@dark.png")
+        $(".newsletter").attr("src","/img/newsletter@dark.png")
+        $(".share").attr("src","/img/share@dark.png")
+    }
+
+    function footerLighten(){
+        $(".rss").attr("src","/img/rss.png")
+        $(".newsletter").attr("src","/img/newsletter.png")
+        $(".share").attr("src","/img/share.png")
+    }
+
     if ((currentHour >= 6) && (currentHour <= 19)){
+        $(".theme-container").addClass("light")
+        footerLighten()
+        if ($("body").find(".dark")[0] === undefined){
+            $(".theme-container").removeClass("dark")
+        }
+
     }else{
-        $("*").css("transition","1")
-        $("body, .main-container").css("background-color","#303030")
-        $(".article-title").css({"background-color":"#212121", "margin-bottom":"1rem"})
-        $(".active-page").css("text-shadow","0 0 0.4rem white, 0 0 0.4rem #f5f5f5")
-        $(".paginator-container").css("background-color","#151515")
-        $("h1, h3, h4").css("color","#e5e5e5")
-        $("p, li, a, .from-to").css("color","#d4d4d4")
-        $("blockquote").css("border-left","0.07rem solid #BDBDBD")
-        $(".toc-container").css("color","#bdbdbd")
+        $(".theme-container").addClass("dark")
+        footerDarken()
+        if ($("body").find(".light")[0] === undefined){
+            $(".theme-container").removeClass("light")
+        }
     }
 
   $(".page-number").each(function(){
