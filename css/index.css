@@ -22,7 +22,7 @@ body {
   --light-header: #151515;
   --light-main-text: #212121;
   --light-quote: #616161;
-  --light-horizon: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+  --light-horizon: linear-gradient(to right, rgba(97,97,97,0), rgba(97,97,97,0.75), rgba(97,97,97,0));
   --light-toc-side: linear-gradient(to top, rgba(93,93,93,0.06), rgba(93,93,93,0.3), rgba(93,93,93,0.06));
   --dark-background: #212121;
   --dark-article-container: #424242;

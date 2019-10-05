@@ -14,7 +14,7 @@ $(function() {
         $(".share").attr("src","/img/share.png")
     }
 
-    if ((currentHour >= 6) && (currentHour <= 19)){
+    if ((currentHour >= 6) && (currentHour <= 18)){
         $(".theme-container").addClass("light")
         footerLighten()
         if ($("body").find(".dark")[0] === undefined){
