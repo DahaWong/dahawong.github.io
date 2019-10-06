@@ -15,7 +15,7 @@ body {
 }
 :root {
   --light-background: #fafafa;
-  --light-article-container: #9e9e9e;
+  --light-article-container: rgba(97,97,97,0.7);
   --light-article-title: #fafafa;
   --light-paginator: #616161;
   --light-button: #616161;
