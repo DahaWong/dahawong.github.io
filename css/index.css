@@ -14,16 +14,16 @@ body {
   background-color: var(--background);
 }
 :root {
-  --light-background: #fafafa;
-  --light-article-container: rgba(97,97,97,0.7);
-  --light-article-title: #fafafa;
-  --light-paginator: #616161;
-  --light-button: #616161;
-  --light-header: #151515;
-  --light-main-text: #212121;
-  --light-quote: #616161;
-  --light-horizon: linear-gradient(to right, rgba(97,97,97,0), rgba(97,97,97,0.75), rgba(97,97,97,0));
-  --light-toc-side: linear-gradient(to top, rgba(93,93,93,0.06), rgba(93,93,93,0.3), rgba(93,93,93,0.06));
+  --light-background: #d2d9df;
+  --light-article-container: rgba(49,59,68,0.7);
+  --light-article-title: #d2d9df;
+  --light-paginator: #313b44;
+  --light-button: #313b44;
+  --light-header: #313b44;
+  --light-main-text: #313b44;
+  --light-quote: #313b44;
+  --light-horizon: linear-gradient(to right, rgba(49,59,68,0), rgba(49,59,68,0.75), rgba(49,59,68,0));
+  --light-toc-side: linear-gradient(to top, rgba(49,59,68,0.06), rgba(49,59,68,0.6), rgba(49,59,68,0.06));
   --dark-background: #212121;
   --dark-article-container: #363636;
   --dark-article-title: #ccc;
@@ -262,17 +262,17 @@ footer {
 .toc-content ol ol {
   margin-left: 0.5rem;
   padding-left: 1rem;
-  border-left: 0.05rem solid #e3e3e4;
+  border-left: 0.05rem solid rgba(49,59,68,0.3);
 }
 .toc-content ol li {
-  color: rgba(189,189,189,0.8);
+  color: rgba(49,59,68,0.3);
   font-weight: 100;
 }
 .toc-content ol li:last-child {
   margin-bottom: 0;
 }
 .toc-content ol a {
-  color: rgba(189,189,189,0.8);
+  color: rgba(49,59,68,0.3);
   font-size: 0.9rem;
   border-bottom: 0;
 }
@@ -299,7 +299,7 @@ footer {
   margin: 4rem 0 3rem;
 }
 blockquote {
-  border-left: 0.1rem solid #616161;
+  border-left: 0.1rem solid rgba(49,59,68,0.5);
   padding-left: 1.5rem;
   margin-right: 1.5rem;
   margin-bottom: 2rem;
@@ -359,9 +359,9 @@ h1::selection,
 h3::selection,
 h4::selection,
 a::selection {
-  color: #fafafa;
+  color: var(--background);
   text-shadow: 0 0 0.05rem #fff;
-  background-color: #828282;
+  background-color: var(--main-text);
 }
 ul,
 ol {
