@@ -14,16 +14,16 @@ body {
   background-color: var(--background);
 }
 :root {
-  --light-background: #d2d9df;
-  --light-article-container: rgba(49,59,68,0.7);
-  --light-article-title: #d2d9df;
-  --light-paginator: #313b44;
-  --light-button: #313b44;
-  --light-header: #313b44;
-  --light-main-text: #313b44;
-  --light-quote: #313b44;
-  --light-horizon: linear-gradient(to right, rgba(49,59,68,0), rgba(49,59,68,0.75), rgba(49,59,68,0));
-  --light-toc-side: linear-gradient(to top, rgba(49,59,68,0.06), rgba(49,59,68,0.6), rgba(49,59,68,0.06));
+  --light-background: #e4eef6;
+  --light-article-container: rgba(57,80,99,0.7);
+  --light-article-title: #e4eef6;
+  --light-paginator: #395063;
+  --light-button: #395063;
+  --light-header: #395063;
+  --light-main-text: #395063;
+  --light-quote: #395063;
+  --light-horizon: linear-gradient(to right, rgba(57,80,99,0), rgba(57,80,99,0.75), rgba(57,80,99,0));
+  --light-toc-side: linear-gradient(to top, rgba(57,80,99,0.06), rgba(57,80,99,0.6), rgba(57,80,99,0.06));
   --dark-background: #212121;
   --dark-article-container: #363636;
   --dark-article-title: #ccc;
@@ -63,13 +63,6 @@ body {
   display: none;
   height: 4rem;
 }
-.right-part {
-  display: none;
-  flex-wrap: wrap;
-  width: 10vw;
-  justify-content: center;
-  order: 1;
-}
 .button-container {
   display: none;
 }
@@ -86,14 +79,14 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 1.5rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.275rem;
   background-color: var(--paginator);
   position: sticky;
   top: 0;
 }
 .page-number {
   font-family: 'Wire One', sans-serif;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   text-decoration: none;
   color: #fafafa;
   cursor: default;
@@ -226,8 +219,9 @@ footer {
 .main-container {
   display: flex;
   width: 100vw;
-  justify-content: center;
+  align-items: center;
   background-color: var(--background);
+  flex-direction: column;
 }
 .post-container {
   font-family: 'Noto Sans SC', sans-serif;
@@ -288,6 +282,10 @@ footer {
 .toc-link {
   transition: 250ms;
 }
+.title-container {
+  width: 100%;
+  padding: 1.6rem;
+}
 .post-title {
   font-family: 'Playfair Display', 'Noto Serif SC', serif;
   font-weight: 400;
@@ -295,6 +293,7 @@ footer {
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
   margin: 4rem 0 3rem;
+  width: 100%;
 }
 blockquote {
   border-left: 0.1rem solid rgba(49,59,68,0.5);
