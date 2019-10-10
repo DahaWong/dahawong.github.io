@@ -10,7 +10,7 @@ body {
 .theme-container {
   display: flex;
   width: 100vw;
-  justify-content: flex-end;
+  justify-content: center;
   background-color: var(--background);
 }
 :root {
@@ -64,7 +64,7 @@ body {
   height: 4rem;
 }
 .right-part {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   width: 10vw;
   justify-content: center;
@@ -76,7 +76,6 @@ body {
 .center-part {
   display: flex;
   flex-direction: column;
-  width: 80vw;
 }
 .active-page {
   color: #fafafa;
@@ -86,7 +85,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 80vw;
   padding: 1.5rem;
   margin-bottom: 0.25rem;
   background-color: var(--paginator);
@@ -113,22 +111,22 @@ body {
 }
 .article-title {
   display: flex;
-  height: 8.51063829787234rem;
+  width: 100vw;
+  height: 42.5531914893617vw;
   color: var(--article-title);
   background-color: var(--article-container);
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: 0.2rem;
   text-align: center;
   text-decoration: none;
   align-items: center;
   justify-content: center;
   padding: 0 2.5rem;
-  margin-bottom: 0.25rem;
-  width: 80vw;
+  margin-bottom: 0.275rem;
 }
 footer {
   display: flex;
-  width: 80vw;
+  width: 100vw;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
@@ -166,7 +164,7 @@ footer {
     width: 25vw;
   }
   .button-container {
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     position: fixed;
@@ -174,7 +172,7 @@ footer {
     bottom: 16vh;
   }
   button {
-    display: flex;
+    display: none;
     justify-content: center;
     width: 8vw;
     height: 4.944375772558714vw;
