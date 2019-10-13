@@ -412,7 +412,7 @@ strong {
 }
 img {
   width: 80vw;
-  box-shadow: 10px 10px 1rem var(--main-text);
+  box-shadow: 5px 5px 12px var(--main-text);
 }
 @media only screen and (min-width: 501px) {
   h3 {
