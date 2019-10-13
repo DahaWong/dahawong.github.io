@@ -395,7 +395,7 @@ li p {
 }
 p a,
 li a {
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.03rem;
   color: var(--main-text);
   margin: 0 0.05rem;
   text-decoration: none;
