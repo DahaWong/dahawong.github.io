@@ -1,7 +1,8 @@
 <!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"><link href="https://fonts.loli.net/css?family=Noto+Sans+SC:100,300,400|Noto+Serif+SC:200,300,400|Playfair+Display:400,400i,700|Wire+One&amp;display=swap&amp;subset=chinese-simplified" rel="stylesheet"><title>Daha</title><link rel="stylesheet" href="/css/index.css"></head><body><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/toc.js"></script><script src="/js/index.js"></script><div class="theme-container"><div class="main-container"><span class="title-container"><h1 class="post-title">手指解放革命（一）：网页浏览</h1></span><div class="post-container"><section class="toc-container"><div class="toc-sideline"></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#vimium-插件"><span class="toc-text">Vimium 插件</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#基本动作"><span class="toc-text">基本动作</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#自主配置"><span class="toc-text">自主配置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#注意事项及附录"><span class="toc-text">注意事项及附录</span></a></li></ol></li></ol></div></section><div class="post-content"><blockquote>
 <p>手指是我们与电子设备交互的主要部位，主要的动作有滑动、点击、滚动和按下。在使用设备的过程中，频繁和繁复的操作会让手指感到疲惫，同时大脑也要为冗余的动作多操一份心。<br><br></p>
-<p>《手指解放革命》系列文章旨在探讨和分享如何更轻松地与电子设备沟通。</p>
+<p>《手指解放革命》系列文章试探讨和分享如何更轻松地与电子设备沟通。</p>
 </blockquote>
+<p><code>（2019.10.13：目前博客有关代码样式的部分尚未完成，代码均放置在引用模块中。建议使用 PC 端阅读本文。）</code></p>
 <h3 id="vimium-插件"><a class="header-anchor" href="#vimium-插件"></a>Vimium 插件</h3>
 <p>Vimium 是一款能让使用者丢掉鼠标仅仅通过键盘在 Chrome 中浏览网页的插件。使用它的好处是不用在键盘和鼠标/触控板之间来回切换。另一方面，纯粹地敲击键盘比起用鼠标「移动 + 点击」或者触控板「滑动 + 点击」，手和手指移动的距离更短。</p>
 <h4 id="基本动作"><a class="header-anchor" href="#基本动作"></a>基本动作</h4>
@@ -81,9 +82,9 @@
 <p><code># 点击 [sz] （即 Search Zhihu 的略写）进入知乎站内搜索</code></p>
 <p><code>map zh Vomnibar.activateInNewTab keyword=zh</code>ihu</p>
 </blockquote>
-<p>③ 更合理的[f]导航字母</p>
+<p>③ 更合理的 [f] 导航字母</p>
 <p><img src="https://raw.githubusercontent.com/DahaWong/pictures/master/f.png" alt="f"></p>
-<p>如前面所介绍的，预设[f]的功能是网页链接导航。在 Advanced Options，将「Characters used for link hints」中的「sdfercvjkluim」替换成「fjdkghsl」。如果你的打字指法标准，那么这样的配置能充分利用最灵活的食指和中指来点击链接。</p>
+<p>如前面所介绍的，预设 [f] 的功能是网页链接导航。在 Advanced Options，将「Characters used for link hints」中的「sdfercvjkluim」替换成「fjdkghsl」。如果你的打字指法标准，那么这样的配置能充分利用最灵活的食指和中指来点击链接。</p>
 <p>④ 更方便地在标签页之间移动</p>
 <p>下面的配置可以让你使用键盘的 [←]、[→] 前往相邻的标签页。你可能会担心文本框内固有快捷键会不会被占用（如这里的方向键在文本输入中是控制光标移动），答案是不会！</p>
 <blockquote>
@@ -126,14 +127,15 @@
 </li>
 <li>附录二：我的映射配置
 <ul>
-<li>Custom key mappings
+<li>
+<p>Custom key mappings</p>
 <blockquote>
 <p><code># 在下面自定义你喜欢的映射配置吧！</code><br><br></p>
 <p><code># 网页切换：</code></p>
 <p><code>map &lt;left previousTab</code><br>
-<code>map \&lt;right&gt; nextTab</code><br>
-<code>map \&lt;backspace&gt; goBack</code><br>
-<code>map \&lt;m-backspace&gt; goForward</code><br>
+<code>map &lt;right&gt; nextTab</code><br>
+<code>map &lt;backspace&gt; goBack</code><br>
+<code>map &lt;m-backspace&gt; goForward</code><br>
 <code>map , goBack</code><br>
 <code>map . goForward</code><br><br></p>
 <p><code>unmap d</code><br>
@@ -171,12 +173,13 @@
 <code>map o Vomnibar.activateInNewTab</code></p>
 </blockquote>
 </li>
-<li>Custom search engines
+<li>
+<p>Custom search engines</p>
 <blockquote>
-<p><code>wiki: https://www.wikipedia.org/w/index.php?title=Special:Search&amp;search=%s Wikipedia</code><br><br><br>
-<code>zhihu: https://www.zhihu.com/search?type=content&amp;q=%s 知乎</code><br><br><br>
-<code>sspai: https://sspai.com/</code><br><br><br>
-<code>baidu: https://www.baidu.com/s?wd=%s Baidu</code></p>
+<p><code>wiki: https://www.wikipedia.org/w/index.php?title=Special:Search&amp;search=%s Wikipedia</code><br></p>
+<p><code>zhihu: https://www.zhihu.com/search?type=content&amp;q=%s 知乎</code><br></p>
+<p><code>sspai: https://beta.sspai.com/search/post/%s 少数派</code></p>
+<p><code>baidu: https://www.baidu.com/s?wd=%s Baidu</code></p>
 </blockquote>
 </li>
 </ul>
