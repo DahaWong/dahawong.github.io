@@ -306,7 +306,7 @@ blockquote {
 blockquote p,
 blockquote p a {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--main-text);
 }
 blockquote p a:hover,
@@ -411,6 +411,7 @@ strong {
   letter-spacing: 0.05rem;
 }
 img {
+  width: 50vw;
   box-shadow: 5px 5px 10px #888;
 }
 @media only screen and (min-width: 501px) {
@@ -470,6 +471,9 @@ img {
   td {
     width: 50vw;
     height: 0.5rem;
+  }
+  img {
+    width: 80vw;
   }
 }
 body {
