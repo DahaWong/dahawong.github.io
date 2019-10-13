@@ -232,11 +232,14 @@ footer {
   justify-content: center;
   margin-bottom: 10rem;
 }
+.post-content {
+  width: 80vw;
+}
 .toc-container {
-  width: 10rem;
+  width: 15rem;
   display: none;
   top: 10rem;
-  right: 3rem;
+  right: -2rem;
   position: fixed;
 }
 .toc-sideline {
@@ -298,24 +301,37 @@ footer {
 blockquote {
   border-left: 0.1rem solid rgba(49,59,68,0.5);
   padding-left: 1.5rem;
-  margin-right: 1.5rem;
   margin-bottom: 2rem;
 }
 blockquote p,
 blockquote p a {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--main-text);
 }
 blockquote p a:hover,
 blockquote p a a:hover {
   color: var(--main-text);
 }
+table,
+th,
+td {
+  width: 80vw;
+  height: 2rem;
+  border: 0.05rem solid rgba(49,59,68,0.6);
+  padding: 0.5rem;
+}
+table {
+  margin: 2rem 0;
+}
+th,
+td {
+  border: 0.02rem solid rgba(49,59,68,0.3);
+}
 abbr {
   text-decoration: none;
 }
-h1,
-h2 {
+h1 {
   color: var(--header);
   margin: 2rem 0;
 }
@@ -328,7 +344,7 @@ h3 {
 }
 h4 {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.15rem;
   letter-spacing: 0.08rem;
   margin-top: 4rem;
   color: var(--header);
@@ -341,8 +357,8 @@ hr {
   background-image: var(--horizon);
 }
 p,
-ul,
-ol {
+ol,
+ul {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   line-height: 2.2rem;
@@ -353,6 +369,7 @@ ol {
 p::selection,
 li::selection,
 h1::selection,
+h2::selection,
 h3::selection,
 h4::selection,
 a::selection {
@@ -393,6 +410,9 @@ li a:hover {
 strong {
   letter-spacing: 0.05rem;
 }
+img {
+  box-shadow: 5px 5px 10px #888;
+}
 @media only screen and (min-width: 501px) {
   h3 {
     font-size: 1.6rem;
@@ -411,6 +431,9 @@ strong {
     font-size: 2.3rem;
   }
   .post-container {
+    width: 50vw;
+  }
+  .post-content {
     width: 50vw;
   }
   hr {
@@ -441,6 +464,12 @@ strong {
   ol ol {
     margin-left: 2rem;
     margin-top: 0.6rem;
+  }
+  table,
+  th,
+  td {
+    width: 50vw;
+    height: 0.5rem;
   }
 }
 body {
