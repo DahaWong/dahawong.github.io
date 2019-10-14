@@ -377,6 +377,9 @@ pre {
 pre span {
   word-break: normal;
 }
+code {
+  overflow: scroll;
+}
 p::selection,
 li::selection,
 h1::selection,
@@ -483,9 +486,9 @@ img {
     width: 45vw;
     height: 0.5rem;
   }
-  img {
-    width: 45vw;
-  }
+}
+.post-content img {
+  width: 45vw;
 }
 body {
   font-family: 'Playfair Display', 'Noto Serif SC', serif;
