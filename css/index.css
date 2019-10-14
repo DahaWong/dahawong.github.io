@@ -288,7 +288,7 @@ footer {
 }
 .title-container {
   width: 100%;
-  padding: 1.6rem;
+  padding: 0 1.6rem;
 }
 .post-title {
   font-family: 'Playfair Display', 'Noto Serif SC', serif;
@@ -331,7 +331,7 @@ th,
 td {
   width: 75vw;
   border: 0.02rem solid rgba(49,59,68,0.3);
-  font-size: 14px;
+  font-size: 0.95rem;
 }
 abbr {
   text-decoration: none;
@@ -370,12 +370,6 @@ ul {
   margin: 1rem 0 2rem;
   word-break: normal;
   color: var(--main-text);
-}
-pre {
-  word-break: normal;
-}
-pre span {
-  word-break: normal;
 }
 code {
   overflow: scroll;
