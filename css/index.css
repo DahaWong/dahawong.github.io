@@ -225,7 +225,7 @@ footer {
   flex-wrap: wrap;
 }
 .post-container {
-  font-weight: 300;
+  font-weight: 400;
   display: flex;
   flex-wrap: wrap;
   width: 80vw;
@@ -273,7 +273,7 @@ footer {
   border-bottom: 0;
 }
 .toc-content ol a:hover {
-  transition: 300ms;
+  transition: 400ms;
   color: var(--header);
   border-bottom: 0;
   cursor: default;
@@ -292,7 +292,7 @@ footer {
 }
 .post-title {
   font-family: 'Playfair Display', 'Noto Serif SC', serif;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   font-size: 1.4rem;
   letter-spacing: 0.085rem;
@@ -343,14 +343,14 @@ h1 {
   margin: 2rem 0;
 }
 h3 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.2rem;
   letter-spacing: 0.08rem;
   margin: 2rem 0;
   color: var(--header);
 }
 h4 {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 1.15rem;
   letter-spacing: 0.08rem;
   margin-top: 1rem;
@@ -392,7 +392,7 @@ ol {
   margin-left: 1.2rem;
 }
 li {
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 1rem;
   letter-spacing: 0.04rem;
   line-height: 1.8rem;
