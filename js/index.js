@@ -1,6 +1,9 @@
 $(function() {
     let currentTime = new Date();
     let currentHour = currentTime.getHours();
+    let patternSC = new RegExp("[\u4E00-\u9FA5]+");
+    let patternEN = new RegExp("[A-Za-z]+");
+
     // console.log(currentHour)
     function footerDarken(){
         $(".rss").attr("src","/img/rss@dark.png")

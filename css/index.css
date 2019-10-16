@@ -225,7 +225,6 @@ footer {
   flex-wrap: wrap;
 }
 .post-container {
-  font-family: 'Noto Sans SC', sans-serif;
   font-weight: 300;
   display: flex;
   flex-wrap: wrap;
@@ -235,11 +234,12 @@ footer {
 }
 .post-content {
   width: 80vw;
+  font-family: 'Noto Serif SC', serif;
 }
 .toc-container {
   width: 25vw;
   display: none;
-  top: 12rem;
+  top: 9.5rem;
   right: -8rem;
   position: fixed;
 }
@@ -295,7 +295,7 @@ footer {
   font-weight: 400;
   text-align: center;
   font-size: 1.4rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.085rem;
   margin: 4rem 0 3rem;
   width: 100%;
 }
@@ -332,6 +332,8 @@ td {
   width: 75vw;
   border: 0.02rem solid rgba(49,59,68,0.3);
   font-size: 0.95rem;
+  color: var(--main-text);
+  letter: 0.04rem;
 }
 abbr {
   text-decoration: none;
@@ -365,10 +367,10 @@ p,
 ol,
 ul {
   font-size: 1rem;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.12rem;
   line-height: 2.2rem;
   margin: 1rem 0 2rem;
-  word-break: normal;
+  word-break: break-all;
   color: var(--main-text);
 }
 code {
@@ -392,13 +394,13 @@ ol {
 li {
   font-weight: 300;
   margin-bottom: 1rem;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.04rem;
   line-height: 1.8rem;
 }
 li li,
 li p {
   color: var(--header);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   margin-right: 1.5rem;
 }
 p a,
@@ -416,23 +418,21 @@ li a:hover {
   border-bottom: 0.8px solid rgba(0,0,0,0.2);
 }
 strong {
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.045rem;
 }
 p img {
   width: 75vw;
   box-shadow: 4px 4px 10px rgba(49,59,68,0.4);
 }
 @media only screen and (min-width: 501px) {
-  .post-content {
-    font-family: 'Noto Serif SC', serif;
-  }
   h3 {
-    font-size: 1.6rem;
-    letter-spacing: 0.15rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.06rem;
   }
   h4 {
-    font-size: 1.3rem;
-    letter-spacing: 0.1rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.055rem;
+    margin-top: 2.5rem;
   }
   .toc-container,
   .toc-sideline,
@@ -456,7 +456,7 @@ p img {
   ol {
     font-size: 1.15rem;
     line-height: 2rem;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.08rem;
     margin-bottom: 2.5rem;
     margin-top: 1.2rem;
   }
@@ -485,6 +485,7 @@ p img {
   }
   p img {
     width: 45vw;
+    margin: 2rem 0;
   }
 }
 body {
