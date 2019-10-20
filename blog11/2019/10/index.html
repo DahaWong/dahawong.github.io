@@ -84,50 +84,23 @@
 <p>相比 Chrome 默认的快捷键，它<strong>支持不使用辅助按键(Ctrl、Alt、Shift…）来进行配置</strong>。</p>
 <h4 id="基本动作"><a class="header-anchor" href="#基本动作"></a>基本动作</h4>
 <p>Vimium 的原理可以理解为「键盘快捷键-动作」映射。其中预设了一些基本动作，启动后使用 [Shift + /] ，即 [?] 来查看所有的命令。下面列举一些特别推荐记忆的基本快捷键：</p>
-<ul>
-<li>[j]：网页向下滚动；</li>
-<li>[k]：网页向上滚动；</li>
-<li>[f]：显示网页所有含超链接的元素，根据显示的字母选择进入下一个网页；</li>
-<li>[t]：即「<strong>t</strong>ab」，创建新标签页</li>
-<li>[Shift+p]：即「<strong>P</strong>aste」，读取剪贴板（即刚刚复制过）的内容，粘贴到搜索栏搜索，并在新标签页打开；</li>
-<li>[x]：即「<strong>✘</strong>」，关闭当前网页；</li>
-<li>[r]：即「<strong>r</strong>efresh」，刷新当前网页；</li>
-<li>[b]：即「<strong>b</strong>ookmark」，检索书签；</li>
-<li>[o]：即「<strong>o</strong>pen」，显示网址输入栏。</li>
-</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[j]：网页向下滚动；</span><br><span class="line">[k]：网页向上滚动；</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">[f]：显示网页所有含超链接的元素，根据显示的字母选择进入下一个网页；</span><br><span class="line">[t]：即「tab」，创建新标签页</span><br><span class="line">[Shift+p]：即「Paste」，读取剪贴板（即刚刚复制过）的内容，粘贴到搜索栏搜索，并在新标签页打开；</span><br><span class="line">[x]：即「✘」，关闭当前网页；</span><br><span class="line">[r]：即「refresh」，刷新当前网页；</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[b]：即「bookmark」，检索书签；</span><br><span class="line">[o]：即「open」，显示网址输入栏。</span><br></pre></td></tr></table></figure>
 <h4 id="自主配置"><a class="header-anchor" href="#自主配置"></a>自主配置</h4>
 <p>Vimium 的功能当然不止于此，我们可以通过自行配置快捷键来做更多的事情。右键它的图标，选择进入「Option」，这里是可以自由发挥的地方：</p>
 <p><strong>map 与 unmap</strong></p>
 <p>找到「Custom key mappings」，在这里建立或者取消快捷键映射。配置「快捷键-动作」的格式如下 ，如果快捷键被预设映射占用，可以考虑先<strong>解除映射（unmap）</strong>，再建立映射：</p>
-<blockquote>
-<p><code># 格式</code></p>
-<p><code>unmap [预设快捷键] [默认动作]</code><br>
-<code>map [快捷键] [新动作]</code><br><br></p>
-<p><code># 例子</code></p>
-<p><code># 点击 [→] 前往下一个标签页</code></p>
-<p><code>map &lt;right&gt; nextTab</code> <br><br></p>
-<p><code># 点击 [Shift + i] 进入隐身页</code></p>
-<p><code>unmap i</code><br>
-<code>map i createTab incognito</code></p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">#格式</span><br><span class="line"></span><br><span class="line">unmap [预设快捷键] [默认动作]</span><br><span class="line">map [快捷键] [新动作]  </span><br><span class="line"></span><br><span class="line">#例子</span><br><span class="line"></span><br><span class="line">#点击 [→] 前往下一个标签页</span><br><span class="line"></span><br><span class="line">map &lt;right&gt; nextTab   </span><br><span class="line"></span><br><span class="line">#点击 [Shift + i] 进入隐身页</span><br><span class="line"></span><br><span class="line">unmap i</span><br><span class="line">map i createTab incognito</span><br></pre></td></tr></table></figure>
 <p>根据官方文档的 <a href="https://github.com/philc/vimium/blob/master/README.md" target="_blank" rel="noopener">Read Me</a> 和 <a href="https://github.com/philc/vimium/wiki/Tips-and-Tricks" target="_blank" rel="noopener">Tips-and-Tricks</a>，我做了一些有趣的个性化配置：</p>
 <p><strong>① 快捷键访问指定网站</strong></p>
 <p>对于最常用的、且首字母不是常用预设快捷键的网站，推荐使用<strong>语义性的</strong>略称（如 [daha]、[ins]）；而其它较常用的网站，使用一个非预设字母（比如[z]）加上网站的首字母（如[zz]、[zy]）。</p>
-<blockquote>
-<p><code># 格式</code></p>
-<p><code>map [快捷键] createTab [网址]</code><br><br></p>
-<p><code># 以打开本站为例</code></p>
-<p><code>unmap d</code><br><br>
-<code>map daha createTab https://blog.daha.me</code><br><br></p>
-<p><code># 以打开 Instagram 为例</code></p>
-<p><code>unmap i</code></p>
-<p><code>map ins createTab https://www.instagram.com/</code><br><br></p>
-<p><code># 以打开 YouTube、知乎 为例</code></p>
-<p><code>map zy createTab https://www.youtube.com/</code></p>
-<p><code>map zz createTab https://www.zhihu.com/</code></p>
-</blockquote>
-<p><strong>② 快捷键打开站内搜索</strong></p>
-<p><img src="https://raw.githubusercontent.com/DahaWong/pictures/master/zhihu-search.png" alt="zhihu-search"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#格式</span><br><span class="line">map [快捷键] createTab [网址]</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#以打开本站为例</span><br><span class="line">unmap d</span><br><span class="line">map daha createTab https://blog.daha.me</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#以打开Instagram 为例</span><br><span class="line">unmap i</span><br><span class="line">map ins createTab https://www.instagram.com/</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#以打开YouTube、知乎为例</span><br><span class="line">map zy createTab https://www.youtube.com/</span><br><span class="line">map zz createTab https://www.zhihu.com/</span><br></pre></td></tr></table></figure>
+<p><strong>② 快捷键打开站内搜索</strong><br>
+<img src="https://raw.githubusercontent.com/DahaWong/pictures/master/zhihu-search.png" alt="zhihu-search"></p>
 <ul>
 <li>「关键词-搜索栏」映射：
 <ul>
@@ -140,44 +113,30 @@
 </ul>
 </li>
 </ul>
-<blockquote>
-<p><code># 格式</code></p>
-<p><code>[关键词]: [https://xxx.com/XXXXX=%s [网站名]]</code><br><br></p>
-<p><code># 配置 [zhihu] 为知乎搜索关键词</code></p>
-<p><code>zhihu: https://www.zhihu.com/search?type=content&amp;q=%s 知乎</code></p>
-</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#格式</span><br><span class="line">[关键词]: [https://xxx.com/XXXXX=%s [网站名]]</span><br><span class="line"></span><br><span class="line">#配置 [zhihu] 为知乎搜索关键词</span><br><span class="line">zhihu: https://www.zhihu.com/search?type=content&amp;q=%s 知乎</span><br></pre></td></tr></table></figure>
 <ul>
 <li>「快捷键-关键词」映射
 <ul>
-<li>进入「Custom Mapping Key」编辑框</li>
+<li>进入「Custom Mapping Key」编辑框<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">#格式</span><br><span class="line">map [快捷键] Vomnibar.activateInNewTab keyword=[关键词]  </span><br><span class="line"></span><br><span class="line">#点击 [sz] （即 Search Zhihu 的略写）进入知乎站内搜索</span><br><span class="line">map zh Vomnibar.activateInNewTab keyword=zhihu</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
 </li>
 </ul>
-<blockquote>
-<p><code># 格式</code></p>
-<p><code>map [快捷键] Vomnibar.activateInNewTab keyword=[关键词]</code><br><br></p>
-<p><code># 点击 [sz] （即 Search Zhihu 的略写）进入知乎站内搜索</code></p>
-<p><code>map zh Vomnibar.activateInNewTab keyword=zh</code>ihu</p>
-</blockquote>
-<p><strong>③ 更合理的 [f] 导航字母</strong></p>
-<p><img src="https://raw.githubusercontent.com/DahaWong/pictures/master/f.png" alt="f"></p>
-<p>如前面所介绍的，预设 [f] 的功能是网页链接导航。在 Advanced Options，将「Characters used for link hints」中的「sdfercvjkluim」替换成「fjdkghsl」。如果你的打字指法标准，那么这样的配置能充分利用最灵活的食指和中指来点击链接。</p>
-<p><strong>④ 更方便地在标签页之间移动</strong></p>
-<p>下面的配置可以让你使用键盘的 [←]、[→] 以及 [h]、[l] 前往相邻的标签页。你可能会担心文本框内固有快捷键会不会被占用（如这里的方向键在文本输入中是控制光标移动），答案是不会！</p>
-<blockquote>
-<p><code># 代码</code></p>
-<p><code>map &lt;left&gt; previousTab</code><br>
-<code>map &lt;right&gt; nextTab</code></p>
-<p><code>map h previousTab</code><br>
-<code>map l nextTab</code></p>
-</blockquote>
+<p><strong>③ 更合理的 [f] 导航字母</strong><br>
+<img src="https://raw.githubusercontent.com/DahaWong/pictures/master/f.png" alt="f"><br>
+如前面所介绍的，预设 [f] 的功能是网页链接导航。在 Advanced Options，将「Characters used for link hints」中的「sdfercvjkluim」替换成「fjdkghsl」。如果你的打字指法标准，那么这样的配置能充分利用最灵活的食指和中指来点击链接。</p>
+<p><strong>④ 更方便地在标签页之间移动</strong><br>
+下面的配置可以让你使用键盘的 [←]、[→] 以及 [h]、[l] 前往相邻的标签页。你可能会担心文本框内固有快捷键会不会被占用（如这里的方向键在文本输入中是控制光标移动），答案是不会！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"># 代码</span><br><span class="line"></span><br><span class="line">map &lt;left&gt; previousTab</span><br><span class="line">map &lt;right&gt; nextTab</span><br><span class="line"></span><br><span class="line">map h previousTab</span><br><span class="line">map l nextTab</span><br></pre></td></tr></table></figure>
 <h4 id="注意事项及附录"><a class="header-anchor" href="#注意事项及附录"></a>注意事项及附录</h4>
 <ul>
 <li>在 Chrome 自有的页面上（比如默认的新标签页），作为插件的 Vimium 没有操作权限。这个时候可以使用 Chrome 的快捷键。</li>
 <li>自定义快捷键要留意冲突，比如：[zz] 和 [z] 是冲突的；[ins] 和 [i] 是冲突的，同时配置的话只执行最短的快捷键；</li>
 <li>如果想完全自定义快捷浏览系统，可以使用 <code>unmapAll</code> 解除所有映射，再自行定义；</li>
 <li>[esc] 用来退出一些特殊模式（比如：链接导航模式、搜索模式）</li>
-<li>附录一：特殊的快捷键表示
+</ul>
+<hr>
+<p><em>附录一：特殊的快捷键表示</em></p>
 <table>
 <thead>
 <tr>
@@ -204,119 +163,15 @@
 </tr>
 </tbody>
 </table>
-</li>
-<li>附录二：我的映射配置
-<ul>
-<li>
-<p>Custom key mappings</p>
-<blockquote>
-<p><code># 在下面自定义你喜欢的映射配置吧！</code><br><br></p>
-<p><code># 网页切换：</code></p>
-<p><code>map &lt;left previousTab</code><br>
-<code>map &lt;right&gt; nextTab</code><br>
-<code>map &lt;backspace&gt; goBack</code><br>
-<code>map &lt;m-backspace&gt; goForward</code><br>
-<code>map , goBack</code><br>
-<code>map . goForward</code><br><br></p>
-<p><code>unmap d</code><br>
-<code>unmap i</code><br>
-<code>unmap o</code><br><br></p>
-<p><code># 最常用网站：</code></p>
-<p><code>map da createTab https://blog.daha.me</code><br>
-<code>map dri createTab https://dribbble.com</code><br>
-<code>map ins createTab https://www.instagram.com/</code><br><br></p>
-<p><code># 最常访问博客：</code></p>
-<p><code>map &lt;c-j&gt; createTab https://blog.joway.io</code><br><br></p>
-<p><code># 常用网站：</code></p>
-<p><code>map zb createTab https://t.bilibili.com/</code><br>
-<code>map zd createTab https://movie.douban.com/mine</code><br>
-<code>map ze createTab https://www.evernote.com/Home.action?login=true#n=8a319073-074a-40fe-90aa-62ef18d17fd5&amp;s=s720&amp;ses=4&amp;sh=2&amp;sds=5&amp;</code><br>
-<code>map zf createTab http://fanfou.com/home</code><br>
-<code>map zg createTab https://www.github.com</code><br>
-<code>map zi createTab https://www.instapaper.com</code><br>
-<code>map zj createTab https://web.okjike.com/feed</code><br>
-<code>map zl createTab https://liqi.io</code><br>
-<code>map zm createTab https://mail.google.com</code><br>
-<code>map zr createTab https://www.inoreader.com/</code><br>
-<code>map zs createTab https://sspai.com/series/70/list</code><br>
-<code>map zv createTab incognito https://www.v2ex.com</code><br>
-<code>map zy createTab https://www.youtube.com/</code><br>
-<code>map zz createTab https://www.zhihu.com/</code><br><br></p>
-<p><code># 搜索系统：</code></p>
-<p><code>map sw Vomnibar.activateInNewTab keyword=wiki</code><br>
-<code>map sz Vomnibar.activateInNewTab keyword=zhihu</code><br>
-<code>map ss Vomnibar.activateInNewTab keyword=sspai</code><br>
-<code>map sb Vomnibar.activateInNewTab keyword=baidu</code><br><br></p>
-<p><code># 其他：</code></p>
-<p><code>map I createTab incognito</code><br>
-<code>map R reload hard</code><br>
-<code>map o Vomnibar.activateInNewTab</code></p>
-</blockquote>
-</li>
-<li>
-<p>Custom search engines</p>
-<blockquote>
-<p><code>wiki: https://www.wikipedia.org/w/index.php?title=Special:Search&amp;search=%s Wikipedia</code><br></p>
-<p><code>zhihu: https://www.zhihu.com/search?type=content&amp;q=%s 知乎</code><br></p>
-<p><code>sspai: https://beta.sspai.com/search/post/%s 少数派</code></p>
-<p><code>baidu: https://www.baidu.com/s?wd=%s Baidu</code></p>
-</blockquote>
-</li>
-</ul>
-</li>
-<li>附录三：Vimium中所有<strong>预设的映射</strong>以及<strong>对应的动作</strong>
-<blockquote>
-<p><code>map j scrollDown</code><br>
-<code>map &lt;c-e&gt; scrollDown</code><br>
-<code>map k scrollUp</code><br>
-<code>map &lt;c-y&gt; scrollUp</code><br>
-<code>map gg scrollToTop</code><br>
-<code>map G scrollToBottom</code><br>
-<code>map d scrollPageDown</code><br>
-<code>map u scrollPageUp</code><br>
-<code>map - scrollFullPageDown</code><br>
-<code>map - scrollFullPageUp</code><br>
-<code>map h scrollLeft</code><br>
-<code>map l scrollRight</code><br>
-<code>map r reload</code><br>
-<code>map yy copyCurrentUrl</code><br>
-<code>map p openCopiedUrlInCurrentTab</code><br>
-<code>map P openCopiedUrlInNewTab</code><br>
-<code>map i enterInsertMode</code><br>
-<code>map v enterVisualMode</code><br>
-<code>map gi focusInput</code><br>
-<code>map f LinkHints.activateMode</code><br>
-<code>map F LinkHints.activateModeToOpenInNewTab</code><br>
-<code>map - LinkHints.activateModeToOpenInNewForegroundTab</code><br>
-<code>map gf nextFrame</code><br>
-<code>map gF mainFrame</code></p>
-<p><code>map o Vomnibar.activate</code><br>
-<code>map O Vomnibar.activateInNewTab</code><br>
-<code>map b Vomnibar.activateBookmarks</code><br>
-<code>map B Vomnibar.activateBookmarksInNewTab</code><br>
-<code>map T Vomnibar.activateTabSelection</code><br>
-<code>map - enterFindMode</code><br>
-<code>map n performFind</code><br>
-<code>map N performBackwardsFind</code></p>
-<p><code>map H goBack</code><br>
-<code>map L goForward</code></p>
-<p><code>map t createTab</code><br>
-<code>map J previousTab</code><br>
-<code>map gT previousTab</code><br>
-<code>map K nextTab</code><br>
-<code>map gt nextTab</code><br>
-<code>map ^ visitPreviousTab</code><br>
-<code>map g0 firstTab</code><br>
-<code>map g$ lastTab</code><br>
-<code>map yt duplicateTab</code><br>
-<code>map &lt;a-p&gt; togglePinTab</code><br>
-<code>map &lt;a-m&gt; toggleMuteTab</code><br>
-<code>map x removeTab</code><br>
-<code>map X restoreTab</code></p>
-<p><code>map ? showHelp</code></p>
-</blockquote>
-</li>
-</ul>
 <hr>
-<p>&lt;完&gt;</p>
+<p><em>附录二：Vimium中所有预设的热键以及对应的动作</em></p>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">map j scrollDown</span><br><span class="line">map &lt;c-e&gt; scrollDown</span><br><span class="line">map k scrollUp</span><br><span class="line">map &lt;c-y&gt; scrollUp</span><br><span class="line">map gg scrollToTop</span><br><span class="line">map G scrollToBottom</span><br><span class="line">map d scrollPageDown</span><br><span class="line">map u scrollPageUp</span><br><span class="line">map - scrollFullPageDown</span><br><span class="line">map - scrollFullPageUp</span><br><span class="line">map h scrollLeft</span><br><span class="line">map l scrollRight</span><br><span class="line">map r reload</span><br><span class="line">map yy copyCurrentUrl</span><br><span class="line">map p openCopiedUrlInCurrentTab</span><br><span class="line">map P openCopiedUrlInNewTab</span><br><span class="line">map i enterInsertMode</span><br><span class="line">map v enterVisualMode</span><br><span class="line">map gi focusInput</span><br><span class="line">map f LinkHints.activateMode</span><br><span class="line">map F LinkHints.activateModeToOpenInNewTab</span><br><span class="line">map - LinkHints.activateModeToOpenInNewForegroundTab</span><br><span class="line">map gf nextFrame</span><br><span class="line">map gF mainFrame</span><br><span class="line"></span><br><span class="line">map o Vomnibar.activate</span><br><span class="line">map O Vomnibar.activateInNewTab</span><br><span class="line">map b Vomnibar.activateBookmarks</span><br><span class="line">map B Vomnibar.activateBookmarksInNewTab</span><br><span class="line">map T Vomnibar.activateTabSelection</span><br><span class="line">map - enterFindMode</span><br><span class="line">map n performFind</span><br><span class="line">map N performBackwardsFind</span><br><span class="line"></span><br><span class="line">map H goBack</span><br><span class="line">map L goForward</span><br><span class="line"></span><br><span class="line">map t createTab</span><br><span class="line">map J previousTab</span><br><span class="line">map gT previousTab</span><br><span class="line">map K nextTab</span><br><span class="line">map gt nextTab</span><br><span class="line">map ^ visitPreviousTab</span><br><span class="line">map g0 firstTab</span><br><span class="line">map g$ lastTab</span><br><span class="line">map yt duplicateTab</span><br><span class="line">map &lt;a-p&gt; togglePinTab</span><br><span class="line">map &lt;a-m&gt; toggleMuteTab</span><br><span class="line">map x removeTab</span><br><span class="line">map X restoreTab</span><br><span class="line"></span><br><span class="line">map ? showHelp</span><br></pre></td></tr></table></figure>
+<hr>
+<p><em>附录三：我的映射配置</em></p>
+<p>① Custom key mappings<br>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">#在下面自定义你喜欢的映射配置吧！  </span><br><span class="line"></span><br><span class="line">#网页切换：</span><br><span class="line"></span><br><span class="line">map h previousTab</span><br><span class="line">map l nextTab</span><br><span class="line">map &lt;backspace&gt; goBack</span><br><span class="line">map &lt;m-backspace&gt; goForward</span><br><span class="line">map , goBack</span><br><span class="line">map . goForward  </span><br><span class="line"></span><br><span class="line">unmap d</span><br><span class="line">unmap i</span><br><span class="line">unmap o  </span><br><span class="line"></span><br><span class="line">#最常用网站：</span><br><span class="line"></span><br><span class="line">map da createTab https://blog.daha.me</span><br><span class="line">map dri createTab https://dribbble.com</span><br><span class="line">map ins createTab https://www.instagram.com</span><br><span class="line"></span><br><span class="line">#最常访问博客：</span><br><span class="line"></span><br><span class="line">map &lt;c-j&gt; createTab https://blog.joway.io  </span><br><span class="line"></span><br><span class="line">#常用网站：</span><br><span class="line"></span><br><span class="line">map zb createTab https://t.bilibili.com/</span><br><span class="line">map zd createTab https://movie.douban.com/mine</span><br><span class="line">map ze createTab https://www.evernot e.com/Home.action?login=true#n=8a319073-074a-40fe-90aa-62ef18d17fd5&amp;s=s720&amp;ses=4&amp;sh=2&amp;sds=5&amp;</span><br><span class="line">map zf createTab http://fanfou.com/home</span><br><span class="line">map zg createTab https://www.github.com</span><br><span class="line">map zi createTab https://www.instapaper.com</span><br><span class="line">map zj createTab https://web.okjike.com/feed</span><br><span class="line">map zl createTab https://liqi.io</span><br><span class="line">map zm createTab https://mail.google.com</span><br><span class="line">map zr createTab https://www.inoreader.com/</span><br><span class="line">map zs createTab https://sspai.com/series/70/list</span><br><span class="line">map zv createTab incognito https://www.v2ex.com</span><br><span class="line">map zy createTab https://www.youtube.com/</span><br><span class="line">map zz createTab https://www.zhihu.com/  </span><br><span class="line"></span><br><span class="line">#搜索系统：</span><br><span class="line"></span><br><span class="line">map sw Vomnibar.activateInNewTab keyword=wiki</span><br><span class="line">map sz Vomnibar.activateInNewTab keyword=zhihu</span><br><span class="line">map ss Vomnibar.activateInNewTab keyword=sspai</span><br><span class="line">map sb Vomnibar.activateInNewTab keyword=baidu  </span><br><span class="line"></span><br><span class="line">#其他：</span><br><span class="line"></span><br><span class="line">map I createTab incognito</span><br><span class="line">map R reload hard</span><br><span class="line">map o Vomnibar.activateInNewTab</span><br></pre></td></tr></table></figure></p>
+<p>② Custom search engines<br>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">wiki: https://www.wikipedia.org/w/index.php?title=Special:Search&amp;search=%s Wikipedia </span><br><span class="line"></span><br><span class="line">zhihu: https://www.zhihu.com/search?type=content&amp;q=%s 知乎 </span><br><span class="line"></span><br><span class="line">sspai: https://beta.sspai.com/search/post/%s 少数派</span><br><span class="line"></span><br><span class="line">baidu: https://www.baidu.com/s?wd=%s  Baidu</span><br></pre></td></tr></table></figure></p>
+<hr>
+<p>&lt;本篇完&gt;</p>
 </div></div></div></div></body></html>
