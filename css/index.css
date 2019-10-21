@@ -325,7 +325,7 @@ td {
   padding: 0.5rem;
 }
 table {
-  margin: 2rem 0;
+  margin: 1rem 0 1.8rem;
 }
 th,
 td {
@@ -383,6 +383,10 @@ a::selection {
   color: var(--background);
   text-shadow: 0 0 0.05rem #fff;
   background-color: var(--main-text);
+}
+.line::selection {
+  color: var(--main-text);
+  background-color: var(--background);
 }
 ul,
 ol {
@@ -447,7 +451,7 @@ p img {
   line-height: 1.3rem;
 }
 .code pre {
-  width: 45vw;
+  width: 55vw;
   overflow: scroll;
 }
 @media only screen and (min-width: 501px) {
@@ -508,6 +512,9 @@ p img {
   p img {
     width: 50vw;
     margin: 2rem 0;
+  }
+  .code pre {
+    width: 45vw;
   }
 }
 body {
