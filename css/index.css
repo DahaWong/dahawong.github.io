@@ -151,7 +151,7 @@ footer {
 }
 @media only screen and (min-width: 501px) {
   .center-part {
-    width: 60vw;
+    width: 50vw;
   }
   .right-part {
     width: 10vw;
@@ -182,18 +182,18 @@ footer {
     transform: rotate(180deg);
   }
   .paginator-container {
-    width: 60vw;
+    width: 50vw;
     padding: 2.5rem;
     margin-bottom: 0.5rem;
   }
   .page-number {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   .article-title {
-    width: 60vw;
-    height: 25.53191489361702rem;
+    width: 50vw;
+    height: 21.27659574468085vw;
     padding: 0 4rem;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
     letter-spacing: 0.3rem;
   }
