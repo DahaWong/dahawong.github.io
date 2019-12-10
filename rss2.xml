@@ -8,7 +8,7 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 10 Dec 2019 12:29:17 GMT</pubDate>
+    <pubDate>Tue, 10 Dec 2019 12:43:02 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -22,14 +22,13 @@
         
           
           
-            &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://t.me/SaveInstapaper_bot&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Instasaver&lt;/a&gt; 是我最近开发的一个小项目。它是一个运作在 Telegram
+            &lt;p&gt;&lt;a href=&quot;https://t.me/SaveInstapaper_bot&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Instasaver&lt;/a&gt; 是我最近开发的一个小项目。它是一个运作在 &lt;a
           
         
       
       </description>
       
-      <content:encoded><![CDATA[<blockquote><p><a href="https://t.me/SaveInstapaper_bot" target="_blank" rel="noopener">Instasaver</a> 是我最近开发的一个小项目。它是一个运作在 Telegram 平台的机器人（官方名称：Telegram Bot），本质上，机器人也是 Telegram 的用户。和他发起聊天，可以实现很多扩展功能。比如当你给 Instasaver 发送消息的时候，他会提取出其中的链接，并将它们保存到 Instapaper 上。</p><p>现阶段仍在本地测试中，未投放到服务器，敬请期待。</p></blockquote><hr><p><em>&lt;待续&gt;</em></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p><a href="https://t.me/SaveInstapaper_bot" target="_blank" rel="noopener">Instasaver</a> 是我最近开发的一个小项目。它是一个运作在 <a href="https://telegram.org/faq#q-what-is-telegram-what-do-i-do-here" target="_blank" rel="noopener">Telegram</a> 平台的机器人（官方名称：<a href="https://core.telegram.org/bots" target="_blank" rel="noopener">Telegram Bot</a>），本质上，机器人也是 Telegram 的用户。和他发起聊天，可以实现很多扩展功能。比如当你给 Instasaver 发送消息的时候，他会提取出其中的链接，并将它们保存到 Instapaper 上。</p><p>现阶段仍在本地测试中，未投放到服务器，敬请期待。</p><hr><p><em>&lt;待续&gt;</em></p>]]></content:encoded>
       
       <comments>http://blog.daha.me/blog12/2019/12/#disqus_thread</comments>
     </item>

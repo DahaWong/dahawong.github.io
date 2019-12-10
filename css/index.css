@@ -312,13 +312,15 @@ blockquote p {
 }
 blockquote p,
 blockquote p a {
-  display: inline;
   font-size: 1rem;
   color: rgba(49,59,68,0.6);
 }
 blockquote p a:hover,
 blockquote p a a:hover {
   color: rgba(49,59,68,0.4);
+}
+blockquote p a {
+  display: inline;
 }
 table,
 th,
