@@ -302,16 +302,17 @@ footer {
 blockquote {
   border-left: 0.05rem solid rgba(49,59,68,0.5);
   padding-left: 1.5rem;
-  margin-top: 4.5rem;
+  margin-top: 3rem;
   margin-bottom: 2rem;
 }
 blockquote p {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 blockquote p,
 blockquote p a {
-  margin: 0;
+  display: inline;
   font-size: 1rem;
   color: rgba(49,59,68,0.6);
 }
@@ -456,6 +457,9 @@ p img {
   overflow: scroll;
 }
 @media only screen and (min-width: 501px) {
+  blockquote p {
+    margin-bottom: 1.5rem;
+  }
   h3 {
     font-size: 1.8rem;
     letter-spacing: 0.06rem;

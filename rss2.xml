@@ -8,8 +8,31 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Sun, 08 Dec 2019 09:23:10 GMT</pubDate>
+    <pubDate>Tue, 10 Dec 2019 12:17:28 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>在 Telegram 愉快地转存文章</title>
+      <link>http://blog.daha.me/blog12/2019/12/</link>
+      <guid>http://blog.daha.me/blog12/2019/12/</guid>
+      <pubDate>Mon, 09 Dec 2019 16:00:00 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://t.me/SaveInstapaper_bot&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Instasaver&lt;/a&gt; 是我最近开发的一个小项目。它是一个基于 Telegram
+          
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<blockquote><p><a href="https://t.me/SaveInstapaper_bot" target="_blank" rel="noopener">Instasaver</a> 是我最近开发的一个小项目。它是一个基于 Telegram 平台的机器人（官方名称：Telegram Bot），本质上，机器人也是 Telegram 的用户。和他发起聊天，可以实现很多扩展功能。比如当你给 Instasaver 发送消息的时候，他会提取出其中的链接，并将它们保存到 Instapaper 上。</p></blockquote><hr><p><em>&lt;待续&gt;</em></p>]]></content:encoded>
+      
+      <comments>http://blog.daha.me/blog12/2019/12/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>马拉松：42 × 问与答</title>

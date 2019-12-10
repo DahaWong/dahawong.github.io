@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>在 Telegram 愉快地转存文章</title>
+      <link href="/blog12/2019/12/"/>
+      <url>/blog12/2019/12/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p><a href="https://t.me/SaveInstapaper_bot" target="_blank" rel="noopener">Instasaver</a> 是我最近开发的一个小项目。它是一个基于 Telegram 平台的机器人（官方名称：Telegram Bot），本质上，机器人也是 Telegram 的用户。和他发起聊天，可以实现很多扩展功能。比如当你给 Instasaver 发送消息的时候，他会提取出其中的链接，并将它们保存到 Instapaper 上。</p></blockquote><hr><p><em>&lt;待续&gt;</em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 开发 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 玩具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>马拉松：42 × 问与答</title>
       <link href="/blog11/2019/12/"/>
       <url>/blog11/2019/12/</url>
