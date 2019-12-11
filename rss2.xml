@@ -8,11 +8,11 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Tue, 10 Dec 2019 13:34:56 GMT</pubDate>
+    <pubDate>Tue, 10 Dec 2019 22:23:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
-      <title>在 Telegram 愉快地转存文章</title>
+      <title>在 Telegram 轻松地转存文章</title>
       <link>http://blog.daha.me/blog12/2019/12/</link>
       <guid>http://blog.daha.me/blog12/2019/12/</guid>
       <pubDate>Mon, 09 Dec 2019 16:00:00 GMT</pubDate>
@@ -29,7 +29,7 @@
       
       </description>
       
-      <content:encoded><![CDATA[<p><img src="https://raw.githubusercontent.com/DahaWong/pictures/master/instasaver-min.png" alt="instasaver"></p><p><a href="https://t.me/SaveInstapaper_bot" target="_blank" rel="noopener">Instasaver</a> 是我最近开发的一个小项目。它是一个运作在 <a href="https://telegram.org/faq#q-what-is-telegram-what-do-i-do-here" target="_blank" rel="noopener">Telegram</a> 平台的机器人（官方名称：<a href="https://core.telegram.org/bots" target="_blank" rel="noopener">Telegram Bot</a>），本质上，机器人也是 Telegram 的用户。和他发起聊天，可以实现很多扩展功能。比如当你给 Instasaver 发送消息的时候，他会提取出其中的链接，并将它们保存到 Instapaper 上。</p><p>现阶段仍在本地测试中，未投放到服务器，敬请期待。</p><hr><p><em>&lt;待续&gt;</em></p>]]></content:encoded>
+      <content:encoded><![CDATA[<p><img src="https://raw.githubusercontent.com/DahaWong/pictures/master/instasaver-min.png" alt="instasaver"></p><p><a href="https://t.me/SaveInstapaper_bot" target="_blank" rel="noopener">Instasaver</a> 是我最近开发的一个小项目。它是一个运作在 <a href="https://telegram.org/faq#q-what-is-telegram-what-do-i-do-here" target="_blank" rel="noopener">Telegram</a> 平台的机器人（官方名称：<a href="https://core.telegram.org/bots" target="_blank" rel="noopener">Telegram Bot</a>），本质上，机器人也是 Telegram 的用户。和他发起聊天，可以实现很多扩展功能。比如当你给 Instasaver 发送消息的时候，他会提取出其中的链接，并将它们保存到 你的 Instapaper 账号里。</p><p>现阶段仍在本地测试中，未投放到服务器，敬请期待。</p><hr><p><em>&lt;待续&gt;</em></p>]]></content:encoded>
       
       <comments>http://blog.daha.me/blog12/2019/12/#disqus_thread</comments>
     </item>
