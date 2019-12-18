@@ -1,17 +1,17 @@
-<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"><link href="https://fonts.loli.net/css?family=Noto+Sans+SC:100,300,400|Noto+Serif+SC:200,400,500|Playfair+Display:400,400i,700|Wire+One&amp;display=swap&amp;subset=chinese-simplified" rel="stylesheet"><title>Daha</title><link rel="stylesheet" href="/css/index.css"></head><body><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/toc.js"></script><script src="/js/index.js"></script><div class="theme-container"><div class="main"><div class="right"><section class="toc-container"><div class="toc-sideline"></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#播放音乐"><span class="toc-text">播放音乐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#睡眠记录"><span class="toc-text">睡眠记录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#签到打卡"><span class="toc-text">签到打卡</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#尾声"><span class="toc-text">尾声</span></a></li></ol></div></section></div><div class="post-container"><h1 class="post-title">润物细无声</h1><div class="post-content"><blockquote>
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1"><link href="https://fonts.loli.net/css?family=Noto+Sans+SC:100,300,400|Noto+Serif+SC:200,400,500|Playfair+Display:400,400i,700|Wire+One&amp;display=swap&amp;subset=chinese-simplified" rel="stylesheet"><title>Daha</title><link rel="stylesheet" href="/css/index.css"></head><body><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/toc.js"></script><script src="/js/index.js"></script><div class="theme-container"><div class="main"><div class="right"><section class="toc-container"><div class="toc-sideline"></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#播放音乐"><span class="toc-text">播放音乐</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#睡眠记录"><span class="toc-text">睡眠记录</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#签到打卡"><span class="toc-text">签到打卡</span></a></li></ol><li class="toc-item toc-level-3"><a class="toc-link" href="#尾声"><span class="toc-text">尾声</span></a></li></div></section></div><div class="post-container"><h1 class="post-title">润物细无声</h1><div class="post-content"><blockquote>
+<p>本篇系 @少数派 联合写作。</p>
 <p>任务自动化最迷人的一点在于，当一切配置安顿好之后，只需要少许触发条件，「机器人」就悄悄地帮你完成了一切。你可能甚至意识不到它们的发生，自然而美好。</p>
 </blockquote>
-<p>Tasker 是 Android 系统最优秀的任务自动化软件。它充分地利用手机的潜能（比如各类传感器），检测你当前所处的状态并判断你的意图，从而完成任务。而作为使用者，（可以）不需要编写程序，在交互界面做好配置即可做到。下面是一些常用的应用场景：</p>
+<p>Tasker 是 Android 系统最优秀的任务自动化软件。它充分地利用手机的潜能（比如各类传感器）检测你当前所处的状态并判断你的意图，从而完成任务。而作为使用者，我们可以不需要编写程序，在交互界面做好配置即可做到。下面罗列一些常用的应用场景：</p>
 <h4 id="播放音乐"><a class="header-anchor" href="#播放音乐"></a>播放音乐</h4>
 <p>非常简单也令人愉悦的配置：「当连接上指定的蓝牙设备时，开始播放音乐」。我主要使用的音乐播放设备是 Airpods 和蓝牙小音箱。戴上 AirPods、AirBattery 检测到后帮它连上蓝牙、音乐自然地流淌出来，音量正合适。</p>
-<p>我有睡前戴耳机聆听音乐入睡的习惯，因为夜深人静，这个时候只需要很低的音量。所以我引入了这样的 Tasker 配置：「到了睡觉时间，调低媒体音量，30分钟后静音、终止音乐软件播放」。</p>
+<p>我喜欢睡前戴耳机聆听着音乐入睡。因为夜深人静，这个时候只需要很低的音量。所以便引入了这样的配置：「到了睡觉时间，调低媒体音量，30分钟后静音、终止音乐软件播放」。</p>
 <h4 id="睡眠记录"><a class="header-anchor" href="#睡眠记录"></a>睡眠记录</h4>
-<p>说到睡眠，睡眠时间记录也是一个常用的场景。这里配合了 NFC 标签的使用，我把 NFC 标签贴在床头，每当到了睡觉时间 Tasker 唤起 NFC ，将手机靠近标签，这时 Tasker 里提前定义好的「入睡时间」变量便会记录下此刻的时间；早上清醒之后，再打一次卡，记录「起床时间」变量，后台计算出睡眠时间后，告诉我晚上睡了多久，是否满 8 个小时。同时添加一条记录到「睡眠记录」文件，每个周五的时候提醒我查看这周的睡眠状况。仅仅使用了一些变量，就可以轻松记录睡眠。更重要的是，配合 NFC 标签这一物理打卡器，一般不会忘记。</p>
+<p>说到睡眠，睡眠时间记录也是常用的场景。这里配合了 NFC 标签的使用，我把 NFC 标签贴在床头，每当到了睡觉时间 Tasker 唤起 NFC ，将手机靠近标签，这时 Tasker 里提前定义好的「入睡时间」变量便会记录下此刻的时间；早上清醒之后，再打一次卡，记录「起床时间」变量，后台计算出睡眠时间后，告诉我晚上睡了多久，是否满 8 个小时。同时添加一条记录到「睡眠记录」文件，每个周五的时候提醒我查看这周的睡眠状况。仅仅使用了一些变量，就可以轻松记录睡眠。更重要的是用了 NFC 标签这一物理打卡器，一般不会忘记。</p>
 <h4 id="签到打卡"><a class="header-anchor" href="#签到打卡"></a>签到打卡</h4>
 <p>这个功能需要配合 Nova Launcher 启动器的 Swipe Up 和 AutoInput 软件。Nova Launcher 的 Swipe Up 支持软件图标上滑触发 Tasker 任务。所以我配置了上滑图标自动签到相关软件，Tasker 负责打开软件，AutoInput 负责自动完成点击任务。</p>
-<h4 id="尾声"><a class="header-anchor" href="#尾声"></a>尾声</h4>
-<p>还有一些简单的小任务：步数达到一个阈值时，晚些时候提醒拉伸放松；到家离家时问候以及提醒待办事项；电源不足提醒充电，充满电时提醒完成；打开 Instapaper 时启动横屏支持（本人的阅读习惯）；话费不足时打开充值界面（正则表达式短信识别）……</p>
-<p>总之，Tasker 解放了一切不自由，发挥想象力使用它吧！</p>
+<h3 id="尾声"><a class="header-anchor" href="#尾声"></a>尾声</h3>
+<p>使用 Tasker 还可以完成其他一些小任务，比如：步数达到一个阈值时，晚些时候提醒拉伸放松；到家离家时问候以及提醒待办事项；电源不足提醒充电，充满电时提醒完成；打开 Instapaper 时启动横屏支持（我习惯横屏阅读）；话费不足时打开充值界面 …… 发挥想象力，一切皆有可能。</p>
 <hr>
 <p><em>&lt;待编辑&gt;</em></p>
 </div></div></div></div></body></html>
