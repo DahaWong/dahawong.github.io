@@ -4,60 +4,14 @@
   box-sizing: border-box;
 }
 body {
-  display: flex;
+  height: 100vh;
   position: relative;
 }
 .theme-container {
   display: flex;
   width: 100vw;
   justify-content: center;
-  background-color: var(--background);
-}
-:root {
-  --light-background: #e4eef6;
-  --light-article-container: rgba(57,80,99,0.7);
-  --light-article-title: #e4eef6;
-  --light-paginator: #395063;
-  --light-button: #395063;
-  --light-header: #395063;
-  --light-main-text: #395063;
-  --light-quote: #395063;
-  --light-horizon: linear-gradient(to right, rgba(57,80,99,0), rgba(57,80,99,0.75), rgba(57,80,99,0));
-  --light-toc-side: linear-gradient(to top, rgba(57,80,99,0.06), rgba(57,80,99,0.6), rgba(57,80,99,0.06));
-  --dark-background: #212121;
-  --dark-article-container: #363636;
-  --dark-article-title: #ccc;
-  --dark-paginator: #2b2b2b;
-  --dark-button: #181818;
-  --dark-header: #d4d4d4;
-  --dark-main-text: #c3c3c3;
-  --dark-quote: #bdbdbd;
-  --dark-horizon: linear-gradient(to right, rgba(158,158,158,0), rgba(189,189,189,0.75), rgba(158,158,158,0));
-  --dark-toc-side: linear-gradient(to top, rgba(162,162,162,0.06), rgba(162,162,162,0.3), rgba(162,162,162,0.06));
-}
-.theme-container.light {
-  --background: var(--light-background);
-  --article-container: var(--light-article-container);
-  --article-title: var(--light-article-title);
-  --paginator: var(--light-paginator);
-  --button: var(--light-button);
-  --header: var(--light-header);
-  --main-text: var(--light-main-text);
-  --quote: var(--light-quote);
-  --horizon: var(--light-horizon);
-  --toc-side: var(--light-toc-side);
-}
-.theme-container.dark {
-  --background: var(--dark-background);
-  --article-container: var(--dark-article-container);
-  --article-title: var(--dark-article-title);
-  --paginator: var(--dark-paginator);
-  --button: var(--dark-button);
-  --header: var(--dark-header);
-  --main-text: var(--dark-main-text);
-  --quote: var(--dark-quote);
-  --horizon: var(--dark-horizon);
-  --toc-side: var(--dark-toc-side);
+  background-color: #fbfaf3;
 }
 .page-type {
   display: none;
