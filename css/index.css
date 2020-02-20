@@ -180,8 +180,9 @@ footer date.from-to {
   width: 100%;
 }
 blockquote {
+  width: 90%;
   border-left: 0.15rem solid #ffa17a;
-  padding-left: 1.5rem;
+  padding-left: 1rem;
   margin: 2rem 0 2rem;
   color: #5c7d7b;
   font-weight: 500;
