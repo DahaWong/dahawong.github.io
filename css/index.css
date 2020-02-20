@@ -9,7 +9,7 @@
 }
 html,
 body {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
 }
 .theme-container {
@@ -19,6 +19,17 @@ body {
   justify-content: center;
   align-items: center;
   background-color: #fbfaf3;
+}
+.category,
+.music,
+.film,
+.book,
+.blog {
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: futura;
+  letter-spacing: 0.1rem;
+  color: #6d9997;
 }
 .categories {
   display: flex;
@@ -38,10 +49,10 @@ nav {
   display: none;
 }
 .blog {
-  margin: 2rem;
+  margin: 2rem 0 1rem;
   width: 100%;
   height: 3rem;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-family: futura;
   color: #6d9997;
 }
@@ -155,9 +166,6 @@ footer date.from-to {
   color: #0f1f43;
   font-size: 1rem;
 }
-nav.home {
-  margin: 0;
-}
 .post-container {
   font-weight: 400;
   display: flex;
@@ -225,16 +233,16 @@ h3 {
   font-weight: 500;
   font-size: 1.2rem;
   letter-spacing: 0.08rem;
-  margin: 2rem 0;
+  margin-bottom: 2rem;
 }
 h4 {
   font-weight: 500;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   letter-spacing: 0.08rem;
-  margin-top: 1rem;
+  margin-top: 2rem;
 }
 hr {
-  margin: 4rem auto;
+  margin: 2rem auto;
   border: 0;
   height: 1px;
   width: 100%;
@@ -244,9 +252,9 @@ p,
 a,
 ol,
 ul {
-  letter-spacing: 0.12rem;
+  letter-spacing: 0.125rem;
   line-height: 1.8rem;
-  margin: 1rem 0 2rem;
+  margin: 1rem 0 1rem;
   word-break: break-all;
 }
 ul,
@@ -337,7 +345,7 @@ p img {
     width: 50vw;
   }
   hr {
-    margin: 6rem 0;
+    margin: 4rem 0;
   }
   p,
   ul,
