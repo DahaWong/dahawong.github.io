@@ -25,6 +25,8 @@ body {
 .film,
 .book,
 .blog {
+  position: relative;
+  left: -1rem;
   margin-top: 1rem;
   font-size: 1.25rem;
   font-family: futura;
@@ -49,6 +51,7 @@ nav {
   display: none;
 }
 .blog {
+  left: 0;
   margin: 2rem 0 1rem;
   width: 100%;
   height: 3rem;
