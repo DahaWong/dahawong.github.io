@@ -70,16 +70,20 @@ span.dot {
   color: #142859;
   font-size: 18px;
   letter-spacing: 0.05rem;
-  text-decoration: underline #ffa17a;
+  text-decoration: none;
   align-items: center;
   margin-bottom: 1rem;
+}
+.articles-container .article-title span {
+  padding-bottom: 0.2rem;
+  border-bottom: 0.025rem solid rgba(255,161,122,0.618);
 }
 .articles-container .page-number {
   display: inline-block;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
   color: #5c7d7b;
 }
 footer {
@@ -189,7 +193,7 @@ footer date.from-to {
   font-size: 1.5rem;
   letter-spacing: 0.05rem;
   color: #142859;
-  margin: 2rem 0 0;
+  margin: 2rem 0 1rem;
   width: 100%;
 }
 blockquote {
