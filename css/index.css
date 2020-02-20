@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+*::selection {
+  color: #fbfaf3;
+  background-color: #3a4b6d;
+}
 html,
 body {
   height: 100vh;
@@ -34,9 +38,9 @@ nav {
   display: none;
 }
 .blog {
-  magin: auto;
+  margin: 2rem;
   width: 100%;
-  height: 4rem;
+  height: 3rem;
   font-size: 24px;
   font-family: futura;
   color: #6d9997;
@@ -142,12 +146,17 @@ footer date.from-to {
     width: 3rem;
   }
 }
-.main-container {
+.wrapper {
   display: flex;
   width: 100vw;
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
+  color: #0f1f43;
+  font-size: 1rem;
+}
+nav.home {
+  margin: 0;
 }
 .post-container {
   font-weight: 400;
@@ -161,56 +170,6 @@ footer date.from-to {
   width: 80vw;
   font-family: 'Noto Serif SC', serif;
 }
-.toc-container {
-  width: 25vw;
-  display: none;
-  top: 9.5rem;
-  right: -8rem;
-  position: fixed;
-}
-.toc-sideline {
-  display: none;
-  width: 0.8px;
-  background-image: var(--toc-side);
-}
-.toc-content {
-  display: none;
-  flex-direction: column;
-}
-.toc-content ol {
-  list-style-type: none;
-}
-.toc-content ol ol {
-  margin-left: 0.05rem;
-  padding-left: 1rem;
-  border-left: 0.05rem solid rgba(49,59,68,0.3);
-}
-.toc-content ol li {
-  color: rgba(49,59,68,0.3);
-  font-weight: 100;
-}
-.toc-content ol li:last-child {
-  margin-bottom: 0;
-}
-.toc-content ol a {
-  color: rgba(49,59,68,0.3);
-  font-size: 0.9rem;
-  border-bottom: 0;
-}
-.toc-content ol a:hover {
-  transition: 400ms;
-  color: var(--header);
-  border-bottom: 0;
-  cursor: default;
-}
-.toc-link.active {
-  transition: 250ms;
-  color: var(--main-text);
-  border-bottom: 0;
-}
-.toc-link {
-  transition: 250ms;
-}
 .title-container {
   width: 100%;
   padding: 0 1.6rem;
@@ -219,33 +178,29 @@ footer date.from-to {
   font-family: 'Playfair Display', 'Noto Serif SC', serif;
   font-weight: 500;
   text-align: center;
-  font-size: 1.4rem;
-  letter-spacing: 0.085rem;
-  margin: 4rem 0 3rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.05rem;
+  color: #142859;
+  margin: 2rem 0 0;
   width: 100%;
 }
 blockquote {
-  border-left: 0.05rem solid rgba(49,59,68,0.5);
+  border-left: 0.05rem solid rgba(255,161,122,0.618);
   padding-left: 1.5rem;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin: 3rem 0 2rem;
+  color: #5c7d7b;
 }
 blockquote p {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
 }
 blockquote p,
 blockquote p a {
-  font-size: 1rem;
-  color: rgba(49,59,68,0.6);
+  display: inline;
 }
 blockquote p a:hover,
 blockquote p a a:hover {
-  color: rgba(49,59,68,0.4);
-}
-blockquote p a {
-  display: inline;
+  color: #5d6982;
 }
 table,
 th,
@@ -261,61 +216,38 @@ td {
   width: 75vw;
   border: 0.02rem solid rgba(49,59,68,0.3);
   font-size: 0.95rem;
-  color: var(--main-text);
   letter: 0.04rem;
 }
 abbr {
   text-decoration: none;
-}
-h1 {
-  color: var(--header);
-  margin: 2rem 0;
 }
 h3 {
   font-weight: 500;
   font-size: 1.2rem;
   letter-spacing: 0.08rem;
   margin: 2rem 0;
-  color: var(--header);
 }
 h4 {
   font-weight: 500;
   font-size: 1.15rem;
   letter-spacing: 0.08rem;
   margin-top: 1rem;
-  color: var(--header);
 }
 hr {
   margin: 4rem auto;
   border: 0;
   height: 1px;
   width: 100%;
-  background-image: var(--horizon);
+  background-image: #ffa17a;
 }
 p,
+a,
 ol,
 ul {
-  font-size: 1rem;
   letter-spacing: 0.12rem;
-  line-height: 2.2rem;
+  line-height: 1.8rem;
   margin: 1rem 0 2rem;
   word-break: break-all;
-  color: var(--main-text);
-}
-p::selection,
-li::selection,
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-a::selection {
-  color: var(--background);
-  text-shadow: 0 0 0.05rem #fff;
-  background-color: var(--main-text);
-}
-.line::selection {
-  color: var(--main-text);
-  background-color: var(--background);
 }
 ul,
 ol {
@@ -325,7 +257,7 @@ li {
   font-weight: 400;
   margin-bottom: 1rem;
   letter-spacing: 0.04rem;
-  line-height: 1.8rem;
+  line-height: 1.5rem;
 }
 li li,
 li p {
@@ -335,17 +267,15 @@ li p {
 }
 p a,
 li a {
-  letter-spacing: 0.03rem;
-  color: var(--main-text);
-  margin: 0 0.05rem;
+  color: #5c7d7b;
   text-decoration: none;
-  border-bottom: 0.9px solid rgba(0,0,0,0.25);
+  border-bottom: 0.9px solid rgba(255,161,122,0.618);
   word-break: break-all;
 }
 p a:hover,
 li a:hover {
-  color: var(--main-text);
-  border-bottom: 0.8px solid rgba(0,0,0,0.2);
+  transition: 400ms;
+  border-bottom: 1px solid #ffa17a;
 }
 strong {
   letter-spacing: 0.045rem;
