@@ -33,6 +33,15 @@ body {
   letter-spacing: 0.1rem;
   color: #6d9997;
 }
+.category a,
+.music a,
+.film a,
+.book a,
+.blog a {
+  margin: 0;
+  color: inherit;
+  text-decoration: none;
+}
 .categories {
   display: flex;
   position: relative;
@@ -194,16 +203,17 @@ footer date.from-to {
   font-weight: 500;
   text-align: center;
   font-size: 1.5rem;
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.18rem;
   color: #142859;
   margin: 2rem 0 1rem;
   width: 100%;
 }
 blockquote {
-  border-left: 0.05rem solid rgba(255,161,122,0.618);
+  border-left: 0.15rem solid #ffa17a;
   padding-left: 1.5rem;
-  margin: 3rem 0 2rem;
+  margin: 2rem 0 2rem;
   color: #5c7d7b;
+  font-weight: 500;
 }
 blockquote p {
   display: flex;
@@ -239,29 +249,29 @@ abbr {
 h3 {
   font-weight: 500;
   font-size: 1.2rem;
-  letter-spacing: 0.08rem;
-  margin-bottom: 2rem;
+  letter-spacing: 0.15rem;
+  margin-top: 2rem;
 }
 h4 {
   font-weight: 500;
   font-size: 1.1rem;
-  letter-spacing: 0.08rem;
+  letter-spacing: 0.125rem;
   margin-top: 2rem;
 }
 hr {
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   border: 0;
-  height: 1px;
-  width: 100%;
-  background-image: #ffa17a;
+  height: 0.5px;
+  width: 61.8%;
+  background-color: #c7d6d4;
 }
 p,
 a,
 ol,
 ul {
-  letter-spacing: 0.125rem;
+  letter-spacing: 0.1rem;
   line-height: 1.8rem;
-  margin: 1rem 0 1rem;
+  margin: 0.5rem 0 1rem;
   word-break: break-all;
 }
 ul,
@@ -271,33 +281,33 @@ ol {
 li {
   font-weight: 400;
   margin-bottom: 1rem;
-  letter-spacing: 0.04rem;
+  letter-spacing: 0.1rem;
   line-height: 1.5rem;
 }
 li li,
 li p {
-  color: var(--header);
-  font-size: 0.95rem;
   margin-right: 1.5rem;
 }
 p a,
 li a {
+  transition: all 400ms ease;
   color: #5c7d7b;
   text-decoration: none;
-  border-bottom: 0.9px solid rgba(255,161,122,0.618);
+  border-bottom: 1px solid #ffa17a;
   word-break: break-all;
 }
 p a:hover,
 li a:hover {
-  transition: 400ms;
-  border-bottom: 1px solid #ffa17a;
+  color: #6d9997;
+  border-color: rgba(255,161,122,0.618);
+  transition: all 400ms ease;
 }
 strong {
-  letter-spacing: 0.045rem;
+  letter-spacing: 0.08rem;
 }
 p img {
   width: 75vw;
-  box-shadow: 4px 4px 10px rgba(49,59,68,0.4);
+  box-shadow: 4px 4px 10px rgba(20,40,89,0.4);
 }
 .highlight {
   background-color: var(--main-text);
@@ -314,7 +324,7 @@ p img {
   font-size: 0.9rem;
   color: var(--background);
   padding: 0;
-  line-height: 1.3rem;
+  line-height: 1.25rem;
 }
 .code {
   color: var(--background);
@@ -352,7 +362,7 @@ p img {
     width: 50vw;
   }
   hr {
-    margin: 4rem 0;
+    margin: 0rem auto;
   }
   p,
   ul,
