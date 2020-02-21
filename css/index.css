@@ -159,6 +159,9 @@ footer date.from-to {
   font-size: 1rem;
   font-weight: 400;
 }
+.wrapper nav.category {
+  height: 1rem;
+}
 .post-container {
   display: flex;
   flex-wrap: wrap;
