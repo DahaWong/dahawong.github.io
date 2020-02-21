@@ -15,10 +15,9 @@ body {
 .theme-container {
   display: flex;
   width: 100vw;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   background-color: #fbfaf3;
+  flex-wrap: wrap;
 }
 .category,
 .music,
@@ -52,42 +51,45 @@ body {
 nav {
   display: flex;
   width: 80%;
+  height: 5rem;
   margin-bottom: 1rem 0 2rem;
 }
-.music,
-.film,
-.book {
+nav .music,
+nav .film,
+nav .book {
   display: none;
 }
-.blog {
+nav .blog {
   left: 0;
   margin: 2rem 0 1rem;
   width: 100%;
-  height: 3rem;
   font-size: 1.5rem;
   font-family: futura;
   color: #6d9997;
 }
-span.dot {
+nav .blog span.dot {
   color: #ffa17a;
 }
 .articles-container {
   width: 80%;
+  height: 80vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.articles-container .article-title {
-  display: block;
+.articles-container .article-list {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+}
+.articles-container .article-list .article-title {
   color: #142859;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.05rem;
   text-decoration: none;
-  align-items: center;
   margin-bottom: 1rem;
 }
-.articles-container .article-title span {
+.articles-container .article-list .article-title span {
   padding-bottom: 0.2rem;
   border-bottom: 0.025rem solid rgba(255,161,122,0.618);
 }
@@ -104,7 +106,7 @@ footer {
   color: #fbfaf3;
   display: flex;
   width: 100vw;
-  height: 5rem;
+  padding: 1rem 0;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -133,11 +135,14 @@ footer date.from-to {
     font-size: 1.25rem;
     margin: 3rem 0 2.5rem;
   }
-  .blog {
+  nav {
+    margin-bottom: 3rem;
+  }
+  nav .blog {
     width: 80%;
   }
   footer {
-    height: 8rem;
+    padding: 2rem 0;
   }
   footer date.from-to {
     margin-top: 0.5rem;
