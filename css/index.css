@@ -18,6 +18,7 @@ body {
   justify-content: center;
   background-color: #fbfaf3;
   flex-wrap: wrap;
+  word-break: break-all;
 }
 .category,
 .music,
@@ -199,11 +200,9 @@ blockquote p {
   display: flex;
   flex-wrap: wrap;
 }
-blockquote p,
 blockquote p a {
   display: inline;
 }
-blockquote p a:hover,
 blockquote p a a:hover {
   color: #5d6982;
 }
@@ -267,6 +266,9 @@ li {
 }
 li::marker {
   color: #5c7d7b;
+}
+li:last-of-type {
+  margin-bottom: 1.5rem;
 }
 li li,
 li p {
