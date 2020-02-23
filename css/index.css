@@ -19,6 +19,7 @@ body {
   background-color: #fbfaf3;
   flex-wrap: wrap;
   word-break: break-all;
+  hyphens: auto;
 }
 .category,
 .music,
