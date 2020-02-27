@@ -43,6 +43,9 @@ body {
   color: inherit;
   text-decoration: none;
 }
+strong {
+  font-weight: 600;
+}
 .categories {
   display: flex;
   position: relative;
@@ -108,6 +111,7 @@ footer {
   color: #fbfaf3;
   display: flex;
   width: 100vw;
+  height: 72px;
   padding: 1.5rem 0;
   flex-direction: column;
   align-items: center;
@@ -175,6 +179,7 @@ footer date.from-to {
   width: 66.66666666666667vw;
   justify-content: center;
   margin-bottom: 10rem;
+  word-break: word-break;
 }
 .post-content {
   width: 80vw;
@@ -189,16 +194,14 @@ footer date.from-to {
   font-weight: 500;
   text-align: left;
   font-size: 28px;
+  letter-spacing: 0.7px;
   color: #142859;
   width: 100%;
 }
 blockquote {
-  width: 90%;
   border-left: 0.15rem solid #ffa17a;
   padding-left: 1rem;
-  margin: 2rem 0 2rem;
   color: #5c7d7b;
-  font-weight: 500;
 }
 blockquote p {
   display: flex;
@@ -209,6 +212,10 @@ blockquote p a {
 }
 blockquote p a a:hover {
   color: #5d6982;
+}
+blockquote:first-of-type {
+  margin: 48px 0 24px;
+  font-size: 16px;
 }
 table,
 th,
@@ -252,10 +259,10 @@ p,
 a,
 ol,
 ul {
-  letter-spacing: 0.1rem;
-  line-height: 1.8rem;
-  margin: 0.5rem 0 1.25rem;
-  word-break: break-all;
+  letter-spacing: 1.2px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  text-align: justify;
 }
 ul,
 ol {
