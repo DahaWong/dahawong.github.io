@@ -217,22 +217,6 @@ blockquote:first-of-type {
   margin: 48px 0 24px;
   font-size: 16px;
 }
-table,
-th,
-td {
-  border: 0.05rem solid rgba(49,59,68,0.6);
-  padding: 0.5rem;
-}
-table {
-  margin: 1rem 0 1.8rem;
-}
-th,
-td {
-  width: 75vw;
-  border: 0.02rem solid rgba(49,59,68,0.3);
-  font-size: 0.95rem;
-  letter: 0.04rem;
-}
 abbr {
   text-decoration: none;
 }
@@ -259,8 +243,8 @@ p,
 a,
 ol,
 ul {
-  letter-spacing: 1.2px;
-  line-height: 24px;
+  letter-spacing: 2.4px;
+  line-height: 2;
   margin-bottom: 24px;
   text-align: justify;
 }
