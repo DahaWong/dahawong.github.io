@@ -258,8 +258,8 @@ ol {
 }
 li {
   margin-bottom: 0.5rem;
-  letter-spacing: 0.1rem;
-  line-height: 1.5rem;
+  letter-spacing: 2px;
+  line-height: 2;
 }
 li::marker {
   color: #5c7d7b;
