@@ -200,6 +200,7 @@ footer date.from-to {
 }
 blockquote {
   font-weight: 300;
+  letter-spacing: 0.8px;
   border-left: 0.15rem solid #ffa17a;
   padding-left: 1rem;
   color: #5c7d7b;
