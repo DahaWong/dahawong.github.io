@@ -162,7 +162,7 @@ footer date.from-to {
   flex-wrap: wrap;
   color: #0f1f43;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 .wrapper nav.category {
   height: 1rem;
@@ -191,14 +191,15 @@ footer date.from-to {
 }
 .post-title {
   font-family: 'Playfair Display', 'Noto Serif SC', serif;
-  font-weight: 500;
+  font-weight: 600;
   text-align: left;
-  font-size: 28px;
+  font-size: 24px;
   letter-spacing: 0.7px;
   color: #142859;
   width: 100%;
 }
 blockquote {
+  font-weight: 300;
   border-left: 0.15rem solid #ffa17a;
   padding-left: 1rem;
   color: #5c7d7b;
@@ -214,7 +215,7 @@ blockquote p a a:hover {
   color: #5d6982;
 }
 blockquote:first-of-type {
-  margin: 48px 0 24px;
+  margin: 24px 0 48px;
   font-size: 16px;
 }
 abbr {
