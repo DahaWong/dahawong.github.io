@@ -70,5 +70,5 @@ window.addEventListener("scroll", function(){
 
 if (lastScrollTop == 0) {
   header.style.opacity = 100;
-  header.style.transform = "translateY(0px)";
+  header.style.transform = `translateY(${header.clientHeight}px)`;
 }
