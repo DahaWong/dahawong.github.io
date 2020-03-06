@@ -219,6 +219,7 @@ footer date.from-to {
   overflow: hidden;
   justify-content: center;
   word-break: word-break;
+  margin-bottom: 48px;
 }
 .post-content {
   width: inherit;
@@ -325,14 +326,18 @@ li a:hover {
 }
 strong {
   font-weight: 700;
-  letter-spacing: 2.4px;
+  letter-spacing: 2px;
+}
+em {
+  font-weight: 700;
+  letter-spacing: 0.8px;
 }
 p img {
   width: 75vw;
   box-shadow: 4px 4px 10px rgba(20,40,89,0.4);
 }
 .slice-number {
-  visibility: none;
+  visibility: hidden;
   display: flex;
   justify-content: space-between;
   width: 66.66666666666667vw;
