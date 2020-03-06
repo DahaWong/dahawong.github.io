@@ -232,7 +232,7 @@ footer date.from-to {
   letter-spacing: 0.8px;
   color: #142859;
   width: 100%;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
 }
 blockquote {
   font-weight: 500;
@@ -248,7 +248,7 @@ blockquote p a a:hover {
   color: #5d6982;
 }
 blockquote:first-of-type {
-  margin: 36px 0 24px;
+  margin: 24px 0 24px;
   font-size: 14px;
   display: block;
 }
