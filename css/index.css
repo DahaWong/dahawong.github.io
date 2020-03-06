@@ -296,7 +296,7 @@ li::marker {
   color: #5c7d7b;
 }
 li:last-of-type {
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 li ul,
 li ol {
