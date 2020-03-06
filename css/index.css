@@ -261,7 +261,7 @@ h3 ~ ol {
 }
 h4 {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 20px;
   letter-spacing: 0.125rem;
   margin-top: 24px;
 }
@@ -324,7 +324,7 @@ li a:hover {
 }
 strong {
   font-weight: 700;
-  letter-spacing: 0.08rem;
+  letter-spacing: 2.4px;
 }
 p img {
   width: 75vw;
