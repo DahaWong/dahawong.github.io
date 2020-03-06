@@ -220,9 +220,6 @@ footer date.from-to {
   width: inherit;
   font-family: 'Noto Serif SC', serif;
 }
-.post-content > * {
-  display: none;
-}
 .post-title {
   font-family: 'Playfair Display', 'Noto Serif SC', serif;
   font-weight: 600;
