@@ -192,7 +192,7 @@ footer date.from-to {
   margin: 0;
   height: inherit;
   position: relative;
-  top: -1px;
+  top: 1.5px;
 }
 .blur-layer {
   background-color: #fbfaf3;
@@ -236,9 +236,6 @@ blockquote {
   border-left: 1.6px solid #ffa17a;
   padding-left: 1rem;
   color: #5c7d7b;
-}
-blockquote p:last-of-type {
-  margin-bottom: 0;
 }
 blockquote p a {
   display: inline;
