@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>RSS</title>
+    <desc>Created with Sketch.</desc>
+    <g id="RSS" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-2" transform="translate(5.000000, 5.000000)">
+            <path d="M21.9999999,21.9989986 L18.1169999,21.999 L18.1146514,21.6671735 C17.9371566,11.8146447 9.89492131,3.88235294 -3.55271368e-15,3.88235294 L-6.39834745e-08,0 L-6.39834745e-08,0 C12.1499307,0 21.9994587,9.84919432 21.9999999,21.9989986 Z M14.2352941,21.9989985 L10.3519999,21.999 L10.3492198,21.7196866 C10.2006775,16.1315014 5.62403758,11.6470588 -3.55271368e-15,11.6470588 L-3.55271368e-15,7.76470588 L-3.55271368e-15,7.76470588 C7.86160203,7.76470588 14.2347529,14.1375229 14.2352941,21.9989985 Z" id="Combined-Shape" fill="#5C7D7B" fill-rule="nonzero"></path>
+            <circle id="Oval" fill="#FFA17A" cx="3" cy="19" r="3"></circle>
+        </g>
+    </g>
+</svg>
