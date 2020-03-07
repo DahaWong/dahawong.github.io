@@ -1,12 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="20px" height="14px" viewBox="0 0 20 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
-    <title>RSS@small</title>
-    <desc>Created with Sketch.</desc>
-    <g id="RSS@small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Group-2" transform="translate(3.000000, 2.000000)">
-            <path d="M11.9999999,11.9989971 L9.88235297,12 L9.88235297,12 C9.88235297,6.54212718 5.45787284,2.11764706 -3.06825271e-15,2.11764706 L-3.4900077e-08,0 L-3.4900077e-08,0 C6.62708272,0 11.999458,5.37204102 11.9999999,11.9989971 Z M7.7647059,12 L5.64705884,12 L5.64705884,12 C5.64705884,8.88121553 3.11878448,6.35294118 -1.29189588e-15,6.35294118 L-1.29189588e-15,4.23529412 L-1.29189588e-15,4.23529412 C4.28832866,4.23529412 7.7647059,7.71167135 7.7647059,12 Z" id="Combined-Shape" fill="#5C7D7B" fill-rule="nonzero"></path>
-            <circle id="Oval" fill="#FFA17A" cx="1.63636364" cy="10.3636364" r="1.63636364"></circle>
-        </g>
-    </g>
-</svg>
+<svg width="20" height="14" xmlns="http://www.w3.org/2000/svg"><g transform="translate(3 2)" fill="none" fill-rule="evenodd"><path d="M12 11.999L9.882 12c0-5.458-4.424-9.882-9.882-9.882V0c6.627 0 12 5.372 12 11.999zM7.765 12H5.647A5.647 5.647 0 000 6.353V4.235A7.765 7.765 0 017.765 12z" fill="#5C7D7B" fill-rule="nonzero"/><circle fill="#FFA17A" cx="1.636" cy="10.364" r="1.636"/></g></svg>

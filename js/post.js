@@ -72,16 +72,45 @@ if (lastScrollTop == 0) {
   header.style.transform = `translateY(${header.clientHeight}px)`;
 }
 
-const rssBtn = document.querySelector(".rss")
-const rssAddr = document.querySelector(".rss-address")
-rssBtn.addEventListener("click", () => {
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+
+var myEfficientFn = debounce(function() {
+	rssBtn.style.disabled = "true";
   rssAddr.focus();
   rssAddr.select();
   let succeed = document.execCommand("copy");
-  let msg = succeed ? "succeed!":"failed."
-  console.log(msg) 
-  rssAddr.setAttribute('style', 'display:none;')
+  rssAddr.setAttribute('style', 'display:none;') // 防止安卓手机弹出键盘
   setTimeout(function() {
     rssAddr.setAttribute('style', 'display:block;')
-  }, 50);
-})
+  }, 100);
+  let message = succeed ? "订阅源已复制":"订阅失败！"
+  const messageDiv = document.createElement("div");
+  messageDiv.textContent = message;
+  messageDiv.style.fontFamily = "Noto Serif SC";
+  messageDiv.classList.add(".copied-message");
+  rssImg.style.visibility = "hidden";
+  rssBtn.appendChild(messageDiv);
+  setTimeout(function() {
+    messageDiv.remove();
+    rssImg.style.visibility = "visible";
+  }, 1000);
+}, 200);
+
+const rssBtn = document.querySelector(".rss");
+const rssAddr = document.querySelector(".rss-address");
+const rssImg = document.querySelector(".rss svg");
+
+rssBtn.addEventListener("click", myEfficientFn);

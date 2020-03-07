@@ -1,9 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
-    <title>list-mark-2</title>
-    <desc>Created with Sketch.</desc>
-    <g id="list-mark-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M6,1.5 C8.76142375,1.5 11,3.73857625 11,6.5 C11,9.26142375 8.76142375,11.5 6,11.5 C3.23857625,11.5 1,9.26142375 1,6.5 C1,3.73857625 3.23857625,1.5 6,1.5 Z M6,4 C4.61928813,4 3.5,5.11928813 3.5,6.5 C3.5,7.88071187 4.61928813,9 6,9 C7.38071187,9 8.5,7.88071187 8.5,6.5 C8.5,5.11928813 7.38071187,4 6,4 Z" id="Combined-Shape" fill="#5C7D7B"></path>
-    </g>
-</svg>
+<svg width="14" height="12" xmlns="http://www.w3.org/2000/svg"><path d="M6 1.5a5 5 0 110 10 5 5 0 010-10zM6 4a2.5 2.5 0 100 5 2.5 2.5 0 000-5z" fill="#5C7D7B" fill-rule="evenodd"/></svg>
