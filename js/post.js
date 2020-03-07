@@ -95,8 +95,8 @@ var myEfficientFn = debounce(function() {
   rssAddr.setAttribute('style', 'display:none;') // 防止安卓手机弹出键盘
   setTimeout(function() {
     rssAddr.setAttribute('style', 'display:block;')
-  }, 400);
-  let message = succeed ? "订阅源已复制":"订阅失败！"
+  }, 25);
+  let message = succeed ? "已复制!":"订阅失败！"
   const messageDiv = document.createElement("div");
   messageDiv.textContent = message;
   messageDiv.style.fontFamily = "Noto Serif SC";
@@ -106,7 +106,7 @@ var myEfficientFn = debounce(function() {
   setTimeout(function() {
     messageDiv.remove();
     rssImg.style.visibility = "visible";
-  }, 1000);
+  }, 500);
 }, 200);
 
 const rssBtn = document.querySelector(".rss");
