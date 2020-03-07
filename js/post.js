@@ -8,7 +8,7 @@ for (const section of Array.from(content)){
     paraLines.push(section.textContent.match(/.{1,18}/g).length);
   }
 }
-console.log(paraLines)
+// console.log(paraLines)
 
 let i = 0;
 while (i < content.length) {
@@ -22,8 +22,8 @@ while (i < content.length) {
     let slicePos = sum - 21;
     let prevSlice = content[i].textContent.slice(0,slicePos * 18);
     let nextSlice = content[i].textContent.slice(slicePos * 18);
-    console.log(prevSlice);
-    console.log(nextSlice);
+    // console.log(prevSlice);
+    // console.log(nextSlice);
   }
 }
 
@@ -57,7 +57,6 @@ window.addEventListener("scroll", function(){
   // console.log(scrollDist);
   // console.log(lastScrollTop);
   if (scrollDist - lastScrollTop < 0) {
-    console.log("test")
     header.style.opacity = 100;
     header.style.transform = `translateY(${header.clientHeight}px)`;
   }
@@ -72,3 +71,13 @@ if (lastScrollTop == 0) {
   header.style.opacity = 100;
   header.style.transform = `translateY(${header.clientHeight}px)`;
 }
+
+const rssBtn = document.querySelector(".rss")
+const rssAddr = document.querySelector(".rss-address")
+rssBtn.addEventListener("click", () => {
+  rssAddr.focus();
+  rssAddr.select();
+  let succeed = document.execCommand("copy");
+  let msg = succeed ? "succeed!":"failed."
+  console.log(msg) 
+})
