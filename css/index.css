@@ -203,6 +203,7 @@ footer date.from-to {
 .blur-container button.rss {
   display: inline-block;
   text-decoration: none;
+  outline: none;
   border: none;
   background: none;
   margin: 0;

@@ -74,14 +74,14 @@ if (lastScrollTop == 0) {
 
 const rssBtn = document.querySelector(".rss")
 const rssAddr = document.querySelector(".rss-address")
-rssAddr.setAttribute('style', 'display:block;');
 rssBtn.addEventListener("click", () => {
   rssAddr.focus();
   rssAddr.select();
   let succeed = document.execCommand("copy");
   let msg = succeed ? "succeed!":"failed."
   console.log(msg) 
+  rssAddr.setAttribute('style', 'display:none;')
   setTimeout(function() {
-    rssAddr.setAttribute('style', 'display:none;');
+    rssAddr.setAttribute('style', 'display:block;')
   }, 50);
 })
