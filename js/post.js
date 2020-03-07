@@ -95,7 +95,7 @@ var myEfficientFn = debounce(function() {
   rssAddr.setAttribute('style', 'display:none;') // 防止安卓手机弹出键盘
   setTimeout(function() {
     rssAddr.setAttribute('style', 'display:block;')
-  }, 100);
+  }, 400);
   let message = succeed ? "订阅源已复制":"订阅失败！"
   const messageDiv = document.createElement("div");
   messageDiv.textContent = message;
