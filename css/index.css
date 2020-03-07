@@ -5,7 +5,7 @@
 }
 *::selection {
   color: #fbfaf3;
-  background-color: #3a4b6d;
+  background-color: #142859;
 }
 html,
 body {
@@ -192,13 +192,19 @@ footer date.from-to {
 }
 .blur-container button.rss {
   display: inline-block;
-  border: none;
   text-decoration: none;
+  border: none;
   background: none;
   margin: 0;
   height: inherit;
   position: relative;
   top: 2px;
+}
+.blur-container button.rss:focus {
+  background: none;
+}
+.blur-container button.rss::selection {
+  background: none;
 }
 .blur-container button.rss img {
   cursor: pointer;
