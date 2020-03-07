@@ -91,14 +91,13 @@ var myEfficientFn = debounce(function() {
 	rssBtn.style.disabled = "true";
   rssAddr.focus();
   rssAddr.select();
-  let succeed = document.execCommand("copy");
+  document.execCommand("copy");
   rssAddr.setAttribute('style', 'display:none;') // 防止安卓手机弹出键盘
   setTimeout(function() {
     rssAddr.setAttribute('style', 'display:block;')
   }, 25);
-  let message = succeed ? "已复制!":"订阅失败！"
   const messageDiv = document.createElement("div");
-  messageDiv.textContent = message;
+  messageDiv.textContent = "已复制！";
   messageDiv.style.fontFamily = "Noto Serif SC";
   messageDiv.classList.add(".copied-message");
   rssImg.style.visibility = "hidden";
