@@ -113,11 +113,11 @@ var myEfficientFn = debounce(function() {
       rssImg.style.visibility = "visible";
       rssImg.style.opacity = 1;
     }, 200)
-  }, 550);
+  }, 2400);
 }, 250);
 
 const rssBtn = document.querySelector("button.rss");
 const rssAddr = document.querySelector("input.rss-address");
 const rssImg = document.querySelector(".rss svg");
 
-rssBtn.addEventListener("click", myEfficientFn);
+rssImg.addEventListener("click", myEfficientFn);
