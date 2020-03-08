@@ -278,6 +278,7 @@ footer date.from-to {
 }
 .blur-container button.rss svg {
   cursor: pointer;
+  transition: opacity 200ms ease-in-out;
 }
 .blur-container button.rss svg:active .outer,
 .blur-container button.rss svg:hover .outer,
@@ -290,7 +291,7 @@ footer date.from-to {
   font-weight: 600;
   letter-spacing: 2.2px;
   color: #5c7d7b;
-  width: 5rem;
+  width: 8rem;
   position: relative;
   top: -15px;
 }

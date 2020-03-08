@@ -88,7 +88,6 @@ function debounce(func, wait, immediate) {
 };
 
 var myEfficientFn = debounce(function() {
-	rssBtn.style.disabled = "true";
   rssAddr.focus();
   rssAddr.select();
   document.execCommand("copy");
@@ -97,19 +96,28 @@ var myEfficientFn = debounce(function() {
     rssAddr.setAttribute('style', 'display:block;')
   }, 25);
   const messageDiv = document.createElement("div");
-  messageDiv.textContent = "已复制！";
+  messageDiv.textContent = "订阅地址已复制";
   messageDiv.style.fontFamily = "Noto Serif SC";
-  messageDiv.classList.add(".copied-message");
-  rssImg.style.visibility = "hidden";
-  rssBtn.appendChild(messageDiv);
+  messageDiv.style.opacity = 0;
+  messageDiv.style.transition = "opacity 250ms ease-in-out";
+  rssImg.style.opacity = 0;
+  setTimeout(() => {
+    rssBtn.appendChild(messageDiv);
+    messageDiv.style.opacity = 1;
+    rssImg.style.visibility = "hidden";
+  }, 200)
   setTimeout(function() {
-    messageDiv.remove();
-    rssImg.style.visibility = "visible";
-  }, 500);
-}, 200);
+    messageDiv.style.opacity = 0;
+    setTimeout(() => {
+      messageDiv.remove();
+      rssImg.style.visibility = "visible";
+      rssImg.style.opacity = 1;
+    }, 200)
+  }, 550);
+}, 250);
 
-const rssBtn = document.querySelector(".rss");
-const rssAddr = document.querySelector(".rss-address");
+const rssBtn = document.querySelector("button.rss");
+const rssAddr = document.querySelector("input.rss-address");
 const rssImg = document.querySelector(".rss svg");
 
 rssBtn.addEventListener("click", myEfficientFn);
