@@ -113,7 +113,7 @@ var myEfficientFn = debounce(function() {
       rssImg.style.visibility = "visible";
       rssImg.style.opacity = 1;
     }, 200)
-  }, 1600);
+  }, 1200);
 }, 250);
 
 const rssBtn = document.querySelector("button.rss");

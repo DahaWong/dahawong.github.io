@@ -438,6 +438,12 @@ p img {
   width: 75vw;
   box-shadow: 4px 4px 10px rgba(20,40,89,0.4);
 }
+p img[alt~="RSS"] {
+  width: 20px;
+  height: 14px;
+  box-shadow: none;
+  margin: 0;
+}
 .slice-number {
   visibility: hidden;
   display: flex;
@@ -506,6 +512,12 @@ p img {
   p img {
     width: 50vw;
     margin: 2rem 0;
+  }
+  p img[alt~="RSS"] {
+    width: 24px;
+    height: 16.8px;
+    box-shadow: none;
+    margin: 0 2px;
   }
   footer {
     position: relative;
