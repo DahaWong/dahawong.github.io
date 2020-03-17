@@ -325,10 +325,10 @@ input.rss-address {
 }
 .post-content {
   width: inherit;
-  font-family: 'Noto Serif SC', serif;
+  font-family: 'Noto Serif SC', "Noto Serif JP", serif;
 }
 .post-title {
-  font-family: 'Playfair Display', 'Noto Serif SC', serif;
+  font-family: 'Playfair Display', 'Noto Serif SC', , "Noto Serif JP", serif;
   font-weight: 600;
   text-align: left;
   font-size: 24px;
@@ -525,6 +525,6 @@ p img[alt~="RSS"] {
   }
 }
 body {
-  font-family: 'Playfair Display', 'Noto Serif SC', serif;
+  font-family: 'Playfair Display', 'Noto Serif SC', 'Noto Serif JP', serif;
   background-color: #f5f5f5;
 }
