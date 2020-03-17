@@ -91,10 +91,6 @@ var myEfficientFn = debounce(function() {
   rssAddr.focus();
   rssAddr.select();
   document.execCommand("copy");
-  rssAddr.setAttribute('style', 'display:none;') // 防止安卓手机弹出键盘
-  setTimeout(function() {
-    rssAddr.setAttribute('style', 'display:block;')
-  }, 25);
   const messageDiv = document.createElement("div");
   messageDiv.textContent = "订阅地址已复制";
   messageDiv.style.fontFamily = "Noto Serif SC";
@@ -113,7 +109,7 @@ var myEfficientFn = debounce(function() {
       rssImg.style.visibility = "visible";
       rssImg.style.opacity = 1;
     }, 200)
-  }, 1200);
+  }, 800);
 }, 250);
 
 const rssBtn = document.querySelector("button.rss");
