@@ -87,7 +87,7 @@ function debounce(func, wait, immediate) {
 	};
 };
 
-var myEfficientFn = debounce(function() {
+let myEfficientFn = debounce(function() {
   rssAddr.focus();
   rssAddr.select();
   document.execCommand("copy");
@@ -95,7 +95,7 @@ var myEfficientFn = debounce(function() {
   messageDiv.textContent = "订阅地址已复制";
   messageDiv.style.fontFamily = "Noto Serif SC";
   messageDiv.style.opacity = 0;
-  messageDiv.style.transition = "opacity 250ms ease-in-out";
+  messageDiv.style.transition = "opacity 200ms ease-in-out";
   rssImg.style.opacity = 0;
   setTimeout(() => {
     rssBtn.appendChild(messageDiv);

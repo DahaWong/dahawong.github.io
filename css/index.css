@@ -278,7 +278,7 @@ footer date.from-to {
 }
 .blur-container button.rss svg {
   cursor: pointer;
-  transition: opacity 200ms ease-in-out;
+  transition: opacity 50ms ease-in-out;
 }
 .blur-container button.rss svg:active .outer,
 .blur-container button.rss svg:hover .outer,
