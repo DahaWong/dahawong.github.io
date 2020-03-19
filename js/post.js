@@ -1,10 +1,12 @@
-let content = document.querySelectorAll("p,ul,ol")
-let post = document.querySelector(".post-content")
-let quote = document.querySelector("blockquote:first-of-type");
+let content = document.querySelectorAll('p,ul,ol')
+let post = document.querySelector('.post-content')
+let quote = document.querySelector('blockquote:first-of-type');
+
+const green500 = '#6D9997';
 
 let paraLines = [];
-for (const section of Array.from(content)){
-  if (section.parentElement != quote){
+for (const section of Array.from(content)) {
+  if (section.parentElement != quote) {
     paraLines.push(section.textContent.match(/.{1,18}/g).length);
   }
 }
@@ -13,7 +15,7 @@ for (const section of Array.from(content)){
 let i = 0;
 while (i < content.length) {
   let sum = 0;
-  while (sum < 21 && i < content.length){
+  while (sum < 21 && i < content.length) {
     let lineCount = content[i].textContent.match(/.{1,18}/g).length;
     sum += lineCount;
     i += 1;
@@ -29,10 +31,10 @@ while (i < content.length) {
 
 
 let pageCount = 0;
-function wrapPage(pageSection){
-  let pageWrapper = document.createElement("section")
+function wrapPage(pageSection) {
+  let pageWrapper = document.createElement('section')
   post.replaceChild(pageWrapper, pageHead);
-  for (const pagePart of Array.from(pageSection)){
+  for (const pagePart of Array.from(pageSection)) {
     pageWrapper.addChild(pagePart);
     pagePart.remove();
   }
@@ -42,17 +44,17 @@ function wrapPage(pageSection){
 
 
 
-function prevPage(){
+function prevPage() {
 
 }
 
-function nextPage(){
+function nextPage() {
 
 }
 
 let lastScrollTop = 0;
-const header = document.querySelector("header.blur-container");
-window.addEventListener("scroll", function(){
+const header = document.querySelector('header.blur-container');
+window.addEventListener('scroll', function() {
   let scrollDist = window.pageYOffset || document.documentElement.scrollTop;
   // console.log(scrollDist);
   // console.log(lastScrollTop);
@@ -62,7 +64,7 @@ window.addEventListener("scroll", function(){
   }
   else{
     header.style.opacity = 0;
-    header.style.transform = "translateY(0px)";
+    header.style.transform = 'translateY(0px)';
   }
   lastScrollTop = scrollDist;
 });
@@ -90,30 +92,57 @@ function debounce(func, wait, immediate) {
 let myEfficientFn = debounce(function() {
   rssAddr.focus();
   rssAddr.select();
-  document.execCommand("copy");
-  const messageDiv = document.createElement("div");
-  messageDiv.textContent = "订阅地址已复制";
-  messageDiv.style.fontFamily = "Noto Serif SC";
+  document.execCommand('copy');
+  const messageDiv = document.createElement('div');
+  messageDiv.textContent = '订阅地址已复制';
+  messageDiv.style.fontFamily = 'Noto Serif SC';
   messageDiv.style.opacity = 0;
-  messageDiv.style.transition = "opacity 200ms ease-in-out";
+  messageDiv.style.transition = 'opacity 200ms ease-in-out';
   rssImg.style.opacity = 0;
   setTimeout(() => {
     rssBtn.appendChild(messageDiv);
     messageDiv.style.opacity = 1;
-    rssImg.style.visibility = "hidden";
+    rssImg.style.visibility = 'hidden';
   }, 200)
   setTimeout(function() {
     messageDiv.style.opacity = 0;
     setTimeout(() => {
       messageDiv.remove();
-      rssImg.style.visibility = "visible";
+      rssImg.style.visibility = 'visible';
       rssImg.style.opacity = 1;
     }, 200)
   }, 800);
 }, 250);
 
-const rssBtn = document.querySelector("button.rss");
-const rssAddr = document.querySelector("input.rss-address");
-const rssImg = document.querySelector(".rss svg");
+const rssBtn = document.querySelector('button.rss');
+const rssAddr = document.querySelector('input.rss-address');
+const rssImg = document.querySelector('.rss svg');
 
-rssImg.addEventListener("click", myEfficientFn);
+rssImg.addEventListener('click', myEfficientFn);
+
+
+// Canvas: 
+const canvas = document.querySelector('.mouse-follow');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const mousePos = {};
+function circleFollowMouse(event) {
+  mousePos.x = event.clientX;
+  mousePos.y = event.clientY;
+}
+
+const context = canvas.getContext('2d');
+window.addEventListener('mousemove', circleFollowMouse);
+
+
+function drawCircle() {
+  context.clearRect(0, 0, canvas.width, canvas.height);
+  context.beginPath();
+  // context.moveTo(width, height);
+  context.arc(mousePos.x, mousePos.y, 50, 0, 2 * Math.PI, true);
+  context.fillStroke = green500;
+  context.stroke();
+  requestAnimationFrame(drawCircle);
+}
+drawCircle();

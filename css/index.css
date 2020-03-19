@@ -228,6 +228,10 @@ footer date.from-to {
     fill: #5c7d7b;
   }
 }
+canvas {
+  position: absolute;
+  z-index: 5;
+}
 .wrapper {
   display: flex;
   width: 100vw;
