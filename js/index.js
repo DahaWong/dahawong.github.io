@@ -1,65 +1,130 @@
-$(function() {
-    let currentTime = new Date();
-    let currentHour = currentTime.getHours();
-    let patternSC = new RegExp("[\u4E00-\u9FA5]+");
-    let patternEN = new RegExp("[A-Za-z]+");
+const cursor = document.querySelector('.cursor');
+const links = document.querySelectorAll('a');
 
-    // console.log(currentHour)
-    function footerDarken(){
-        $(".rss").attr("src","/img/rss@dark.png")
-        $(".newsletter").attr("src","/img/newsletter@dark.png")
-        $(".share").attr("src","/img/share@dark.png")
-    }
+function cursorFollowMouse(e) {
+  cursor.setAttribute('style', `left: ${e.pageX - 10}px; top: ${e.pageY - 10}px;`);
+}
 
-    function footerLighten(){
-        $(".rss").attr("src","/img/rss.png")
-        $(".newsletter").attr("src","/img/newsletter.png")
-        $(".share").attr("src","/img/share.png")
-    }
+function cursorHoverLink() {
+  cursor.classList.remove('leaving');
+  cursor.classList.add('hovering');
+}
 
-    if ((currentHour > 6) && (currentHour < 24)){
-        $(".theme-container").addClass("light")
-        footerLighten()
-        if ($("body").find(".dark")[0] === undefined){
-            $(".theme-container").removeClass("dark")
-        }
+function cursorDown() {
+  cursor.classList.remove('clicking');
+  cursor.classList.add('pressing');
+}
 
-    }else{
-        $(".theme-container").addClass("dark")
-        footerDarken()
-        if ($("body").find(".light")[0] === undefined){
-            $(".theme-container").removeClass("light")
-        }
-    }
+function cursorUp() {
+  cursor.classList.remove('pressing');
+}
 
-  $(".page-number").each(function(){
-    if ($(this).text()=="1F"){
-        $(this).addClass("active-page")
-    }
-  })
+document.addEventListener('mousemove', cursorFollowMouse);
+document.addEventListener('mousedown', cursorDown);
+document.addEventListener('mouseup', cursorUp);
+links.forEach((link) => {
+  link.addEventListener('mouseover', cursorHoverLink);
+  link.addEventListener('mouseleave', () => {
+    cursor.classList.remove('hovering');
+    cursor.classList.add('leaving');
+  });
+});
+
+// Touch Event Process
+
+// Scroll
+const media = document.querySelector('.media');
+
+const mediaWidth = window.innerWidth;
+const mediaHalfWidth = 20;
+let mediaPresentPos = 0;
+let touchStartX;
+let touchEndX;
+
+function needMove(dist) {
+  if (Math.abs(dist) > mediaHalfWidth) {
+    return true;
+  }
+  return false;
+}
+
+function moveToNeighbor() {
+  const touchMoveDist = touchStartX - touchEndX;
+  if (touchMoveDist > 0 && needMove(touchMoveDist)) {
+    media.scrollLeft = media.scrollLeft + mediaWidth - touchMoveDist;
+  } else if (touchMoveDist < 0 && needMove(touchMoveDist)) {
+    media.scrollLeft = media.scrollLeft - mediaWidth - touchMoveDist;
+  } else {
+    media.scrollLeft = mediaPresentPos;
+  }
+}
+
+function touchStart(e) {
+  mediaPresentPos = media.scrollLeft;
+  touchStartX = e.changedTouches[0].clientX;
+}
+
+function touchEnd(e) {
+  touchEndX = e.changedTouches[0].clientX;
+  moveToNeighbor();
+}
+
+media.addEventListener('touchstart', touchStart);
+media.addEventListener('touchend', touchEnd);
 
 
-  $("button").each(function(){
-    let up = $($(this).filter(".upstair")[0])
-    let img = $($(this).find("img")[0])
-    function isUp(button){
-        return (up[0] !== undefined)? true : false
-    }
+// Wisdom
 
-    $(this).mousedown(function(){
-        if (isUp($(this))){
-            $('html, body').animate({scrollTop:0}
-                ,4000)          
-        }else{
-            $('html, body').animate({scrollTop:$('.from-to').offset().top - $(window).height()},4000)          
-        }
-        img.attr("src","/img/active-triangle.png")
-    })
+const wisdom = document.querySelector('.wisdom');
 
-    $(this).mouseup(function(){
-        $('html, body').stop()
-        img.attr("src","/img/triangle.png")
-        img.removeClass("active-button")
-    })
-  })
-})
+function wisdomMoveToNeighbor() {
+  const touchMoveDist = touchStartX - touchEndX;
+  if (touchMoveDist > 0 && needMove(touchMoveDist)) {
+    wisdom.scrollLeft = wisdom.scrollLeft + mediaWidth - touchMoveDist;
+  } else if (touchMoveDist < 0 && needMove(touchMoveDist)) {
+    wisdom.scrollLeft = wisdom.scrollLeft - mediaWidth - touchMoveDist;
+  } else {
+    wisdom.scrollLeft = mediaPresentPos;
+  }
+}
+
+function wisdomTouchStart(e) {
+  mediaPresentPos = media.scrollLeft;
+  touchStartX = e.changedTouches[0].clientX;
+}
+
+function wisdomTouchEnd(e) {
+  touchEndX = e.changedTouches[0].clientX;
+  wisdomMoveToNeighbor();
+}
+
+wisdom.addEventListener('touchstart', wisdomTouchStart);
+wisdom.addEventListener('touchend', wisdomTouchEnd);
+
+// Entries
+
+const entries = document.querySelector('.entries');
+
+function entriesMoveToNeighbor() {
+  const touchMoveDist = touchStartX - touchEndX;
+  if (touchMoveDist > 0 && needMove(touchMoveDist)) {
+    entries.scrollLeft = entries.scrollLeft + mediaWidth - touchMoveDist;
+  } else if (touchMoveDist < 0 && needMove(touchMoveDist)) {
+    entries.scrollLeft = entries.scrollLeft - mediaWidth - touchMoveDist;
+  } else {
+    entries.scrollLeft = mediaPresentPos;
+  }
+}
+
+function entriesTouchStart(e) {
+  mediaPresentPos = media.scrollLeft;
+  touchStartX = e.changedTouches[0].clientX;
+}
+
+function entriesTouchEnd(e) {
+  touchEndX = e.changedTouches[0].clientX;
+  entriesMoveToNeighbor();
+}
+
+entries.addEventListener('touchstart', entriesTouchStart);
+entries.addEventListener('touchend', entriesTouchEnd);

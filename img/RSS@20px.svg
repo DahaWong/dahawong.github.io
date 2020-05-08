@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="21px" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>RSS</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-121.000000, -572.000000)" fill-rule="nonzero">
+            <g id="简报" transform="translate(39.000000, 117.500000)">
+                <g id="Group-4" transform="translate(21.000000, 455.000000)">
+                    <g id="Group-3" transform="translate(61.000000, 0.000000)">
+                        <g id="RSS">
+                            <path d="M19.5,19.9990909 L16.05825,19.9990909 L16.0564773,19.6972727 C15.8987045,10.7409091 8.77056818,3.52909091 0,3.52909091 L0,0 C10.6611818,0 19.3245,8.77545455 19.4973409,19.6681818 L19.5,20 L19.5,19.9990909 Z" id="Path" fill="#5C7D7B"></path>
+                            <path d="M12.6173864,19.9990909 L9.17563636,19.9990909 L9.17297727,19.7445455 C9.04179545,14.6663636 4.98490909,10.5890909 0,10.5890909 L0,7.06 C6.96859091,7.06 12.6173864,12.8536364 12.6173864,20 L12.6173864,19.9990909 Z" id="Path" fill="#5C7D7B"></path>
+                            <ellipse id="Oval" fill="#FFA17A" cx="2.65909091" cy="17.2727273" rx="2.65909091" ry="2.72727273"></ellipse>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

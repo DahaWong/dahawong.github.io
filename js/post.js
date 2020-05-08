@@ -1,57 +1,3 @@
-let content = document.querySelectorAll('p,ul,ol')
-let post = document.querySelector('.post-content')
-let quote = document.querySelector('blockquote:first-of-type');
-
-const green500 = '#6D9997';
-
-let paraLines = [];
-for (const section of Array.from(content)) {
-  if (section.parentElement != quote) {
-    paraLines.push(section.textContent.match(/.{1,18}/g).length);
-  }
-}
-// console.log(paraLines)
-
-let i = 0;
-while (i < content.length) {
-  let sum = 0;
-  while (sum < 21 && i < content.length) {
-    let lineCount = content[i].textContent.match(/.{1,18}/g).length;
-    sum += lineCount;
-    i += 1;
-  }
-  if (sum > 21) {
-    let slicePos = sum - 21;
-    let prevSlice = content[i].textContent.slice(0,slicePos * 18);
-    let nextSlice = content[i].textContent.slice(slicePos * 18);
-    // console.log(prevSlice);
-    // console.log(nextSlice);
-  }
-}
-
-
-let pageCount = 0;
-function wrapPage(pageSection) {
-  let pageWrapper = document.createElement('section')
-  post.replaceChild(pageWrapper, pageHead);
-  for (const pagePart of Array.from(pageSection)) {
-    pageWrapper.addChild(pagePart);
-    pagePart.remove();
-  }
-  pageCount += 1;
-  pageWrapper.id = pageCount.toString();
-}
-
-
-
-function prevPage() {
-
-}
-
-function nextPage() {
-
-}
-
 let lastScrollTop = 0;
 const header = document.querySelector('header.blur-container');
 window.addEventListener('scroll', function() {
@@ -60,18 +6,18 @@ window.addEventListener('scroll', function() {
   // console.log(lastScrollTop);
   if (scrollDist - lastScrollTop < 0) {
     header.style.opacity = 100;
-    header.style.transform = `translateY(${header.clientHeight}px)`;
+    header.style.transform = `translateY(0px)`;
   }
   else{
     header.style.opacity = 0;
-    header.style.transform = 'translateY(0px)';
+    header.style.transform = 'translateY(-${header.clientHeight}px)';
   }
   lastScrollTop = scrollDist;
 });
 
 if (lastScrollTop == 0) {
   header.style.opacity = 100;
-  header.style.transform = `translateY(${header.clientHeight}px)`;
+  header.style.transform = `translateY(0px)`;
 }
 
 function debounce(func, wait, immediate) {
@@ -120,29 +66,7 @@ const rssImg = document.querySelector('.rss svg');
 
 rssImg.addEventListener('click', myEfficientFn);
 
-
-// Canvas: 
-const canvas = document.querySelector('.mouse-follow');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-
-const mousePos = {};
-function circleFollowMouse(event) {
-  mousePos.x = event.clientX;
-  mousePos.y = event.clientY;
-}
-
-const context = canvas.getContext('2d');
-window.addEventListener('mousemove', circleFollowMouse);
-
-
-function drawCircle() {
-  context.clearRect(0, 0, canvas.width, canvas.height);
-  context.beginPath();
-  // context.moveTo(width, height);
-  context.arc(mousePos.x, mousePos.y, 50, 0, 2 * Math.PI, true);
-  context.fillStroke = green500;
-  context.stroke();
-  requestAnimationFrame(drawCircle);
-}
-drawCircle();
+// Commento
+const commentBtn = document.querySelector('#commento-submit-button-root');
+console.log(commentBtn);
+commentBtn.textContent = '发 送';
