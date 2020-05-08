@@ -50,7 +50,19 @@ em {
 .media::-webkit-scrollbar {
   display: none;
 }
+.right-bottom-part::-webkit-scrollbar {
+  display: none;
+}
+.wisdom::-webkit-scrollbar {
+  display: none;
+}
 .media {
+  -ms-overflow-style: none;
+}
+.right-bottom-part {
+  -ms-overflow-style: none;
+}
+.wisdom {
   -ms-overflow-style: none;
 }
 .commento-logo-container {
@@ -62,7 +74,7 @@ em {
 }
 #commento-markdown-button-root {
   color: #5c7d7b;
-  margin: 0 8px;
+  margin: 0 16px;
 }
 #commento-markdown-button-root b {
   display: none;
