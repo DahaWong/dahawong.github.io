@@ -67,6 +67,9 @@ const rssImg = document.querySelector('.rss svg');
 rssImg.addEventListener('click', myEfficientFn);
 
 // Commento
-const commentBtn = document.querySelector('#commento-submit-button-root');
-console.log(commentBtn);
-commentBtn.textContent = '发 送';
+window.commento.main();
+
+const commento = document.querySelector('#commento');
+// const btn = commento.getElementById('commento-mod-tools-lock-button');
+const mainComment = commento.children[2].childNodes;
+console.log(mainComment);
