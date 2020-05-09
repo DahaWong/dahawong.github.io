@@ -65,11 +65,3 @@ const rssAddr = document.querySelector('input.rss-address');
 const rssImg = document.querySelector('.rss svg');
 
 rssImg.addEventListener('click', myEfficientFn);
-
-// Commento
-window.commento.main();
-
-const commento = document.querySelector('#commento');
-// const btn = commento.getElementById('commento-mod-tools-lock-button');
-const mainComment = commento.children[2].childNodes[0];
-console.log(mainComment);

@@ -16,7 +16,7 @@ button {
 p,
 li,
 em {
-  font-family: Noto Sans Serif;
+  font-family: Cairo, Noto Sans Serif;
   font-weight: 300;
 }
 .theme-container {
@@ -64,23 +64,6 @@ em {
 }
 .wisdom {
   -ms-overflow-style: none;
-}
-.commento-logo-container {
-  display: none;
-}
-#commento-submit-button-root {
-  background-color: #6d9997;
-  color: #fcfcf7;
-}
-#commento-markdown-button-root {
-  color: #5c7d7b;
-  margin: 0 16px;
-}
-#commento-markdown-button-root b {
-  display: none;
-}
-.commento-root .commento-logged-container .commento-profile-button {
-  margin: 0;
 }
 .cursor {
   width: 24px;
@@ -1079,7 +1062,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 32px 20px;
+  padding: 20px 20px;
   width: 100%;
   transition: opacity 350ms ease-in-out 0s, transform 275ms ease-in-out 0s;
   z-index: 1;
@@ -1219,9 +1202,10 @@ p,
 a,
 ol,
 ul {
+  font-size: 1rem;
   letter-spacing: 2.4px;
-  line-height: 2;
-  margin: 24px 0;
+  line-height: 2.8;
+  margin: 2rem 0;
   text-align: justify;
 }
 ul,
@@ -1280,6 +1264,86 @@ p img[alt~="RSS"] {
   box-shadow: none;
   margin: 0;
 }
+.commento-logo-container {
+  display: none;
+}
+#commento-submit-button-root {
+  background-color: #89aba8;
+  color: #fcfcf7;
+  padding: 14px 28px;
+  margin: 28px 0 0;
+  letter-spacing: 1.2px;
+  border-radius: 8px;
+  transition: 325ms all ease-out;
+  font-weight: 200;
+  box-shadow: 0 0px 13.6px -32px rgba(137,171,168,0.006), 0 0px 21.4px -32px rgba(137,171,168,0.013), 0 0px 26.4px -32px rgba(137,171,168,0.021), 0 0px 29.9px -32px rgba(137,171,168,0.029), 0 0px 32.5px -32px rgba(137,171,168,0.039), 0 0px 34.8px -32px rgba(137,171,168,0.048), 0 0px 37.3px -32px rgba(137,171,168,0.059), 0 0px 40.7px -32px rgba(137,171,168,0.07), 0 0px 46.6px -32px rgba(137,171,168,0.083), 0 0px 62px -32px rgba(137,171,168,0.1);
+}
+#commento-submit-button-root:hover {
+  font-weight: 200;
+  background-color: #6d9997;
+  box-shadow: 0 1.2px 13.6px -9px rgba(137,171,168,0.006), 0 1.6px 21.4px -9px rgba(137,171,168,0.013), 0 1.9px 26.4px -9px rgba(137,171,168,0.021), 0 2.1px 29.9px -9px rgba(137,171,168,0.029), 0 2.2px 32.5px -9px rgba(137,171,168,0.039), 0 2.4px 34.8px -9px rgba(137,171,168,0.048), 0 2.7px 37.3px -9px rgba(137,171,168,0.059), 0 3.2px 40.7px -9px rgba(137,171,168,0.07), 0 4px 46.6px -9px rgba(137,171,168,0.083), 0 6px 62px -9px rgba(137,171,168,0.1);
+}
+#commento-markdown-button-root {
+  display: none;
+}
+#commento {
+  width: 80vw;
+  margin-left: 10vw;
+  font-family: Cairo;
+  font-weight: 300;
+  letter-spacing: 1.2px;
+  margin-bottom: 40px;
+  padding-bottom: 8rem;
+  padding-right: 10vw;
+}
+#commento .commento-error-box {
+  color: #ffa17a;
+}
+#commento textarea {
+  background-color: rgba(229,236,235,0.3);
+  border: none;
+  color: #5c7d7b;
+  font-size: 14px;
+  letter-spacing: 1.8px;
+  font-weight: 300;
+  resize: none;
+}
+#commento .commento-name {
+  color: #0f1f43;
+  font-size: 14px;
+  line-height: 24px;
+}
+#commento .commento-profile-button {
+  line-height: 38px;
+  margin: 0;
+  margin-left: 2rem;
+  color: #6d9997;
+}
+#commento .commento-sort-policy-button-selected {
+  color: #6d9997;
+}
+#commento .commento-score {
+  color: #3a4b6d;
+}
+#commento .commento-timeago {
+  color: #5d6982;
+}
+#commento .commento-card {
+  border-left: 1.4px solid #ffa17a !important;
+  border-top: none;
+  margin-bottom: 40px;
+}
+#commento .commento-body p {
+  color: #5c7d7b !important;
+  margin-left: 14px;
+}
+#commento .commento-sort-policy-buttons {
+  margin-top: 140px;
+  float: none;
+}
+#commento .commento-card:first-of-type {
+  margin-top: 20px;
+}
 @media only screen and (max-width: 501px) {
   blockquote p {
     margin-bottom: 24px;
@@ -1305,7 +1369,8 @@ p img[alt~="RSS"] {
   }
   p,
   ul,
-  ol {
+  ol,
+  a {
     font-size: 14px;
     line-height: 2rem;
     letter-spacing: 2.2px;
@@ -1341,6 +1406,33 @@ p img[alt~="RSS"] {
   footer {
     position: relative;
     top: 16.666666666666668vh;
+  }
+  #commento .commento-name {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  #commento .commento-profile-button {
+    line-height: px;
+    margin: 0;
+    margin-left: 8px;
+    color: #485d5c;
+    font-size: 8px;
+    letter-spacing: 0.5px;
+  }
+  #commento #commento-submit-button-root {
+    padding: 8px 16px;
+    font-size: 10px;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+  #commento .commento-error-box {
+    font-size: 10px;
+  }
+  #commento .commento-sort-policy-buttons {
+    margin-top: 100px;
+  }
+  #commento .commento-body {
+    margin: 24px 0;
   }
 }
 body {
