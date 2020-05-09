@@ -15,7 +15,7 @@ button {
 }
 p,
 li,
-em {
+a {
   font-family: Cairo, Noto Sans Serif;
   font-weight: 300;
 }
@@ -262,8 +262,8 @@ p.yume-detail {
 }
 .more-info .info-item {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
   margin: 5px 0;
   text-decoration: none;
@@ -346,6 +346,8 @@ span.hero-excerpt {
 }
 .media .sharing .excerpt p {
   margin: 0;
+  font-size: 12px;
+  line-height: 1.8;
 }
 .media .music-share .cover {
   background-image: url("/img/test2.jpg");
@@ -378,17 +380,17 @@ aside.right-part {
 }
 aside.right-part section.wisdom div {
   margin: 0;
-  font-size: 14px;
-  line-height: 20px;
   margin-bottom: 10px;
 }
 aside.right-part section.wisdom div:last-of-type {
   padding-bottom: 10px;
   border-bottom: 0.5px dashed #5c7d7b;
 }
-aside.right-part section.wisdom p {
+aside.right-part section.wisdom div p {
   margin: 0;
   margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 2.2;
 }
 aside.right-part .right-bottom-part {
   display: flex;
@@ -469,8 +471,8 @@ aside.right-part .right-bottom-part section.new-posts {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 200px;
   overflow: scroll;
+  height: 243px;
 }
 aside.right-part .right-bottom-part section.new-posts h3 {
   margin: 5px 0;
@@ -480,7 +482,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title {
   display: flex;
   align-items: center;
   font-size: 12px;
-  line-height: 2;
+  line-height: 2.8;
   font-weight: 400;
   letter-spacing: 1.5px;
   color: #0f1f43;
@@ -650,7 +652,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
   }
   .info-item {
     flex-direction: column-reverse;
-    justify-content: flex-start;
+    justify-content: center;
     height: 40%;
   }
   aside.right-part {
@@ -760,7 +762,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     top: 30px;
   }
   .excerpt {
-    font-family: Noto Sans SC;
+    font-family: Cairo, Noto Sans SC;
     font-weight: 100;
     font-size: 14px;
   }
@@ -832,6 +834,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     color: #5c7d7b;
   }
   .footer span.from-to {
+    font-family: Cairo, sans-serif;
     text-align: center;
     letter-spacing: 5px;
     font-weight: 100;
@@ -995,7 +998,8 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     left: 0vw;
   }
   .footer a {
-    border-bottom: 0.1px solid rgba(255,161,122,0.5);
+    border-bottom: 0.1px solid rgba(255,161,122,0.5) !important;
+    font-size: 10px;
   }
   aside.right-part section.wisdom div:last-of-type {
     border-bottom: none;
@@ -1144,11 +1148,10 @@ input.rss-address {
 }
 .post-content {
   width: inherit;
-  font-family: 'Noto Serif SC', "Noto Serif JP", serif;
 }
 .post-title {
-  font-family: 'Noto Serif SC', , "Noto Serif JP", serif;
-  font-weight: 600;
+  font-family: 'Noto Serif SC', "Noto Serif JP", serif;
+  font-weight: 500;
   text-align: left;
   font-size: 28px;
   letter-spacing: 0.8px;
@@ -1157,6 +1160,7 @@ input.rss-address {
   margin-bottom: 24px;
 }
 blockquote {
+  font-family: Noto Serif SC;
   font-weight: 500;
   letter-spacing: 0.4px;
   border-left: 1.6px solid #ffa17a;
@@ -1290,7 +1294,7 @@ p img[alt~="RSS"] {
   width: 80vw;
   margin-left: 10vw;
   font-family: Cairo;
-  font-weight: 300;
+  font-weight: 200;
   letter-spacing: 1.2px;
   margin-bottom: 40px;
   padding-bottom: 8rem;
@@ -1436,6 +1440,6 @@ p img[alt~="RSS"] {
   }
 }
 body {
-  font-family: 'Playfair Display', 'Noto Serif SC', 'Noto Serif JP', serif;
+  font-family: 'Cairo', 'Noto Serif SC', 'Noto Serif JP', serif;
   background-color: #f5f5f5;
 }

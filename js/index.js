@@ -35,11 +35,17 @@ links.forEach((link) => {
 // Scroll
 const media = document.querySelector('.media');
 
-const mediaWidth = window.innerWidth;
+const mediaWidth = media.clientWidth;
 const mediaHalfWidth = 20;
 let mediaPresentPos = 0;
-let touchStartX;
-let touchEndX;
+let wisdomPresentPos = 0;
+let entriesPresentPos = 0;
+let mediaTouchStartX;
+let mediaTouchEndX;
+let wisdomTouchStartX;
+let wisdomTouchEndX;
+let entriesTouchStartX;
+let entriesTouchEndX;
 
 function needMove(dist) {
   if (Math.abs(dist) > mediaHalfWidth) {
@@ -49,24 +55,28 @@ function needMove(dist) {
 }
 
 function moveToNeighbor() {
-  const touchMoveDist = touchStartX - touchEndX;
+  const touchMoveDist = mediaTouchStartX - mediaTouchEndX;
+  console.log(media.scrollLeft);
   if (touchMoveDist > 0 && needMove(touchMoveDist)) {
-    media.scrollLeft = media.scrollLeft + mediaWidth - touchMoveDist;
+    media.scrollLeft = media.scrollLeft + mediaWidth - touchMoveDist+12;
   } else if (touchMoveDist < 0 && needMove(touchMoveDist)) {
-    media.scrollLeft = media.scrollLeft - mediaWidth - touchMoveDist;
+    media.scrollLeft = media.scrollLeft - mediaWidth - touchMoveDist-15;
   } else {
     media.scrollLeft = mediaPresentPos;
   }
+  console.log(media.scrollLeft);
+  console.log(touchMoveDist);
 }
 
 function touchStart(e) {
   mediaPresentPos = media.scrollLeft;
-  touchStartX = e.changedTouches[0].clientX;
+  mediaTouchStartX = e.changedTouches[0].clientX;
 }
 
 function touchEnd(e) {
-  touchEndX = e.changedTouches[0].clientX;
+  mediaTouchEndX = e.changedTouches[0].clientX;
   moveToNeighbor();
+  console.log(media.scrollLeft);
 }
 
 media.addEventListener('touchstart', touchStart);
@@ -76,25 +86,26 @@ media.addEventListener('touchend', touchEnd);
 // Wisdom
 
 const wisdom = document.querySelector('.wisdom');
+const wisdomWidth = wisdom.clientWidth;
 
 function wisdomMoveToNeighbor() {
-  const touchMoveDist = touchStartX - touchEndX;
+  const touchMoveDist = wisdomTouchStartX - wisdomTouchEndX;
   if (touchMoveDist > 0 && needMove(touchMoveDist)) {
-    wisdom.scrollLeft = wisdom.scrollLeft + mediaWidth - touchMoveDist;
+    wisdom.scrollLeft = wisdom.scrollLeft + wisdomWidth - touchMoveDist+12;
   } else if (touchMoveDist < 0 && needMove(touchMoveDist)) {
-    wisdom.scrollLeft = wisdom.scrollLeft - mediaWidth - touchMoveDist;
+    wisdom.scrollLeft = wisdom.scrollLeft - wisdomWidth - touchMoveDist-15;
   } else {
-    wisdom.scrollLeft = mediaPresentPos;
+    wisdom.scrollLeft = wisdomPresentPos;
   }
 }
 
 function wisdomTouchStart(e) {
-  mediaPresentPos = media.scrollLeft;
-  touchStartX = e.changedTouches[0].clientX;
+  wisdomPresentPos = wisdom.scrollLeft;
+  wisdomTouchStartX = e.changedTouches[0].clientX;
 }
 
 function wisdomTouchEnd(e) {
-  touchEndX = e.changedTouches[0].clientX;
+  wisdomTouchEndX = e.changedTouches[0].clientX;
   wisdomMoveToNeighbor();
 }
 
@@ -104,25 +115,26 @@ wisdom.addEventListener('touchend', wisdomTouchEnd);
 // Entries
 
 const entries = document.querySelector('.entries');
+const entriesWidth = entries.clientWidth;
 
 function entriesMoveToNeighbor() {
-  const touchMoveDist = touchStartX - touchEndX;
+  const touchMoveDist = entriesTouchStartX - entriesTouchEndX;
   if (touchMoveDist > 0 && needMove(touchMoveDist)) {
-    entries.scrollLeft = entries.scrollLeft + mediaWidth - touchMoveDist;
+    entries.scrollLeft = entries.scrollLeft + entriesWidth - touchMoveDist+12;
   } else if (touchMoveDist < 0 && needMove(touchMoveDist)) {
-    entries.scrollLeft = entries.scrollLeft - mediaWidth - touchMoveDist;
+    entries.scrollLeft = entries.scrollLeft - entriesWidth - touchMoveDist-15;
   } else {
-    entries.scrollLeft = mediaPresentPos;
+    entries.scrollLeft = entriesPresentPos;
   }
 }
 
 function entriesTouchStart(e) {
-  mediaPresentPos = media.scrollLeft;
-  touchStartX = e.changedTouches[0].clientX;
+  entriesPresentPos = entries.scrollLeft;
+  entriesTouchStartX = e.changedTouches[0].clientX;
 }
 
 function entriesTouchEnd(e) {
-  touchEndX = e.changedTouches[0].clientX;
+  entriesTouchEndX = e.changedTouches[0].clientX;
   entriesMoveToNeighbor();
 }
 
