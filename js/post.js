@@ -69,5 +69,7 @@ rssImg.addEventListener('click', myEfficientFn);
 // Commento
 window.commento.main();
 
-const btn = document.querySelector('#commento-submit-button-root');
-console.log(btn);
+const commento = document.querySelector('#commento');
+// const btn = commento.getElementById('commento-mod-tools-lock-button');
+const mainComment = commento.children[2].childNodes[0];
+console.log(mainComment);
