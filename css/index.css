@@ -1331,6 +1331,7 @@ p img[alt~="RSS"] {
   line-height: 24px;
   margin-left: 10px;
   margin-bottom: 4px;
+  letter-spacing: 2.2px;
 }
 #commento .commento-profile-button {
   line-height: 38px;
@@ -1493,8 +1494,6 @@ p img[alt~="RSS"] {
     font-size: 10px;
   }
   #commento label {
-    font-size: 6px;
-    position: relative;
-    top: 2px;
+    font-size: 9px;
   }
 }
