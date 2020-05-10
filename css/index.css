@@ -1444,7 +1444,9 @@ p img[alt~="RSS"] {
   }
   #commento {
     padding-bottom: 2rem;
-textarea
+  }
+  #commento textarea {
+    margin-bottom: 80px;
   }
   #commento .commento-name {
     font-size: 16px;
@@ -1464,6 +1466,10 @@ textarea
     font-weight: 300;
     border-radius: 8px;
     margin-top: 20px;
+    top: -80px;
+  }
+  #commento .commento-round-check {
+    top: -80px;
   }
   #commento .commento-error-box {
     font-size: 10px;
