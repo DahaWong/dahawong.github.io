@@ -14,7 +14,8 @@
 h2,
 h3,
 .zh,
-.more-info span {
+.more-info span,
+.entries span {
   font-family: 'Noto Serif SC', 'Noto Serif JP', serif;
 }
 a,
@@ -812,13 +813,12 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     font-weight: 300;
     color: #5c7d7b;
     background-color: #e5eceb;
+    padding-top: 40px;
   }
   .footer .info-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: relative;
-    top: 30%;
   }
   .footer .info-text-wrapper {
     display: flex;
@@ -833,6 +833,8 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     margin: 0;
     text-decoration: none;
     color: #5c7d7b;
+    border-bottom: 0.5px solid #ffa17a;
+    font-size: 10px;
   }
   .footer span.from-to {
     font-family: Cairo, sans-serif;
@@ -840,7 +842,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     letter-spacing: 5px;
     font-weight: 300;
     font-size: 7px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   .hero-part,
   .media,
@@ -954,7 +956,6 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     letter-spacing: 5px;
     line-height: 40px;
     font-weight: 500;
-    margin-bottom: 20px;
   }
   .yume p {
     line-height: 28px;
@@ -996,10 +997,6 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     position: absolute;
     height: 110px;
     left: 0vw;
-  }
-  .footer a {
-    border-bottom: 0.1px solid rgba(255,161,122,0.5) !important;
-    font-size: 10px;
   }
   aside.right-part section.wisdom div:last-of-type {
     border-bottom: none;
@@ -1288,6 +1285,8 @@ p img[alt~="RSS"] {
   border-radius: 8px;
   transition: 325ms all ease-out;
   font-weight: 200;
+  position: relative;
+  top: -120px;
   box-shadow: 0 0px 13.6px -32px rgba(137,171,168,0.006), 0 0px 21.4px -32px rgba(137,171,168,0.013), 0 0px 26.4px -32px rgba(137,171,168,0.021), 0 0px 29.9px -32px rgba(137,171,168,0.029), 0 0px 32.5px -32px rgba(137,171,168,0.039), 0 0px 34.8px -32px rgba(137,171,168,0.048), 0 0px 37.3px -32px rgba(137,171,168,0.059), 0 0px 40.7px -32px rgba(137,171,168,0.07), 0 0px 46.6px -32px rgba(137,171,168,0.083), 0 0px 62px -32px rgba(137,171,168,0.1);
 }
 #commento-submit-button-root:hover {
@@ -1310,6 +1309,7 @@ p img[alt~="RSS"] {
 }
 #commento .commento-error-box {
   color: #ffa17a;
+  text-align: left;
 }
 #commento textarea {
   background-color: rgba(229,236,235,0.3);
@@ -1319,11 +1319,14 @@ p img[alt~="RSS"] {
   letter-spacing: 1.8px;
   font-weight: 300;
   resize: none;
+  margin-bottom: 120px;
 }
 #commento .commento-name {
   color: #0f1f43;
   font-size: 14px;
   line-height: 24px;
+  margin-left: 10px;
+  margin-bottom: 4px;
 }
 #commento .commento-profile-button {
   line-height: 38px;
@@ -1331,8 +1334,11 @@ p img[alt~="RSS"] {
   margin-left: 2rem;
   color: #6d9997;
 }
-#commento .commento-sort-policy-button-selected {
-  color: #6d9997;
+#commento .commento-subtitle {
+  margin-left: 12px;
+}
+#commento .commento-sort-policy-buttons-container {
+  display: none;
 }
 #commento .commento-score {
   color: #3a4b6d;
@@ -1349,22 +1355,25 @@ p img[alt~="RSS"] {
   color: #5c7d7b !important;
   margin-left: 14px;
 }
-#commento .commento-sort-policy-buttons {
-  margin-top: 140px;
-  float: none;
-}
-#commento .commento-card:first-of-type {
-  margin-top: 20px;
-}
 #commento .commento-round-check {
   float: none;
   margin: 24px 0;
+  position: relative;
+  top: -120px;
 }
 #commento .commento-root .commento-anonymous-checkbox-container input[type="checkbox"] + label {
-  font-size: 10px;
+  font-size: 8px;
+  z-index: -1;
 }
 #commento .commento-mod-tools {
   display: none;
+}
+#commento img {
+  display: none;
+}
+#commento .commento-logged-in-as .commento-name {
+  margin-left: 0;
+  left: 0;
 }
 @media only screen and (max-width: 501px) {
   blockquote {
@@ -1435,9 +1444,10 @@ p img[alt~="RSS"] {
   }
   #commento {
     padding-bottom: 2rem;
+textarea
   }
   #commento .commento-name {
-    font-size: 12px;
+    font-size: 16px;
     letter-spacing: 0.5px;
   }
   #commento .commento-profile-button {
@@ -1450,7 +1460,7 @@ p img[alt~="RSS"] {
   }
   #commento #commento-submit-button-root {
     padding: 4px 12px;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: 300;
     border-radius: 8px;
     margin-top: 20px;
@@ -1458,13 +1468,14 @@ p img[alt~="RSS"] {
   #commento .commento-error-box {
     font-size: 10px;
   }
-  #commento .commento-sort-policy-buttons {
-    margin-top: 100px;
-  }
   #commento .commento-body {
     margin: 24px 0;
   }
   #commento .commento-anonymous-checkbox-container {
     margin: 24px 0;
+  }
+  #commento .commento-timeago,
+  #commento .commento-score {
+    font-size: 10px;
   }
 }
