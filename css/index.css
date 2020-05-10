@@ -1063,11 +1063,15 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
   position: fixed;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 20px 40px;
   width: 100%;
   transition: opacity 350ms ease-in-out 0s, transform 275ms ease-in-out 0s;
   z-index: 1;
   background-color: rgba(252,252,247,0.9);
+}
+.blur-container a {
+  font-family: Noto Serif SC;
+  font-size: 20px;
 }
 .blur-container .blur-layer {
   display: none;
@@ -1362,13 +1366,14 @@ p img[alt~="RSS"] {
   top: -120px;
 }
 #commento label {
-  font-size: 8px;
+  font-size: 14px;
   width: 150px;
 }
 #commento .commento-mod-tools {
   display: none;
 }
-#commento .commento-avatar {
+#commento .commento-avatar,
+#commento img {
   display: none;
 }
 #commento .commento-logged-in-as .commento-name {
@@ -1376,6 +1381,9 @@ p img[alt~="RSS"] {
   left: 0;
 }
 @media only screen and (max-width: 501px) {
+  .blur-container {
+    padding: 20px 20px;
+  }
   blockquote {
     margin-top: 36px;
   }
@@ -1483,5 +1491,10 @@ p img[alt~="RSS"] {
   #commento .commento-timeago,
   #commento .commento-score {
     font-size: 10px;
+  }
+  #commento label {
+    font-size: 6px;
+    position: relative;
+    top: 2px;
   }
 }
