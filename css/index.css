@@ -300,7 +300,7 @@ a.hero-pic {
 span.hero-excerpt {
   margin: 10px 0;
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 2.2px;
   color: #142859;
 }
@@ -748,7 +748,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
   }
   p,
   span.via {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 12px;
   }
   .header {
@@ -765,7 +765,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     top: 30px;
   }
   .excerpt {
-    font-weight: 100;
+    font-weight: 300;
     font-size: 14px;
   }
   aside.right-part .right-bottom-part section.new-posts {
@@ -838,7 +838,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     font-family: Cairo, sans-serif;
     text-align: center;
     letter-spacing: 5px;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 7px;
     margin-bottom: 20px;
   }
@@ -1217,7 +1217,7 @@ ol,
 ul,
 li {
   font-size: 18px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 2.4px;
   line-height: 2.8;
   margin: 2rem 0;
