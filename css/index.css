@@ -1320,7 +1320,7 @@ p img[alt~="RSS"] {
   border: none;
   color: #5c7d7b;
   font-size: 14px;
-  letter-spacing: 1.8px;
+  letter-spacing: 1.2px;
   font-weight: 300;
   resize: none;
   margin-bottom: 120px;
@@ -1331,7 +1331,7 @@ p img[alt~="RSS"] {
   line-height: 24px;
   margin-left: 10px;
   margin-bottom: 4px;
-  letter-spacing: 2.2px;
+  letter-spacing: 1.2px;
 }
 #commento .commento-profile-button {
   line-height: 38px;
@@ -1355,6 +1355,7 @@ p img[alt~="RSS"] {
   border-left: 1.4px solid #ffa17a !important;
   border-top: none;
   margin-bottom: 40px;
+  padding-top: 0;
 }
 #commento .commento-body p {
   color: #5c7d7b !important;
@@ -1368,13 +1369,13 @@ p img[alt~="RSS"] {
 }
 #commento label {
   font-size: 14px;
-  width: 150px;
 }
 #commento .commento-mod-tools {
   display: none;
 }
 #commento .commento-avatar,
-#commento img {
+#commento img,
+#commento .commento-moderator::after {
   display: none;
 }
 #commento .commento-logged-in-as .commento-name {
@@ -1459,7 +1460,7 @@ p img[alt~="RSS"] {
   }
   #commento .commento-name {
     font-size: 16px;
-    letter-spacing: 0.5px;
+    letter-spacing: 1.2px;
   }
   #commento .commento-profile-button {
     line-height: px;
@@ -1495,5 +1496,6 @@ p img[alt~="RSS"] {
   }
   #commento label {
     font-size: 9px;
+    width: 150px;
   }
 }
