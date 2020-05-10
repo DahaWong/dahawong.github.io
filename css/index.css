@@ -1363,12 +1363,12 @@ p img[alt~="RSS"] {
 }
 #commento .commento-root .commento-anonymous-checkbox-container input[type="checkbox"] + label {
   font-size: 8px;
-  z-index: -1;
+  width: 150px;
 }
 #commento .commento-mod-tools {
   display: none;
 }
-#commento img {
+#commento .commento-avatar {
   display: none;
 }
 #commento .commento-logged-in-as .commento-name {
