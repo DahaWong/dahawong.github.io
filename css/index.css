@@ -1115,12 +1115,12 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
 }
 .blur-container button.rss div {
   font-size: 14px;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 2.2px;
   color: #5c7d7b;
   width: 8rem;
   position: relative;
-  top: -28px;
+  top: -29px;
 }
 input.rss-address {
   position: absolute;
