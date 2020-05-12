@@ -56,7 +56,6 @@ function needMove(dist) {
 
 function moveToNeighbor() {
   const touchMoveDist = mediaTouchStartX - mediaTouchEndX;
-  console.log(media.scrollLeft);
   if (touchMoveDist > 0 && needMove(touchMoveDist)) {
     media.scrollLeft = media.scrollLeft + mediaWidth - touchMoveDist+12;
   } else if (touchMoveDist < 0 && needMove(touchMoveDist)) {
@@ -64,8 +63,6 @@ function moveToNeighbor() {
   } else {
     media.scrollLeft = mediaPresentPos;
   }
-  console.log(media.scrollLeft);
-  console.log(touchMoveDist);
 }
 
 function touchStart(e) {
@@ -76,7 +73,6 @@ function touchStart(e) {
 function touchEnd(e) {
   mediaTouchEndX = e.changedTouches[0].clientX;
   moveToNeighbor();
-  console.log(media.scrollLeft);
 }
 
 media.addEventListener('touchstart', touchStart);

@@ -13,9 +13,9 @@
 }
 h2,
 h3,
+h4,
 .zh,
-.more-info span,
-.entries span {
+.more-info span {
   font-family: 'Noto Serif SC', 'Noto Serif JP', serif;
 }
 a,
@@ -117,7 +117,7 @@ main {
   box-sizing: content-box;
   padding: 30px 20px 20px;
 }
-h2 {
+main h2 {
   width: 100%;
   text-align: left;
   font-size: 18px;
@@ -125,7 +125,7 @@ h2 {
   line-height: 40px;
   letter-spacing: 3px;
 }
-h3 {
+main h3 {
   width: 100%;
   margin: 0;
   font-size: 16px;
@@ -159,22 +159,22 @@ h3 {
   display: flex;
   flex-direction: column;
   position: relative;
-  top: -20px;
+  top: -16px;
 }
 .header .blog-title .char .tone[src="/img/tone-1.svg"] {
   position: relative;
-  left: 7.5px;
-  top: -1px;
+  left: 4.5px;
+  top: 2px;
 }
 .header .blog-title .char .tone[src="/img/tone-2.svg"] {
   position: relative;
-  left: 3px;
-  top: -1px;
+  left: -6px;
+  top: 1.5px;
 }
 .header .blog-title .char .en {
   font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 3.5px;
+  font-weight: 300;
+  letter-spacing: 2.5px;
   line-height: 10px;
   color: #5c7d7b;
 }
@@ -382,7 +382,7 @@ aside.right-part {
 }
 aside.right-part section.wisdom h2 {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 aside.right-part section.wisdom div {
   margin: 0;
@@ -396,7 +396,7 @@ aside.right-part section.wisdom div p {
   margin: 0;
   margin-bottom: 14px;
   font-size: 14px;
-  line-height: 2.2;
+  line-height: 1.5;
 }
 aside.right-part .right-bottom-part {
   display: flex;
@@ -415,7 +415,7 @@ aside.right-part .right-bottom-part section.entries h3 {
 aside.right-part .right-bottom-part section.entries a.entry {
   display: flex;
   align-items: center;
-  margin: 0 0 5px;
+  margin: 0;
   text-decoration: none;
   color: #0f1f43;
   font-size: 12px;
@@ -484,11 +484,11 @@ aside.right-part .right-bottom-part section.new-posts h3 {
   margin: 5px 0;
 }
 aside.right-part .right-bottom-part section.new-posts a.article-title {
-  margin: 0 0 5px;
+  margin: 0;
   display: flex;
   align-items: center;
   font-size: 12px;
-  line-height: 2.8;
+  line-height: 2.5;
   font-weight: 400;
   letter-spacing: 1.5px;
   color: #0f1f43;
@@ -1093,7 +1093,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
   border: none;
   background: none;
   margin: 0;
-  height: inherit;
+  height: 32px;
   position: relative;
   top: 2px;
 }
@@ -1115,12 +1115,12 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
 }
 .blur-container button.rss div {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 100;
   letter-spacing: 2.2px;
   color: #5c7d7b;
   width: 8rem;
   position: relative;
-  top: -15px;
+  top: -28px;
 }
 input.rss-address {
   position: absolute;
@@ -1141,7 +1141,7 @@ input.rss-address {
   flex-direction: column;
   position: relative;
   flex-wrap: wrap;
-  padding: 0 20vw 0 10vw;
+  padding: 0 15vw;
   overflow: hidden;
   justify-content: center;
   word-break: word-break;
@@ -1154,7 +1154,7 @@ input.rss-address {
   font-family: 'Noto Serif SC', "Noto Serif JP", serif;
   font-weight: 500;
   text-align: left;
-  font-size: 32px;
+  font-size: 36px;
   letter-spacing: 5px;
   color: #142859;
   width: 100%;
@@ -1184,25 +1184,25 @@ blockquote:first-of-type {
 }
 h2 {
   font-weight: 500;
-  font-size: 26px;
-  margin-top: 28px;
+  font-size: 28px;
+  margin-top: 48px;
   letter-spacing: 2.2px;
 }
 h3 {
   font-weight: 500;
   font-size: 24px;
   letter-spacing: 2.2px;
-  margin-top: 18px;
+  margin-top: 30px;
 }
 h3 ~ p,
 h3 ~ ul,
 h3 ~ ol {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 h4 {
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 1.6px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2.2px;
   margin-top: 12px;
 }
 hr {
@@ -1213,15 +1213,14 @@ hr {
   background-color: #c7d6d4;
 }
 p,
-a,
 ol,
 ul,
-li {
+a {
   font-size: 18px;
   font-weight: 300;
   letter-spacing: 2.4px;
-  line-height: 2.8;
-  margin: 2rem 0;
+  line-height: 2.5;
+  margin: 28px 0;
   text-align: justify;
 }
 ul,
@@ -1234,6 +1233,9 @@ li {
   margin-bottom: 12px;
   letter-spacing: 2px;
   line-height: 2;
+}
+li a {
+  margin: 0;
 }
 li::marker {
   color: #5c7d7b;
@@ -1302,14 +1304,14 @@ p img[alt~="RSS"] {
   display: none;
 }
 #commento {
-  width: 80vw;
-  margin-left: 10vw;
+  width: 70vw;
+  margin-left: 15vw;
   font-family: Cairo, sans-serif;
   font-weight: 200;
   letter-spacing: 1.2px;
   margin-bottom: 40px;
   padding-bottom: 8rem;
-  padding-right: 10vw;
+  padding-right: 20px;
 }
 #commento .commento-error-box {
   color: #ffa17a;
@@ -1386,6 +1388,9 @@ p img[alt~="RSS"] {
   .blur-container {
     padding: 20px 20px;
   }
+  .post-container {
+    padding: 0 10vw;
+  }
   blockquote {
     margin-top: 36px;
   }
@@ -1394,6 +1399,7 @@ p img[alt~="RSS"] {
   }
   h2 {
     font-size: 22px;
+    margin-top: 36px;
   }
   h3 {
     font-size: 18px;
@@ -1414,8 +1420,7 @@ p img[alt~="RSS"] {
   p,
   ul,
   ol,
-  a,
-  li {
+  a {
     font-size: 14px;
     line-height: 2rem;
     letter-spacing: 2.8px;
@@ -1425,7 +1430,7 @@ p img[alt~="RSS"] {
     line-height: 2rem;
   }
   li li {
-    font-size: 0.98rem;
+    font-size: 1rem;
     line-height: 1.6rem;
   }
   ul,
@@ -1496,6 +1501,9 @@ p img[alt~="RSS"] {
   }
   #commento label {
     font-size: 9px;
+    width: 150px;
+  }
+  #commento .commento-round-check {
     width: 150px;
   }
 }

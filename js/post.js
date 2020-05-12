@@ -41,7 +41,7 @@ let myEfficientFn = debounce(function() {
   document.execCommand('copy');
   const messageDiv = document.createElement('div');
   messageDiv.textContent = '订阅地址已复制';
-  messageDiv.style.fontFamily = 'Noto Serif SC';
+  // messageDiv.style.fontFamily = 'Noto Serif SC';
   messageDiv.style.opacity = 0;
   messageDiv.style.transition = 'opacity 200ms ease-in-out';
   rssImg.style.opacity = 0;
