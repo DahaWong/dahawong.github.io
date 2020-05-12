@@ -14,18 +14,19 @@
       display: none;
     }
     .main-wrapper {
+      height: 100vh;
       display: flex;
       flex-direction: column;
     }
     img {
       width: 50vw;
+      margin: 40px 0;
     }
     .error-wrapper {
       display: flex;
       flex-direction: column;
-      /* justify-content: center; */
       align-items: center;
-      margin-top: 1.5rem;
+      margin-bottom: 120px;
     }
     span.big-info {
       font-size: 48px;
@@ -41,7 +42,7 @@
       margin: 0;
       font-size: 18px;
     }
-    p.small-info {
+    span.small-info {
       font-size: 18px;
       font-weight: 100;
       letter-spacing: 2.4px;
@@ -55,14 +56,20 @@
       }
       img {
         width: 100vw;
+        margin-top: 72px;
       }
       .main-wrapper {
         height: 100vh;
-        justify-content: center;
+      }
+      span.big-info {
+        font-size: 40px;
+      }
+      span.small-info, a.back {
+        font-size: 16px;
       }
       .error-wrapper {
-        font-size: 36px;
         margin-top: 40px;
+        align-items: center;
       }
     }
     a.home, a.rss {
@@ -97,11 +104,11 @@
         <span class="big-info error">404: </span>
         <span class="big-info not-found">Not Found</span>      
       </div>
-      <p class="small-info">页面飞走了，
+      <span class="small-info">页面飞走了，
         <a class="back" href="https://blog.daha.me">点此返回主页面</a>
         。
-      
-    </p></div>
+      </span>
+    </div>
   </div>
 </body>
 </html></article></div><script defer src="https://cdn.commento.io/js/commento.js" data-no-fonts="true" data-hide-deleted="true" data-custom-text="true"></script><script src="/js/index.js" defer></script><script src="/js/post.js" defer></script><script src="/js/toc.js" defer></script></body></head></html>
