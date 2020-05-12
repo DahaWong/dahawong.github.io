@@ -1460,6 +1460,7 @@ p img[alt~="RSS"] {
   #commento {
     padding-bottom: 2rem;
     width: 80vw;
+    margin-left: 10vw;
   }
   #commento textarea {
     margin-bottom: 80px;
