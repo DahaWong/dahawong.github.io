@@ -296,7 +296,7 @@ a.hero-pic {
   width: 100%;
   height: 240px;
   background-size: cover;
-  background-image: url("http://108.61.210.8/test1.jpg");
+  background-image: url("http://108.61.210.8/img/hero.jpg");
 }
 span.hero-excerpt {
   margin: 10px 0;
@@ -352,13 +352,13 @@ span.hero-excerpt {
   line-height: 1.8;
 }
 .media .music-share .cover {
-  background-image: url("http://108.61.210.8/test2.jpg");
+  background-image: url("http://108.61.210.8/img/music.jpg");
 }
 .media .movie-share .cover {
-  background-image: url("http://108.61.210.8/test3.jpg");
+  background-image: url("http://108.61.210.8/img/movie.jpg");
 }
 .media .book-share .cover {
-  background-image: url("http://108.61.210.8/test4.jpg");
+  background-image: url("http://108.61.210.8/img/book.jpg");
 }
 .right-spliter {
   grid-row: 3/17;
