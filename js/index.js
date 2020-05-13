@@ -1,8 +1,12 @@
 const cursor = document.querySelector('.cursor');
 const links = document.querySelectorAll('a');
+let lastPosY;
+let lastscrollY;
 
 function cursorFollowMouse(e) {
-  cursor.setAttribute('style', `left: ${e.pageX - 10}px; top: ${e.pageY - 10}px;`);
+  lastPosY = e.pageY - 10;
+  lastscrollY = window.scrollY;
+  cursor.setAttribute('style', `left: ${e.pageX - 10}px; top: ${lastPosY}px;`);
 }
 
 function cursorHoverLink() {
@@ -19,9 +23,14 @@ function cursorUp() {
   cursor.classList.remove('pressing');
 }
 
+function scrollRelocate() {
+  cursor.style.top = `${lastPosY + window.scrollY - lastscrollY}px`;
+}
+
 document.addEventListener('mousemove', cursorFollowMouse);
 document.addEventListener('mousedown', cursorDown);
 document.addEventListener('mouseup', cursorUp);
+window.onscroll = scrollRelocate;
 links.forEach((link) => {
   link.addEventListener('mouseover', cursorHoverLink);
   link.addEventListener('mouseleave', () => {
