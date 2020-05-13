@@ -2,8 +2,6 @@ let lastScrollTop = 0;
 const header = document.querySelector('header.blur-container');
 window.addEventListener('scroll', function() {
   let scrollDist = window.pageYOffset || document.documentElement.scrollTop;
-  // console.log(scrollDist);
-  // console.log(lastScrollTop);
   if (scrollDist - lastScrollTop < 0) {
     header.style.opacity = 100;
     header.style.transform = `translateY(0px)`;
