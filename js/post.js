@@ -63,3 +63,34 @@ const rssAddr = document.querySelector('input.rss-address');
 const rssImg = document.querySelector('.rss svg');
 
 rssImg.addEventListener('click', myEfficientFn);
+
+// Scroll Effect
+const pictures = document.querySelectorAll('.post-content>p');
+const picArr = Array.from(pictures);
+
+function scrollEffect() {
+  for (const pic of picArr){
+    pic.classList.add('scrolling');
+    const minThreshold = pic.offsetTop - (this.innerHeight - 1/2 * pic.clientHeight);
+    const maxThreshold = pic.offsetTop + pic.clientHeight;
+    if (this.scrollY < minThreshold || this.scrollY > maxThreshold) {
+      pic.classList.remove("active");
+    } else {
+      pic.classList.add("active");
+    }
+  }
+}
+
+window.addEventListener('scroll', scrollEffect);
+
+let timer = null;
+window.addEventListener('scroll', function () {
+    if(timer !== null) {
+        clearTimeout(timer);        
+    }
+    timer = setTimeout(function() {
+      for (const pic of picArr){
+        pic.classList.remove('scrolling');
+      }
+    }, 200);
+}, false);

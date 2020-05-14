@@ -1052,6 +1052,17 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     transform: scale(1);
   }
 }
+.active {
+  opacity: 100;
+  transition: opacity 600ms ease-out;
+}
+.scrolling {
+  color: #5d6982;
+}
+p {
+  opacity: 0;
+  transition: color 275ms ease-out;
+}
 .wrapper {
   display: flex;
   width: 100vw;
@@ -1167,6 +1178,9 @@ blockquote {
   border-left: 1.6px solid #ffa17a;
   padding-left: 1rem;
   color: #5c7d7b;
+}
+blockquote p {
+  opacity: 1;
 }
 blockquote p a {
   font-weight: 400;
