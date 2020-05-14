@@ -1313,7 +1313,8 @@ p img[alt~="RSS"] {
   padding-bottom: 8rem;
   padding-right: 20px;
 }
-#commento .commento-error-box {
+#commento .commento-error-box,
+#commento .commento-moderation-notice {
   color: #ffa17a;
   text-align: left;
 }
