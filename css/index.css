@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Noto Sans SC", "Noto Sans CJK", 'Cairo', sans-serif;
+  font-family: "Noto Sans SC", 'Cairo', sans-serif;
   font-weight: 300;
 }
 *::selection {
@@ -19,7 +19,7 @@ h4,
 .blur-container a,
 .post-title,
 blockquote p {
-  font-family: 'Noto Serif SC', 'Noto Serif CJK SC', '宋体', 'Noto Serif JP', serif;
+  font-family: 'Noto Serif SC', 'Noto Serif JP', serif;
 }
 a,
 button {
@@ -1143,7 +1143,7 @@ input.rss-address {
   flex-direction: column;
   position: relative;
   flex-wrap: wrap;
-  padding: 0 15vw;
+  padding: 0 17.5vw;
   overflow: hidden;
   justify-content: center;
   word-break: word-break;
@@ -1214,9 +1214,9 @@ p,
 ol,
 ul,
 a {
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 2.2px;
+  font-size: 18px;
+  font-weight: 100;
+  letter-spacing: 2.4px;
   line-height: 2.5;
   margin: 28px 0;
   text-align: justify;
@@ -1268,7 +1268,7 @@ em {
   letter-spacing: 2px;
 }
 p img {
-  width: 75vw;
+  width: 50vw;
   box-shadow: 4px 4px 10px rgba(20,40,89,0.4);
 }
 p img[alt~="RSS"] {
@@ -1302,8 +1302,8 @@ p img[alt~="RSS"] {
   display: none;
 }
 #commento {
-  width: 70vw;
-  margin-left: 15vw;
+  width: 65vw;
+  margin-left: 17.5vw;
   font-family: 'Cairo', sans-serif;
   font-weight: 200;
   letter-spacing: 1.2px;
