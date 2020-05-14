@@ -1216,9 +1216,9 @@ p,
 ol,
 ul,
 a {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
-  letter-spacing: 2.4px;
+  letter-spacing: 2px;
   line-height: 2.5;
   margin: 28px 0;
   text-align: justify;
