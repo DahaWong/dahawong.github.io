@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: "Noto Sans CJK", "Noto Sans SC", "Source Han Sans", "Microsoft Yahei", source-han-sans-simplified-c, 'Cairo', sans-serif;
+  font-family: "Noto Sans SC", "Noto Sans CJK", 'Cairo', sans-serif;
   font-weight: 300;
 }
 *::selection {
@@ -15,8 +15,11 @@ h2,
 h3,
 h4,
 .zh,
-.more-info span {
-  font-family: 'Noto Serif CJK SC', 'Noto Serif SC', 'Source Han Serif SC', 'Source Han Serif', source-han-serif-sc, '宋体', 'Noto Serif JP', serif;
+.more-info span,
+.blur-container a,
+.post-title,
+blockquote p {
+  font-family: 'Noto Serif SC', 'Noto Serif CJK SC', '宋体', 'Noto Serif JP', serif;
 }
 a,
 button {
@@ -837,7 +840,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     font-size: 10px;
   }
   .footer span.from-to {
-    font-family: Cairo, sans-serif;
+    font-family: 'Cairo', sans-serif;
     text-align: center;
     letter-spacing: 5px;
     font-weight: 300;
@@ -1070,7 +1073,6 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
   background-color: rgba(252,252,247,0.9);
 }
 .blur-container a {
-  font-family: Noto Serif SC;
   font-size: 20px;
 }
 .blur-container .blur-layer {
@@ -1151,7 +1153,6 @@ input.rss-address {
   width: inherit;
 }
 .post-title {
-  font-family: 'Noto Serif SC', "Noto Serif JP", serif;
   font-weight: 500;
   text-align: left;
   font-size: 36px;
@@ -1166,9 +1167,6 @@ blockquote {
   border-left: 1.6px solid #ffa17a;
   padding-left: 1rem;
   color: #5c7d7b;
-}
-blockquote p {
-  font-family: Noto Serif SC;
 }
 blockquote p a {
   font-weight: 400;
@@ -1306,7 +1304,7 @@ p img[alt~="RSS"] {
 #commento {
   width: 70vw;
   margin-left: 15vw;
-  font-family: Cairo, sans-serif;
+  font-family: 'Cairo', sans-serif;
   font-weight: 200;
   letter-spacing: 1.2px;
   margin-bottom: 40px;
