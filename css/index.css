@@ -296,7 +296,7 @@ a.hero-pic {
   width: 100%;
   height: 240px;
   background-size: cover;
-  background-image: url("http://108.61.210.8/img/hero.jpg");
+  background-image: url("http://pic.daha.me/img/hero.jpg");
 }
 span.hero-excerpt {
   margin: 10px 0;
@@ -352,13 +352,13 @@ span.hero-excerpt {
   line-height: 1.8;
 }
 .media .music-share .cover {
-  background-image: url("http://108.61.210.8/img/music.jpg");
+  background-image: url("http://pic.daha.me/img/music.jpg");
 }
 .media .movie-share .cover {
-  background-image: url("http://108.61.210.8/img/movie.jpg");
+  background-image: url("http://pic.daha.me/img/movie.jpg");
 }
 .media .book-share .cover {
-  background-image: url("http://108.61.210.8/img/book.jpg");
+  background-image: url("http://pic.daha.me/img/book.jpg");
 }
 .right-spliter {
   grid-row: 3/17;
@@ -1260,7 +1260,7 @@ li a {
 }
 p a:hover,
 li a:hover {
-  color: #6d9997;
+  color: #485d5c;
   border-color: rgba(255,161,122,0.618);
   transition: all 400ms ease 0s;
 }
