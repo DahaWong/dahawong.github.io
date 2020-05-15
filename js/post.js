@@ -94,3 +94,11 @@ window.addEventListener('scroll', function () {
       }
     }, 200);
 }, false);
+
+// Display after loaded
+
+const postContainer = document.querySelector('.post-container');
+function postLoaded() {
+  postContainer.classList.add('loaded');
+}
+window.addEventListener('DOMContentLoaded', postLoaded);

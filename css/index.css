@@ -101,6 +101,9 @@ button {
   transform: scale(0.618);
   transition: 400ms transform ease-out;
 }
+.loaded {
+  opacity: 1 !important;
+}
 img.sharing-bg,
 .footer,
 .entry div,
@@ -119,6 +122,8 @@ main {
   color: #0f1f43;
   box-sizing: content-box;
   padding: 30px 20px 20px;
+  opacity: 0;
+  transition: opacity 600ms ease-out;
 }
 main h2 {
   width: 100%;
@@ -1052,16 +1057,26 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     transform: scale(1);
   }
 }
-.active {
-  opacity: 100;
+.post-container.loaded {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.post-content>.active {
+  opacity: 1;
   transition: opacity 600ms ease-out;
 }
-.scrolling {
+.post-content>.scrolling {
   color: #3a4b6d;
 }
-p {
+.post-content>p {
   opacity: 0;
   transition: color 275ms ease-out;
+}
+.post-content>p:first-of-type {
+  opacity: 1;
+}
+.post-content>p:nth-of-type(2) {
+  opacity: 1;
 }
 .wrapper {
   display: flex;
@@ -1159,6 +1174,9 @@ input.rss-address {
   justify-content: center;
   word-break: word-break;
   margin: 108px 0 48px;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: opacity 1000ms ease-out, transform 600ms ease-out;
 }
 .post-content {
   width: inherit;
