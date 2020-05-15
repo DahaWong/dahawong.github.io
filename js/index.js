@@ -147,12 +147,8 @@ entries.addEventListener('touchstart', entriesTouchStart);
 entries.addEventListener('touchend', entriesTouchEnd);
 
 const mainContainer = document.querySelector('main');
-const images = document.querySelectorAll('img');
 
 function mainLoaded() {
   mainContainer.classList.add('main-loaded');
-  images.forEach((img) => {
-    img.classList.add('img-loaded');
-  });
 }
 window.addEventListener('DOMContentLoaded', mainLoaded);

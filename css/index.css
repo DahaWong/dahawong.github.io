@@ -11,13 +11,6 @@
   color: #0f1f43;
   background-color: #e5eceb;
 }
-img {
-  opacity: 0;
-}
-img.img-loaded {
-  opacity: 1;
-  transition: 600ms opacity ease-out;
-}
 h2,
 h3,
 h4,
