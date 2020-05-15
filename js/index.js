@@ -148,6 +148,6 @@ entries.addEventListener('touchend', entriesTouchEnd);
 
 const mainContainer = document.querySelector('main');
 function mainLoaded() {
-  mainContainer.classList.add('loaded');
+  mainContainer.classList.add('main-loaded');
 }
 window.addEventListener('DOMContentLoaded', mainLoaded);

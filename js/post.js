@@ -99,6 +99,6 @@ window.addEventListener('scroll', function () {
 
 const postContainer = document.querySelector('.post-container');
 function postLoaded() {
-  postContainer.classList.add('loaded');
+  postContainer.classList.add('post-loaded');
 }
 window.addEventListener('DOMContentLoaded', postLoaded);

@@ -101,7 +101,7 @@ button {
   transform: scale(0.618);
   transition: 400ms transform ease-out;
 }
-.loaded {
+.main-loaded {
   opacity: 1 !important;
 }
 img.sharing-bg,
@@ -1057,7 +1057,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
     transform: scale(1);
   }
 }
-.post-container.loaded {
+.post-container.post-loaded {
   opacity: 1 !important;
   transform: translateY(0) !important;
 }
