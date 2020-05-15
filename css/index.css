@@ -1183,7 +1183,7 @@ input.rss-address {
   margin: 108px 0 48px;
   opacity: 0;
   transform: translateY(60px);
-  transition: opacity 1000ms ease-out, transform 600ms ease-out;
+  transition: opacity 1000ms ease-out, transform 800ms ease-out;
 }
 .post-content {
   width: inherit;
