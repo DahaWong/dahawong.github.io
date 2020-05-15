@@ -150,4 +150,4 @@ const mainContainer = document.querySelector('main');
 function mainLoaded() {
   mainContainer.classList.add('loaded');
 }
-window.addEventListener('load', mainLoaded);
+window.addEventListener('DOMContentLoaded', mainLoaded);

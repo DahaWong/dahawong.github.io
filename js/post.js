@@ -101,4 +101,4 @@ const postContainer = document.querySelector('.post-container');
 function postLoaded() {
   postContainer.classList.add('loaded');
 }
-window.addEventListener('load', postLoaded);
+window.addEventListener('DOMContentLoaded', postLoaded);
