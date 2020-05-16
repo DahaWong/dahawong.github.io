@@ -79,6 +79,7 @@ function scrollEffect() {
       pic.classList.add("active");
     }
   }
+  window.commento.main();
 }
 
 window.addEventListener('scroll', scrollEffect);

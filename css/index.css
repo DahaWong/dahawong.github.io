@@ -129,7 +129,6 @@ main h2 {
   width: 100%;
   text-align: left;
   font-size: 18px;
-  font-weight: 700;
   line-height: 40px;
   letter-spacing: 3px;
 }
@@ -169,12 +168,12 @@ main h3 {
   position: relative;
   top: -16px;
 }
-.header .blog-title .char .tone[src="/img/tone-1.svg"] {
+.header .blog-title .char .tone[src="https://cdn.jsdelivr.net/gh/dahawong/dahawong.github.io/img/tone-1.svg"] {
   position: relative;
   left: 4.5px;
   top: 2px;
 }
-.header .blog-title .char .tone[src="/img/tone-2.svg"] {
+.header .blog-title .char .tone[src="https://cdn.jsdelivr.net/gh/dahawong/dahawong.github.io/img/tone-2.svg"] {
   position: relative;
   left: -6px;
   top: 1.5px;
@@ -763,7 +762,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
   .header {
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("/img/Logo@big.svg");
+    background-image: url("https://cdn.jsdelivr.net/gh/dahawong/dahawong.github.io/img/Logo@big.svg");
     margin: 20px 0 40px;
     flex-direction: column;
     align-items: center;
@@ -1096,7 +1095,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
   width: 100%;
   transition: opacity 350ms ease-in-out 0s, transform 275ms ease-in-out 0s;
   z-index: 1;
-  background-color: rgba(252,252,247,0.9);
+  background-color: #fcfcf7;
 }
 .blur-container a {
   font-size: 20px;
@@ -1125,14 +1124,7 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
   position: relative;
   top: 2px;
 }
-.blur-container button.rss:focus {
-  background: none;
-}
-.blur-container button.rss::selection {
-  background: none;
-}
 .blur-container button.rss svg {
-  cursor: pointer;
   transition: opacity 50ms ease-in-out;
 }
 .blur-container button.rss svg:active .outer,
@@ -1140,6 +1132,14 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
 .blur-container button.rss svg:active .middle,
 .blur-container button.rss svg:hover .middle {
   fill: #6d9997;
+}
+.blur-container button.rss button.rss:focus,
+.blur-container button.rss svg:focus {
+  background: none;
+}
+.blur-container button.rss button.rss::selection,
+.blur-container button.rss svg::selection {
+  background: none;
 }
 .blur-container button.rss div {
   font-size: 14px;
@@ -1150,6 +1150,9 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
   position: relative;
   top: -29px;
 }
+.cursor {
+  z-index: 2;
+}
 input.rss-address {
   position: absolute;
   z-index: -1;
@@ -1157,7 +1160,6 @@ input.rss-address {
 }
 .blur-layer {
   background-color: #fcfcf7;
-  opacity: 0.95;
   filter: blur(1.2px);
   width: 100vw;
   height: 16.666666666666668vw;
@@ -1170,13 +1172,12 @@ input.rss-address {
   position: relative;
   flex-wrap: wrap;
   padding: 0 17.5vw;
-  overflow: hidden;
   justify-content: center;
   word-break: word-break;
   margin: 108px 0 48px;
   opacity: 0;
   transform: translateY(60px);
-  transition: opacity 1000ms ease-out, transform 800ms ease-out;
+  transition: opacity 1000ms ease-out, transform 500ms ease-out;
 }
 .post-content {
   width: inherit;
@@ -1184,12 +1185,13 @@ input.rss-address {
 .post-title {
   font-weight: 500;
   text-align: left;
-  font-size: 36px;
+  font-size: 32px;
   letter-spacing: 5px;
   color: #142859;
   width: 100%;
   margin-bottom: 24px;
   text-align: center;
+  background-color: #fcfcf7;
 }
 blockquote {
   letter-spacing: 0.4px;
@@ -1201,7 +1203,6 @@ blockquote p {
   opacity: 1;
 }
 blockquote p a {
-  font-weight: 400;
   display: inline;
 }
 blockquote p a:hover {
@@ -1358,6 +1359,9 @@ p img[alt~="RSS"] {
   resize: none;
   margin-bottom: 120px;
 }
+#commento textarea:focus {
+  background: #e5eceb;
+}
 #commento .commento-name {
   color: #0f1f43;
   font-size: 14px;
@@ -1414,6 +1418,18 @@ p img[alt~="RSS"] {
 #commento .commento-logged-in-as .commento-name {
   margin-left: 0;
   left: 0;
+}
+#commento #commento-submit-button-root:focus,
+#commento .commento-round-check:focus,
+#commento .commento-profile-button:focus,
+#commento label:focus {
+  background: none;
+}
+#commento #commento-submit-button-root::selection,
+#commento .commento-round-check::selection,
+#commento .commento-profile-button::selection,
+#commento label::selection {
+  background: none;
 }
 @media only screen and (max-width: 501px) {
   .blur-container {
