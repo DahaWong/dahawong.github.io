@@ -1,1 +1,32 @@
-<svg width="23" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path stroke="#5C7D7B" stroke-width="2.5" d="M2 2h19.5v13.375H2z"/><path stroke="#5C7D7B" stroke-width="2" stroke-linecap="square" d="M11.75 2.067l.069 13.308"/><g stroke="#FFA17A" stroke-linecap="round"><path d="M4.873 11.327h3.9M4.873 8.774h3.9M4.873 6.188h3.9"/><g><path d="M14.623 11.327h3.9M14.623 6.188h3.9M14.623 8.774h3.9"/></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="23px" height="17px" viewBox="0 0 23 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>往期-图标</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-119.000000, -615.000000)">
+            <g id="简报" transform="translate(39.000000, 117.500000)">
+                <g id="Group-4" transform="translate(21.000000, 455.000000)">
+                    <g id="Group-3" transform="translate(61.000000, 0.000000)">
+                        <g id="往期-图标" transform="translate(0.000000, 44.500000)">
+                            <rect id="Outline" stroke="#5C7D7B" stroke-width="2.5" x="0" y="0" width="19.5" height="13.3751977"></rect>
+                            <line x1="9.75" y1="0.0668759885" x2="9.81914894" y2="13.3751977" id="Middle" stroke="#5C7D7B" stroke-width="2" stroke-linecap="square"></line>
+                            <g id="Text-box" transform="translate(1.700000, 4.000000)" stroke="#FFA17A" stroke-linecap="round">
+                                <g id="Textbox-left" transform="translate(0.250000, 0.000000)">
+                                    <line x1="0.923200839" y1="5.32690846" x2="4.82320084" y2="5.32690846" id="Text3"></line>
+                                    <line x1="0.923200839" y1="2.77371697" x2="4.82320084" y2="2.77371697" id="Text2"></line>
+                                    <line x1="0.923200839" y1="0.1875" x2="4.82320084" y2="0.1875" id="Text1"></line>
+                                </g>
+                                <g id="Textbox-right" transform="translate(10.000000, 0.000000)">
+                                    <line x1="0.923200839" y1="5.32690846" x2="4.82320084" y2="5.32690846" id="Text3"></line>
+                                    <line x1="0.923200839" y1="0.1875" x2="4.82320084" y2="0.1875" id="Text2"></line>
+                                    <line x1="0.923200839" y1="2.77371697" x2="4.82320084" y2="2.77371697" id="Text1"></line>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
