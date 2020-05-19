@@ -3574,7 +3574,7 @@ input.rss-address {
   left: 0;
   position: absolute;
 }
-.post-container {
+article.post-container {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -3587,7 +3587,7 @@ input.rss-address {
   transform: translateY(40px);
   transition: opacity 1000ms ease-out, transform 500ms ease-out;
 }
-.post-container a {
+article.post-container a {
   border-bottom: 1px solid #ffa17a;
 }
 .post-content {
@@ -3710,7 +3710,7 @@ p img[alt~="RSS"] {
 rt {
   position: relative;
   top: 5px;
-  color: #5c7d7b;
+  color: #485d5c;
   letter-spacing: 1.5px;
 }
 .note {
