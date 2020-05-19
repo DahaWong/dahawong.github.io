@@ -3477,6 +3477,12 @@ aside.right-part .right-bottom-part section.new-posts a.article-title span {
 .post-content>p:nth-of-type(3) {
   opacity: 1;
 }
+s {
+  color: #e77132;
+}
+span {
+  color: #0f1f43;
+}
 .wrapper {
   display: flex;
   width: 100vw;
