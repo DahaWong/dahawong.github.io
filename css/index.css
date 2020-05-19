@@ -2359,7 +2359,6 @@
   transition: all 400ms ease 0s;
   color: #5c7d7b;
   text-decoration: none;
-  border-bottom: 1px solid #ffa17a;
   word-break: break-all;
 }
 * a:hover {
@@ -2416,6 +2415,9 @@ button {
   display: flex;
   justify-content: space-around;
 }
+.archive-container a {
+  border-bottom: 1px solid #ffa17a;
+}
 .category-container {
   display: flex;
   flex-direction: column;
@@ -2425,9 +2427,10 @@ button {
   margin-bottom: 80px;
 }
 .category-container a {
-  color: #5c7d7b;
+  color: #485d5c;
   font-size: 24px;
   margin: 0;
+  border-bottom: 1px solid #ffa17a;
 }
 .category-item {
   display: flex;
@@ -3577,6 +3580,9 @@ input.rss-address {
   opacity: 0;
   transform: translateY(40px);
   transition: opacity 1000ms ease-out, transform 500ms ease-out;
+}
+.post-container a {
+  border-bottom: 1px solid #ffa17a;
 }
 .post-content {
   width: inherit;
