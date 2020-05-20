@@ -3744,7 +3744,7 @@ p img[alt~="RSS"] {
 }
 rt {
   position: relative;
-  top: 7px;
+  top: 6px;
   color: #485d5c;
   letter-spacing: 1.5px;
 }
