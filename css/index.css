@@ -3920,7 +3920,7 @@ span.note-content {
   .blur-container {
     padding: 20px 20px;
   }
-  .post-container {
+  article.post-container {
     padding: 0 10vw;
   }
   blockquote {
