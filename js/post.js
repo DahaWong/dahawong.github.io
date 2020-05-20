@@ -1,1 +1,133 @@
-let lastScrollTop=0;const header=document.querySelector("header.blur-container");function debounce(e,t,s){var o;return function(){var n=this,r=arguments,i=s&&!o;clearTimeout(o),o=setTimeout(function(){o=null,s||e.apply(n,r)},t),i&&e.apply(n,r)}}window.addEventListener("scroll",function(){let e=window.pageYOffset||document.documentElement.scrollTop;e-lastScrollTop<0?(header.style.opacity=100,header.style.transform="translateY(0px)"):(header.style.opacity=0,header.style.transform="translateY(-${header.clientHeight}px)"),lastScrollTop=e}),0==lastScrollTop&&(header.style.opacity=100,header.style.transform="translateY(0px)");let myEfficientFn=debounce(function(){rssAddr.focus(),rssAddr.select(),document.execCommand("copy");const e=document.createElement("div");e.textContent="订阅地址已复制",e.style.opacity=0,e.style.transition="opacity 200ms ease-in-out",rssImg.style.opacity=0,setTimeout(()=>{rssBtn.appendChild(e),e.style.opacity=1,rssImg.style.visibility="hidden"},200),setTimeout(function(){e.style.opacity=0,setTimeout(()=>{e.remove(),rssImg.style.visibility="visible",rssImg.style.opacity=1},200)},1e3)},250);const rssBtn=document.querySelector("button.rss"),rssAddr=document.querySelector("input.rss-address"),rssImg=document.querySelector(".rss svg");rssImg.addEventListener("click",myEfficientFn);const pictures=document.querySelectorAll(".post-content>p"),picArr=Array.from(pictures);function scrollEffect(){for(const e of picArr){e.classList.add("scrolling");const t=e.offsetTop-(this.innerHeight-.5*e.clientHeight),s=e.offsetTop+e.clientHeight;this.scrollY<t||this.scrollY>s?e.classList.remove("active"):e.classList.add("active")}}window.addEventListener("scroll",scrollEffect);let timer=null;window.addEventListener("scroll",function(){null!==timer&&clearTimeout(timer),timer=setTimeout(function(){for(const e of picArr)e.classList.remove("scrolling")},200)},!1);const postContainer=document.querySelector(".post-container");function postLoaded(){postContainer.classList.add("post-loaded"),window.commento.main()}window.addEventListener("DOMContentLoaded",postLoaded);const showNote=e=>{e.target.previousSibling.classList.add("note-shown")},hideNote=e=>{e.target.nextSibling.classList.remove("note-shown")},noteLabels=document.querySelectorAll("sup.note-label");noteLabels.forEach(e=>{e.addEventListener("mouseover",showNote),e.addEventListener("touchstart",showNote)});const Turbolinks=require("turbolinks");Turbolinks.start();
+let lastScrollTop = 0;
+const header = document.querySelector('header.blur-container');
+window.addEventListener('scroll', function() {
+  let scrollDist = window.pageYOffset || document.documentElement.scrollTop;
+  if (scrollDist - lastScrollTop < 0) {
+    header.style.opacity = 100;
+    header.style.transform = `translateY(0px)`;
+  }
+  else{
+    header.style.opacity = 0;
+    header.style.transform = 'translateY(-${header.clientHeight}px)';
+  }
+  lastScrollTop = scrollDist;
+});
+
+if (lastScrollTop == 0) {
+  header.style.opacity = 100;
+  header.style.transform = `translateY(0px)`;
+}
+
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+
+let myEfficientFn = debounce(function() {
+  rssAddr.focus();
+  rssAddr.select();
+  document.execCommand('copy');
+  const messageDiv = document.createElement('div');
+  messageDiv.textContent = '订阅地址已复制';
+  messageDiv.style.opacity = 0;
+  messageDiv.style.transition = 'opacity 200ms ease-in-out';
+  rssImg.style.opacity = 0;
+  setTimeout(() => {
+    rssBtn.appendChild(messageDiv);
+    messageDiv.style.opacity = 1;
+    rssImg.style.visibility = 'hidden';
+  }, 200)
+  setTimeout(function() {
+    messageDiv.style.opacity = 0;
+    setTimeout(() => {
+      messageDiv.remove();
+      rssImg.style.visibility = 'visible';
+      rssImg.style.opacity = 1;
+    }, 200)
+  }, 1000);
+}, 250);
+
+const rssBtn = document.querySelector('button.rss');
+const rssAddr = document.querySelector('input.rss-address');
+const rssImg = document.querySelector('.rss svg');
+
+rssImg.addEventListener('click', myEfficientFn);
+
+// Scroll Effect
+const pictures = document.querySelectorAll('.post-content>p');
+const picArr = Array.from(pictures);
+
+function scrollEffect() {
+  for (const pic of picArr){
+    pic.classList.add('scrolling');
+    const minThreshold = pic.offsetTop - (this.innerHeight - 1/2 * pic.clientHeight);
+    const maxThreshold = pic.offsetTop + pic.clientHeight;
+    if (this.scrollY < minThreshold || this.scrollY > maxThreshold) {
+      pic.classList.remove("active");
+    } else {
+      pic.classList.add("active");
+    }
+  }
+}
+
+window.addEventListener('scroll', scrollEffect);
+
+let timer = null;
+window.addEventListener('scroll', function () {
+    if(timer !== null) {
+        clearTimeout(timer);        
+    }
+    timer = setTimeout(function() {
+      for (const pic of picArr){
+        pic.classList.remove('scrolling');
+      }
+    }, 200);
+}, false);
+
+// Display after loaded
+const postContainer = document.querySelector('.post-container');
+function postLoaded() {
+  postContainer.classList.add('post-loaded');
+  window.commento.main();
+}
+window.addEventListener('DOMContentLoaded', postLoaded);
+
+// Note System
+const showNote = (e) => {
+  const label = e.target;
+  const note = label.previousSibling;
+  note.classList.add('note-shown');
+};
+
+const hideNote = (e) => {
+  const label = e.target;
+  const note = label.nextSibling;
+  note.classList.remove('note-shown');
+};
+
+const noteLabels = document.querySelectorAll('sup.note-label');
+noteLabels.forEach((label) => {
+  label.addEventListener('mouseover', showNote);
+  label.addEventListener('touchstart', showNote);
+  // label.addEventListener('mouseleave', hideNote);
+  // window.addEventListener('touchstart', hideNote);
+});
+
+// Quit Animation
+const blurContainer = document.querySelector('header.blur-container');
+const nav = document.querySelector('nav.category');
+const pageFadeOut = () => {
+  blurContainer.classList.add('header-fade-out');
+  postContainer.classList.add('post-fade-out');
+};
+nav.addEventListener('click', pageFadeOut);
