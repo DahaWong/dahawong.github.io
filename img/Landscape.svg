@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
-    <title>Landscape</title>
-    <desc>Created with Sketch.</desc>
-    <g id="Landscape" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Icon" transform="translate(17.000000, 25.000000)">
-            <g id="River" transform="translate(0.000000, 13.995813)" stroke-linecap="round">
-                <path d="M2.02949701,6.68075563 C5.38244865,5.63877458 8.78914597,5.11778405 12.249589,5.11778405 C15.710032,5.11778405 19.2072743,5.63877458 22.7413159,6.68075563 C26.1932858,7.63877458 29.6452556,8.11778405 33.0972254,8.11778405 C36.5491952,8.11778405 40.0011651,7.63877458 43.4531349,6.68075563" id="Path-7" stroke="#5C7D7B" stroke-width="2.5"></path>
-                <path d="M4.5,0.995813068 C7.48185123,0.334728977 10.0651846,0.00418693157 12.25,0.00418693157 C14.4348154,0.00418693157 17.0181488,0.334728977 20,0.995813068" id="Path-7-Copy" stroke="#89ABA8" stroke-width="2"></path>
-                <path d="M26,1.84624504 C28.277423,2.51291171 30.777423,2.84624504 33.5,2.84624504 C36.222577,2.84624504 38.722577,2.51291171 41,1.84624504" id="Path-7-Copy-2" stroke="#89ABA8" stroke-width="2"></path>
-                <path d="M0,11.5083739 C3.51421664,10.5083739 6.68088331,10.0083739 9.5,10.0083739 C12.3191167,10.0083739 15.8191167,10.5083739 20,11.5083739" id="Path-7-Copy" stroke="#5C7D7B" stroke-width="2"></path>
-                <path d="M27.0012165,12.3462026 C30.2184737,13.4250103 33.551401,13.9644141 36.9999985,13.9644141 C40.448596,13.9644141 43.449002,13.4250103 46.0012165,12.3462026" id="Path-7-Copy-2" stroke="#5C7D7B" stroke-width="2" transform="translate(36.501216, 13.155308) rotate(-4.000000) translate(-36.501216, -13.155308) "></path>
-            </g>
-            <circle id="Sun" fill="#FFA17A" cx="34.5" cy="6.5" r="6"></circle>
-        </g>
-    </g>
-</svg>
+<svg width="80" height="80" xmlns="http://www.w3.org/2000/svg"><g transform="translate(17 25)" fill="none" fill-rule="evenodd"><g stroke-linecap="round"><path d="M2.03 20.677a34.251 34.251 0 0110.22-1.563c3.46 0 6.957.52 10.491 1.563 3.452.958 6.904 1.437 10.356 1.437s6.904-.48 10.356-1.437" stroke="#5C7D7B" stroke-width="2.5"/><path d="M4.5 14.992C7.482 14.33 10.065 14 12.25 14c2.185 0 4.768.33 7.75.992M26 15.842c2.277.667 4.777 1 7.5 1s5.223-.333 7.5-1" stroke="#89ABA8" stroke-width="2"/><path d="M0 25.504c3.514-1 6.68-1.5 9.5-1.5 2.82 0 6.32.5 10.5 1.5M26.968 27.007a31.241 31.241 0 0010.087.916c3.44-.24 6.396-.987 8.867-2.242" stroke="#5C7D7B" stroke-width="2"/></g><circle fill="#FFA17A" cx="34.5" cy="6.5" r="6"/></g></svg>
