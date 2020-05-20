@@ -3709,7 +3709,7 @@ p img[alt~="RSS"] {
 }
 rt {
   position: relative;
-  top: 5px;
+  top: 7px;
   color: #485d5c;
   letter-spacing: 1.5px;
 }
@@ -3795,9 +3795,10 @@ span.note-content {
   font-weight: 300;
   resize: none;
   margin-bottom: 120px;
+  transition: 400ms background ease-out;
 }
 #commento textarea:focus {
-  background: #e5eceb;
+  background: rgba(229,236,235,0.5);
 }
 #commento .commento-name {
   color: #0f1f43;
